@@ -6,7 +6,7 @@
 
 *A game designed to test your memory. Can you correctly recall the order of a shuffled deck of cards?*
 
-This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses.It provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journies. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
+This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. t provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
 
 ![A mock-up image of the website]()
 
@@ -71,10 +71,24 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 ## Project Goals
 
 ### User Goals
+- A website that is easy to navigate.
+- A website that will display well on different devices.
+- A description of how to play the game.
+- Contact information of the developer.
+- Positive and immediate feedback from the site such as on hover or on click JavaScript animations to ensure a good user experience.
 
 ### Site Owner Goals
+- Provide a fun memory game with a lot of replayability potential.
+- Allow different difficulty settings.
+- Display the game in a good looking and engaging manner to appeal to the user.
+- A game that is responsive and works well on mobiles as well as desktops.
 
 ### Developer Goals
+- A well designed website that catches the attention of the users.
+- A responsive website where the functionality is not impacted by screen size.
+- Easy navigation that is intuitive and responsive.
+- A website designed with accessibility in mind.
+- A finished product that will proudly be displayed within the developer's portfolio.
 
 ## User Stories
 
