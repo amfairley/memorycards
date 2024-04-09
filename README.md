@@ -4,9 +4,9 @@
 
 # Memory Cards
 
-*Description of site*
+*A game designed to test your memory. Can you correctly recall the order of a shuffled deck of cards?*
 
-Longer description of site including aim, value it provides. Description of the development process and why mobile first.
+This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses.It provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journies. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
 
 ![A mock-up image of the website]()
 
