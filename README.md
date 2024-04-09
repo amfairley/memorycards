@@ -93,10 +93,17 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 ## User Stories
 
 ### First Time Visitor Goals
+1. As a First Time Visitor, I want to know the purpose of the website immediately.
+2. As a First Time Visitor, I want to be able to navigate the website easily and intuitively.
+3. As a First Time Visitor, I want to be able to learn how to play the game.
 
 ### Returning Visitor Goals
+4. As a Returning Visitor, I want to be able to quickly play the game.
+5. As a Returning Visitor, I want to be be able to contact the website developer.
 
 ### Frequent Visitor Goals
+6. As a Frequent Visitor, I want to be able to tune the difficulty of the game.
+7. As a Frequent Visitor, I want to be able to see other work from the developer.
 
 ## Five Planes of UX
 
