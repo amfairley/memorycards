@@ -100,28 +100,41 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 ### Returning Visitor Goals
 4. As a Returning Visitor, I want to be able to quickly play the game.
 5. As a Returning Visitor, I want to be be able to contact the website developer.
+6. As a Returning Visitor, I want to be able to learn how to improve my performance at the game.
 
 ### Frequent Visitor Goals
-6. As a Frequent Visitor, I want to be able to tune the difficulty of the game.
-7. As a Frequent Visitor, I want to be able to see other work from the developer.
+7. As a Frequent Visitor, I want to be able to tune the difficulty of the game.
+8. As a Frequent Visitor, I want to be able to see other work from the developer.
 
 ## Five Planes of UX
 
 ### Strategy
-- **What value does the project provide?**
-- **What are the business needs?**
-- **Who is the target audience?**
+- **What value does the project provide?** This memory game website will provide a fun and enjoyable way for users to test and improve upon their memory.
+- **What are the business needs?** The business in this case would be the developer, who intends to produce a fun, responsive, and interactive website. Their needs would be an engaging game and a way for the user to contact and give feedback to the developer.
+- **Who is the target audience?** The target audience are those interested in memory games or brain training games.
 - **What are the user requirements and expectations?**
-- **What information is required?**
+    - A simple and intuitive navigation system
+    - Responsiveness from button clicks and mouse hover
+    - Able to quickly learn how to play the game
+    - All functions and links work as expected
+    - External links open in a new browser tab
+    - The design and functionality on the site works regardless of screen size
+    - Contact information is readily available
+    - An obvious sign that I have accidentally accessed a page that does not exist
+    - Accessibility
 
 #### Viability and Feasibility
 Followed is an analysis of the above value and user and business needs:
 |   Task |   Importance | Viability/Feasibility |
 | --------- | ------------- | ----------------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Card Memory Game | 5 | 5 |
+| A way to give feedback to the developer | 5 | 5 |
+| Responsive on all devices | 5 | 5 |
+| Different difficulties | 3 | 5 |
+| 404 page | 4 | 4 |
+| How to play | 3 | 4 |
+| Link to developer GitHub | 2 | 5 |
+
 
 ### Scope
 
