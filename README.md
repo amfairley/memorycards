@@ -214,9 +214,9 @@ There will be no sub-category navigation links within each webpage.
 #### Preliminary Wireframes
 
 ##### Home page
-- [Desktop](docs/wireframes/homepage_desktop.png)
-- [Tablet](docs/wireframes/homepage_tablet.png)
-- [Mobile](docs/wireframes/homepage_mobile.png)
+- [Mobile](documentation/wireframes/home_mobile.png)
+- [Tablet](documentation/wireframes/home_tablet.png)
+- [Desktop](documentation/wireframes/home_desktop.png)
 ##### How to play
 - [Desktop](docs/wireframes/aboutus_desktop.png)
 - [Tablet](docs/wireframes/aboutus_tablet.png)
@@ -305,6 +305,8 @@ Hero images
 	* Used for version control
 3. [Github](https://github.com/)
 	* Used to store the code
+4. [Balsamiq Wireframes](https://balsamiq.com/)
+    * Used to create wireframes for the project
 
 ## Testing
 For my testing, please see the separate [testing.md](link) file.
