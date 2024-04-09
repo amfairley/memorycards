@@ -172,24 +172,40 @@ A mobile-first approach is taken to ensure optimal performance on mobile devices
 
 #### Overall Structure
 Each page will consise of:
-- **Navigation bar**: describe
-- **Main section**: describe
-- **Footer**: describe
+- **Navigation bar**: Meets the navigation requirement.
+- **Main section**: Meeting the page-specific requirements.
+- **Footer**: Meeting the requirement for a link to the developer's GitHub profile.
 
 Required pages and their main sections:
-- **Homepage**: what requirement does it meet?
-    1. Has this
-    2. Also this etc.
-- **How to play**: what requirement does it meet?
-    1. Has this
-    2. Also this etc.
-- **Contact me**: what requirement does it meet?
-    1. Has this
-    2. Also this etc.
+- **Homepage**: This page will meet the requirement for an interactive game.
+    1. The main section of the homepage will hold the game area.
+    2. The game area will have the following functionality:
+        - The user can select a number of cards to memorise.
+        - The cards will then be shuffled.
+        - The shuffled cards will be displayed to the user.
+        - The shuffled cards will then be hidden and the user must recreate the sequence.
+- **How to play**: This page will meet the requirement for an explanation of gameplay.
+    1. This page will house the rules for the game.
+    2. It must include how to play the game and what the functions of the buttons are.
+    3. It will also include some hints and/or tips to allow the user to increase their score.
+- **Contact me**: This page will meet the requirement for allowing players to contact the developer.
+    1. This page will have a text box and a submit button allowing messages to be sent to the developer's email address.
+- **404**: This page will meet the requirement for alerting users when they have accessed a page that does not exist.
+    1. This page will have a message informing the user that they have tried to access a page that does not exist.
+    2. This page will have a link back to the home/game page.
 
 #### Information Architecture
+The same navigation bar and footer will be implemented on each page to create a consistent website that is pleasing to look at and easy to use.
+The navigation bar will have the site brand/logo that links to the homepage as well as separate links to the other pages. This will allow the user to access the desired section of the site well within the 3 click maximum that many websites adhere to.
+There will be no sub-category navigation links within each webpage.
 
 #### Interactive Experience
+- **The website**: Clickable links will have animated effects on hover or click, providing clear feedback to the user. All external links such as the GitHub profile will open in a new tab. Content hinting will be used where possible to influence the user to scroll down and uncover new content on the pages.
+- **The game**: 
+    - The game will work by firstly having the user select the length of a sequence to memorise. 
+    - When prompted a pack of cards will be shuffled and the entered number of cards will be shown on the screen.
+    - Upon another prompt, the cards will disappear and a table allowing the user to select the cards will appear.
+    - There will be feedback on whether the user is correct/incorrect with their guesses.
 
 ### Skeleton
 
