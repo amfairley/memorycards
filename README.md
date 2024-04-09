@@ -139,18 +139,34 @@ Followed is an analysis of the above value and user and business needs:
 ### Scope
 
 #### Content Requirements
+A mobile-first approach is taken to ensure optimal performance on mobile devices and the Bootstrap 5 size limits will be considered during the design of each section in order to make it suitable for phones, tablets, and desktops.
 
 ##### Section: Navigation Bar
+- The navigation bar will be present on every page to create a cohesive structure across the website.
+- It will include the site name and logo, so that the website is easily identifiable.
+- It will have links to the homepage, how to play page, and contact me page.
+- The links will be responsive to a mouse hover and click to provide feedback to the user.
+- The current page will have it's link identified in some way to indicate the current page.
 
 ##### Section: Footer
+- The footer section will be present on every page to create a cohesive structure across the website.
+- It will include the site name and logo, so that the website is easily identifiable.
+- It will include external links such as a link to the developer's GitHub profile.
+- External links will be responsive to a mouse hove and click to provide feedback to the user.
+- External links will open in a new tab to provide good user experience.
 
 ##### Webpage: Homepage
+- The homepage will house the memory game.
 
 ##### Webpage: How to play
+- The how to play page will provide instructions to the user.
 
 ##### Webpage: Contact me
+- The contact me page will house a text box, allowing the user to send a message to the developer's email using an API.
 
 ##### Webpage: 404
+- The 404 page will inform the user that the page that they have tried to access does not exist.
+- It will provide a link back to the homepage.
 
 ### Structure
 
