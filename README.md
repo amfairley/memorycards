@@ -315,6 +315,8 @@ Hero images
 	* CSS library used for its grid system and easier styling and responsiveness 
 6. [Font Awesome](https://fontawesome.com/)
     * Used throughout for decorative icons
+7. [Favicon](https://favicon.io/)
+	* Used to supply the image for the browser tab
 
 ## Testing
 For my testing, please see the separate [testing.md](link) file.
