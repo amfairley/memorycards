@@ -311,6 +311,10 @@ Hero images
 	* Used to store the code
 4. [Balsamiq Wireframes](https://balsamiq.com/)
     * Used to create wireframes for the project
+5. [Bootstrap v5.3.3](https://getbootstrap.com/)
+	* CSS library used for its grid system and easier styling and responsiveness 
+6. [Font Awesome](https://fontawesome.com/)
+    * Used throughout for decorative icons
 
 ## Testing
 For my testing, please see the separate [testing.md](link) file.
