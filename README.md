@@ -171,10 +171,11 @@ A mobile-first approach is taken to ensure optimal performance on mobile devices
 ### Structure
 
 #### Overall Structure
-Each page will consise of:
+Each page will consist of:
 - **Navigation bar**: Meets the navigation requirement.
 - **Main section**: Meeting the page-specific requirements.
 - **Footer**: Meeting the requirement for a link to the developer's GitHub profile.
+- **Ratio sizes of elements**: Key sections will maintain the same ratio of sizes aceross each page to create uniformity.
 
 Required pages and their main sections:
 - **Homepage**: This page will meet the requirement for an interactive game.
@@ -185,11 +186,14 @@ Required pages and their main sections:
         - The shuffled cards will be displayed to the user.
         - The shuffled cards will then be hidden and the user must recreate the sequence.
 - **How to play**: This page will meet the requirement for an explanation of gameplay.
-    1. This page will house the rules for the game.
-    2. It must include how to play the game and what the functions of the buttons are.
-    3. It will also include some hints and/or tips to allow the user to increase their score.
+    1. This page will have a hero image and title allowing the user to quickly gauge the intent of the page.
+    2. This page will house the rules for the game.
+    3. It must include how to play the game and what the functions of the buttons are.
+    4. It will also include some hints and/or tips to allow the user to increase their score.
+    5. There will be an image to break up the text and make it more appealing to the user.
 - **Contact me**: This page will meet the requirement for allowing players to contact the developer.
-    1. This page will have a text box and a submit button allowing messages to be sent to the developer's email address.
+    1. There will be a page title indicating the purpose of the page.
+    2. This page will have a text box and a submit button allowing messages to be sent to the developer's email address.
 - **404**: This page will meet the requirement for alerting users when they have accessed a page that does not exist.
     1. This page will have a message informing the user that they have tried to access a page that does not exist.
     2. This page will have a link back to the home/game page.
@@ -218,17 +222,17 @@ There will be no sub-category navigation links within each webpage.
 - [Tablet](documentation/wireframes/home_tablet.png)
 - [Desktop](documentation/wireframes/home_desktop.png)
 ##### How to play
-- [Desktop](docs/wireframes/aboutus_desktop.png)
-- [Tablet](docs/wireframes/aboutus_tablet.png)
-- [Mobile](docs/wireframes/aboutus_mobile.png)
+- [Mobile](documentation/wireframes/how_to_play_mobile.png)
+- [Tablet](documentation/wireframes/how_to_play_tablet.png)
+- [Desktop](documentation/wireframes/how_to_play_desktop.png)
 ##### Contact me
-- [Desktop](docs/wireframes/travel_desktop.png)
-- [Tablet](docs/wireframes/travel_tablet.png)
-- [Mobile](docs/wireframes/travel_mobile.png)
+- [Mobile](documentation/wireframes/contact_me_mobile.png)
+- [Tablet](documentation/wireframes/contact_me_tablet.png)
+- [Desktop](documentation/wireframes/contact_me_desktop.png)
 ##### 404
-- [Desktop](docs/wireframes/rsvp_desktop.png)
-- [Tablet](docs/wireframes/rsvp_tablet.png)
-- [Mobile](docs/wireframes/rsvp_mobile.png)
+- [Mobile](documentation/wireframes/404_mobile.png)
+- [Tablet](documentation/wireframes/404_tablet.png)
+- [Desktop](documentation/wireframes/404_desktop.png)
 
 #### Changes to Wireframes
 
@@ -286,7 +290,7 @@ All images used were optimised using [adobe photoshop](https://www.adobe.com/uk/
 Others: Logo and navigation bar, any hover effect
 Footer
 Homepage
-Contact us
+Contact me
 Hero images
 404
 
