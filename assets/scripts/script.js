@@ -9,13 +9,29 @@ const cards = [
     '7c.png', 
     '8c.png', 
     '9c.png', 
-    '10c.png', 
+    '0c.png', 
     'jc.png', 
     'qc.png',
     'kc.png'
 ];
 let sequenceLength;
 let cardsToPlay;
+
+var cardObject = {
+    'ac': "Ace of Clubs",
+    '2c': "Two of Clubs",
+    '3c': "Three of Clubs",
+    '4c': "Four of Clubs",
+    '5c': "Five of Clubs",
+    '6c': "Six of Clubs",
+    '7c': "Seven of Clubs",
+    '8c': "Eight of Clubs",
+    '9c': "Nine of Clubs",
+    '0c': "Ten of Clubs",
+    'jc': "Jack of Clubs",
+    'qc': "Queen of Clubs",
+    'kc': "King of Clubs"    
+};
 
 // This shuffling algorithm was made with help from stack overflow and Bro Code on YouTube, see README.md for links
 /**
@@ -51,6 +67,77 @@ function makeDivs(n) {
         $("#game-area").append(newDiv);
     }
 }
+
+/**
+ * Builds a the guessing table with n rows
+ */
+function tableBuild(n) {
+    for (let i = 0; i < n; i++) {
+        // Create a table row
+        let tr1 = document.createElement("tr");
+        // Create column 1 value: Order number
+        let td1 = document.createElement("td");
+        td1.innerHTML = parseInt(i) +1;
+        // Create column 2: Guessing section
+        let td2 = document.createElement("td");
+        // Create column 2 Select section 1
+        let select1 = document.createElement("select");
+        select1.innerHTML = 
+            "<option value= 'disabled'>Card Value</option>" +
+            "<option value='a'>Ace</option>" +
+            "<option value='2'>2</option>" +
+            "<option value='3'>3</option>" +
+            "<option value='4'>4</option>" +
+            "<option value='5'>5</option>" +
+            "<option value='6'>6</option>" +
+            "<option value='7'>7</option>" +
+            "<option value='8'>8</option>" +
+            "<option value='9'>9</option>" +
+            "<option value='10'>10</option>" +
+            "<option value='j'>Jack</option>" +
+            "<option value='q'>Queen</option>" +
+            "<option value='k'>King</option>";
+        // Append select1 to td2
+        td2.append(select1);
+        // Creat column 2 Select section 2
+        let select2 = document.createElement("select");
+        select2.innerHTML =
+            "<option value= 'disabled'>Suit</option>" +
+            "<option value='c'>Clubs</option>" +
+            "<option value='d'>Diamonds</option>" +
+            "<option value='h'>Hearts</option>" +
+            "<option value='s'>Spades</option>";
+        // append Select 2 to td2
+        td2.append(select2);
+        // Create column 2 submit button
+        let submitButton = document.createElement("button");
+        // Add class and content
+        submitButton.classList.add("submit-guess");
+        submitButton.innerHTML = "Submit";
+        // Append submit button to td2
+        td2.append(submitButton);
+        // Create column 3: Actual Answer
+        let td3 = document.createElement("td");
+        let currentCard = cardsToPlay[i].slice(0,2);
+        td3.innerHTML = cardObject[currentCard];
+        // Correct column 4: Result
+        let td4 = document.createElement("td");
+        // Append all columns to table row
+        tr1.append(td1);
+        tr1.append(td2);
+        tr1.append(td3);
+        tr1.append(td4);
+
+        // Append table row to table
+        document.getElementById("table-body").append(tr1);
+    }
+    // Update the page
+    let appendScript = "<script id='guessing-script' src='assets/scripts/script2.js'></script>"
+    $("body").append(appendScript);
+}
+
+
+
 // Button event listeners
 
 // Apply length button chooses how many cards to show, shuffles the cards, displays the play button
@@ -67,5 +154,13 @@ $("#play").click(function() {
     cardsToPlay = cards.slice(0, sequenceLength);
     // Make separate divs
     makeDivs(sequenceLength);
+})
+
+// Guess button
+$("#guess").click(function() {
+    // Show the guessing table
+    $("#guessing-table").removeClass("hidden");
+    tableBuild(sequenceLength);
+    
 })
 
