@@ -4,6 +4,11 @@ a {
     text-decoration: inherit;
 }
 
+/* Global class: game: hidden*/
+.hidden {
+    visibility: hidden;
+}
+
 /* Global class: make width 95% */
 
 .w95 {
