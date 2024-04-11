@@ -24,6 +24,7 @@ function getKeyByValue(object, value) {
 
 
 
+
 // Event listener for class submit-guess
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
@@ -45,5 +46,9 @@ $(".submit-guess").click(function() {
         $(results).html("Y");
     } else {
         $(results).html("N");
-    }
-})
+    };
+    // Disable the select and submit fields
+    $(this).prop("disabled", true);
+    $(siblings[0]).prop("disabled", true);
+    $(siblings[1]).prop("disabled", true);
+});
