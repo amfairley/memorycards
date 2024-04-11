@@ -1,3 +1,22 @@
+// Global variables
+const cards = [
+    'ac.png', 
+    '2c.png', 
+    '3c.png', 
+    '4c.png', 
+    '5c.png', 
+    '6c.png', 
+    '7c.png', 
+    '8c.png', 
+    '9c.png', 
+    '10c.png', 
+    'jc.png', 
+    'qc.png',
+    'kc.png'
+];
+let shuffledCards;
+let sequenceLength;
+
 // This shuffling algorithm was made with help from stack overflow and Bro Code on YouTube, see README.md for links
 /**
  * Fischer Yates Algorithm for shuffling 
