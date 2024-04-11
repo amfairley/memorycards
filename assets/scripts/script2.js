@@ -51,4 +51,12 @@ $(".submit-guess").click(function() {
     $(this).prop("disabled", true);
     $(siblings[0]).prop("disabled", true);
     $(siblings[1]).prop("disabled", true);
+
+    // Add a class to the submit button to track submissions
+    $(this).addClass("submitted");
+
+    // An alert to show when the game is finished
+    if ($(".submitted").length === $(".submit-guess").length) {
+        alert("Game over")
+    } 
 });
