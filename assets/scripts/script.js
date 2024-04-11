@@ -1,3 +1,4 @@
+// This shuffling algorithm was made with help from stack overflow and Bro Code on YouTube, see README.md for links
 /**
  * Fischer Yates Algorithm for shuffling 
  */
