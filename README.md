@@ -320,6 +320,8 @@ Hero images
     * Used throughout for decorative icons
 7. [Favicon](https://favicon.io/)
 	* Used to supply the image for the browser tab
+8. [jQuery](https://jquery.com/)
+    * JavaScript library used for more concise event listeners
 
 ## Testing
 For my testing, please see the separate [testing.md](link) file.
