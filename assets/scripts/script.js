@@ -17,7 +17,7 @@ const cards = [
 let sequenceLength;
 let cardsToPlay;
 
-var cardObject = {
+const cardObject = {
     'ac': "Ace of Clubs",
     '2c': "Two of Clubs",
     '3c': "Three of Clubs",
@@ -93,7 +93,7 @@ function tableBuild(n) {
             "<option value='7'>7</option>" +
             "<option value='8'>8</option>" +
             "<option value='9'>9</option>" +
-            "<option value='10'>10</option>" +
+            "<option value='0'>10</option>" +
             "<option value='j'>Jack</option>" +
             "<option value='q'>Queen</option>" +
             "<option value='k'>King</option>";
@@ -144,12 +144,13 @@ function tableBuild(n) {
 $("#sequence-length").click(function() {
     // save the number as length
     sequenceLength = $("#quantity").val();
-    // shuffle the cards
-    shuffle(cards);
+
 });
 
 // Play button 
 $("#play").click(function() {
+    // shuffle the cards
+    shuffle(cards);
     // Selects a portion of the shuffled cards to play
     cardsToPlay = cards.slice(0, sequenceLength);
     // Make separate divs
