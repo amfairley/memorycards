@@ -347,5 +347,7 @@ For my testing, please see the separate [testing.md](link) file.
 ### Media
 
 ### Code
+**Fischer Yates Shuffling Algorithm**
+This code was put together with help from [stack overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/43409054) and [Bro Code](https://www.youtube.com/watch?v=FGAUekwri1Q) on YouTube. 
 
 ## Acknowledgements
