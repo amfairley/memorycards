@@ -175,6 +175,7 @@ $("#guess").click(function() {
     // Show the guessing table
     $("#guessing-table").removeClass("hidden");
     tableBuild(sequenceLength);
-    
-})
+    // Remove the card images from the screen
+    $(".card-image").remove();
+});
 
