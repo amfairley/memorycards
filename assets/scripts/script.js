@@ -120,6 +120,7 @@ function tableBuild(n) {
         let td3 = document.createElement("td");
         let currentCard = cardsToPlay[i].slice(0,2);
         td3.innerHTML = cardObject[currentCard];
+        td3.classList.add("hidden");
         // Correct column 4: Result
         let td4 = document.createElement("td");
         // Append all columns to table row
