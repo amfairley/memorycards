@@ -170,6 +170,8 @@ $("#play").click(function() {
 
 // Guess button
 $("#guess").click(function() {
+    // Hide the guess button
+    $("#guess").addClass("hidden");
     // Show the guessing table
     $("#guessing-table").removeClass("hidden");
     tableBuild(sequenceLength);
