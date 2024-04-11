@@ -147,17 +147,25 @@ $("#sequence-length").click(function() {
     sequenceLength = Math.floor($("#quantity").val());
     // Allow the play button to appear
     $("#play").removeClass("hidden");
-
+    // Display the sequence length
+    $("#sequence-length-display").text(sequenceLength);
 });
 
 // Play button 
 $("#play").click(function() {
+    // Hide the play button
+    $(this).addClass("hidden");
+    // Hide the choosing length select and button
+    $("#quantity").addClass("hidden");
+    $("#sequence-length").addClass("hidden");
     // shuffle the cards
     shuffle(cards);
     // Selects a portion of the shuffled cards to play
     cardsToPlay = cards.slice(0, sequenceLength);
     // Make separate divs
     makeDivs(sequenceLength);
+    // Show the guess button
+    $("#guess").removeClass("hidden");
 })
 
 // Guess button
