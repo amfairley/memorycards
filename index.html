@@ -81,12 +81,21 @@
         <section class = "row container-fluid g-0 justify-content-around" id = "game-area">
             <div class= "col-12" id="button-section">
                 <button type=>Reset</button>
-                <button>Play now</button>
+                <button id="play">Play now</button>
                 <input type="number" id="quantity" min="1" max="13">
                 <button id="sequence-length">Apply length</button>
                 <button>Guess</button>
             </div>
-
+            <table id="guessing-table" class="hidden">
+                <thead>
+                    <th scope="col">Order</th>
+                    <th scope="col">Guess</th>
+                    <th scope="col">Answer</th>
+                    <th scope="col">Correct?</th>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
         </section>
     </main>
 
