@@ -18,12 +18,12 @@
 
 **Select Length**: The select length will be a drop down providing sequence lengths for the user to select and a submit button locking in their choice. Selecting and submitting a length will:
 - Show the selected length in a display box on screen
-- Shuffle the cards array
 - Display a Play Now button
 
 **Play Now**: Clicking the play now button will:
 - Disable the select length drop down box and submit buttons, preventing the user from changing the starting values during the game
 - Hide the Play Now button
+- Shuffle the cards
 - Show the cards on screen equal to the number selected by the user
 - Display a button advancing the user to the guessing stage
 - IF POSSIBLE start an internal timer
@@ -44,5 +44,7 @@
 
 ## Possible errors
 - If an unavailable value is selected e.g. none or greater than 52
+- Prevent play game being pressed multiple times resulting in concatenation of arrays
+        Maybe each press removes current ones
 
 
