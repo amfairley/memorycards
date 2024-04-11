@@ -142,8 +142,11 @@ function tableBuild(n) {
 
 // Apply length button chooses how many cards to show, shuffles the cards, displays the play button
 $("#sequence-length").click(function() {
-    // save the number as length
-    sequenceLength = $("#quantity").val();
+    // Save the number as length
+    // Math.floor is used in case the user enters a float value
+    sequenceLength = Math.floor($("#quantity").val());
+    // Allow the play button to appear
+    $("#play").removeClass("hidden");
 
 });
 
