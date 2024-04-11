@@ -76,3 +76,10 @@ main {
     display: inline-block;
     text-align: center;
 }
+
+/* Game length display box */
+#length-box {
+    height: 100px;
+    width: 100px;
+    border: solid 1px black;
+}
