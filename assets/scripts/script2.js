@@ -35,6 +35,8 @@ $(".submit-guess").click(function() {
     let submittedAnswer = cardObject2[String(submittedAnswerInitial)];
     // checks this answer against parent's next sibling
     let pSiblings = $(this).parent().siblings();
+    // Show the answer column
+    pSiblings[1].classList.remove("hidden");
     let correctAnswer = pSiblings[1].innerHTML;
     let results = pSiblings[2];
     console.log(correctAnswer);
