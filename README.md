@@ -50,6 +50,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Typography](#typography)
         - [Images](#images)
     6. [Features](#features)
+        - [The Game Area](#the-game-area)
         - [Browser tab](#browser-tab)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -277,6 +278,8 @@ All images used were optimised using [adobe photoshop](https://www.adobe.com/uk/
 
 ### Features
 
+#### The Game Area
+For an in depth description of the functionality of the game area, click here.
 #### Browser tab:
 
 <details><summary>Browser Tab</summary>
