@@ -123,6 +123,7 @@ function tableBuild(n) {
         td3.classList.add("hidden");
         // Correct column 4: Result
         let td4 = document.createElement("td");
+        td4.classList.add("result");
         // Append all columns to table row
         tr1.append(td1);
         tr1.append(td2);
@@ -146,10 +147,16 @@ $("#sequence-length").click(function() {
     // Save the number as length
     // Math.floor is used in case the user enters a float value
     sequenceLength = Math.floor($("#quantity").val());
-    // Allow the play button to appear
-    $("#play").removeClass("hidden");
-    // Display the sequence length
-    $("#sequence-length-display").text(sequenceLength);
+    // Testing that the input is within limits
+    if ((sequenceLength > 0) && (sequenceLength <= 52)) {
+            // Allow the play button to appear
+        $("#play").removeClass("hidden");
+        // Display the sequence length
+        $("#sequence-length-display").text(sequenceLength);
+    } else {
+        alert("Please enter a valid number between 1 and 52");
+    }
+
 });
 
 // Play button 
