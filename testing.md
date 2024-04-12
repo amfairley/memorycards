@@ -31,3 +31,7 @@
 ## Manual Testing
 
 ## Manual Testing: JavaScript
+
+**Shuffle Function:**<br>
+The shuffle function was tested in the console. First the cards array was logged to the console. Then it was shuffled and logged again to show that the shuffling affected the order of the original array. <br>
+![shuffle_test](/documentation/testing/javascript_testing/javascript_manual_test_shuffle_function.png)
