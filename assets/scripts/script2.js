@@ -1,4 +1,5 @@
-// Event listener for class submit-guess
+// Button event listeners
+// Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
     let siblings = $(this).siblings();
@@ -24,7 +25,7 @@ $(".submit-guess").click(function() {
         $(results).html("Y");
     } else {
         $(results).html("N");
-    };
+    }
 
     // Disable the select and submit fields
     $(this).prop("disabled", true);
@@ -41,7 +42,7 @@ $(".submit-guess").click(function() {
     let counter = 0;
     // If an answer is correct, add 1 to counter
     for (let i = 0; i < sequenceLength; i++) {
-        if (resultsArray[i]['textContent']==="Y") {
+        if (resultsArray[i].textContent==="Y") {
             counter++;
         }
     }
@@ -50,6 +51,6 @@ $(".submit-guess").click(function() {
 
     // An alert to show when the game is finished
     if ($(".submitted").length === sequenceLength) {
-        alert("Game over. You scored " + finalScore + "%")
-    };
+        alert("Game over. You scored " + finalScore + "%");
+    }
 });
