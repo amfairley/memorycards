@@ -11,6 +11,7 @@
 8. [Testing User Stories](#testing-user-stories)
 9. [Manual Testing](#manual-testing)
 10. [Manual Testing: JavaScript](#manual-testing-javascript)
+    - [Shuffle Function](#shuffle-function)
 
 ## HTML Validation
 
@@ -32,6 +33,12 @@
 
 ## Manual Testing: JavaScript
 
-**Shuffle Function:**<br>
-The shuffle function was tested in the console. First the cards array was logged to the console. Then it was shuffled and logged again to show that the shuffling affected the order of the original array. <br>
-![shuffle_test](/documentation/testing/javascript_testing/javascript_manual_test_shuffle_function.png)
+### Shuffle Function:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| The cards array was logged to the console | The array of cards will appear unshuffled | As expected |
+| Call the shuffle function on the cards array | The order of the cards will be shuffled | As expected |
+| Log the cards array again | The array will now be shuffled | As expected | 
+
+![shuffle test](/documentation/testing/javascript_testing/javascript_manual_test_shuffle_function.png)
+
