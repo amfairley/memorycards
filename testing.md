@@ -11,7 +11,8 @@
 8. [Testing User Stories](#testing-user-stories)
 9. [Manual Testing](#manual-testing)
 10. [Manual Testing: JavaScript](#manual-testing-javascript)
-    - [Shuffle Function](#shuffle-function)
+    - [shuffle() Function](#shuffle-function)
+    - [makeDivs() Function](#makedivs-function)
 
 ## HTML Validation
 
@@ -33,7 +34,7 @@
 
 ## Manual Testing: JavaScript
 
-### Shuffle Function:
+### shuffle() Function:
 | Test Step |  Expected | Outcome |
 | --------- | ------------- | ----------------- |
 | The cards array was logged to the console | The array of cards will appear unshuffled | As expected |
@@ -42,3 +43,11 @@
 
 ![shuffle test](/documentation/testing/javascript_testing/javascript_manual_test_shuffle_function.png)
 
+### makeDivs() Function:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| Assign the value of cards to cardsToPlay | cardsToPlay now has the value of an array of cards | As expected |
+| Call makeDivs() function on a number | That number of card images will appear in the game area. The card images will match that number of values in the cardsToPlay array | As expected |
+
+![makeDivs test console](/documentation/testing/javascript_testing/javascript_manual_test_makeDivs_function_a.png)
+![makeDivs test gamearea](/documentation/testing/javascript_testing/javascript_manual_test_makeDivs_function_b.png)
