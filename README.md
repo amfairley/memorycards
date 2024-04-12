@@ -322,6 +322,8 @@ Hero images
 	* Used to supply the image for the browser tab
 8. [jQuery](https://jquery.com/)
     * JavaScript library used for more concise event listeners
+9. [JSHint](https://jshint.com/)
+    * Used to validate JavaScript code
 
 ## Testing
 For my testing, please see the separate [testing.md](link) file.
