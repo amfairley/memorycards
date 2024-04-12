@@ -336,6 +336,9 @@ When populating the guessing table, the JavaScript could not connect event liste
 ```
 This allowed a second JavaScript file to be appended to the html body, where the game scoring section is stored. As this is loaded after the table, it is able to connect event listeners to the buttons in the table.
 
+**Bug 2:**
+After reseting the game, when the guess button is pressed linking the script to the guessing functions file, there are errors due to the global variables on that file having already been defined on the first run through of the game. To get around this, I used var to define the necessary global variables within the game script file, so that they were accessible from the guessing functions file, removing the need for them to be redefined in the latter.
+
 ### Known Bugs
 
 ### Mistakes
