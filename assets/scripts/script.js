@@ -14,10 +14,11 @@ const cards = [
     'qc.png',
     'kc.png'
 ];
-let sequenceLength;
+var sequenceLength;
+var correctAnswerAmount;
 let cardsToPlay;
 
-const cardObject = {
+var cardObject = {
     'ac': "Ace of Clubs",
     '2c': "Two of Clubs",
     '3c': "Three of Clubs",
