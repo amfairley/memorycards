@@ -1,4 +1,6 @@
-// Global variables
+/* jshint esversion: 8, jquery: true, scripturl: true */
+
+// GLOBAL VARIABLES (var is used for variables that need to be accesed by separate scripts)
 const cards = [
     'ac.png', 
     '2c.png', 
@@ -14,10 +16,8 @@ const cards = [
     'qc.png',
     'kc.png'
 ];
-var sequenceLength;
-var correctAnswerAmount;
 let cardsToPlay;
-
+var sequenceLength;
 var cardObject = {
     'ac': "Ace of Clubs",
     '2c': "Two of Clubs",
@@ -34,6 +34,7 @@ var cardObject = {
     'kc': "King of Clubs"    
 };
 
+// FUNCTIONS
 // This shuffling algorithm was made with help from stack overflow and Bro Code on YouTube, see README.md for links
 /**
  * Fischer Yates Algorithm for shuffling 
@@ -52,6 +53,7 @@ function shuffle(array) {
     return array;
     }
 
+// Function to make divs to hold the card card images
 /**
  *  Cycles through n times, making divs housing the card images and appending them to the game area
 */ 
@@ -63,7 +65,7 @@ function makeDivs(n) {
         // Assign an id of box + whatever number box it is-----------------NEEDED?
         $(newDiv).attr("id","cardimage"+i);
         // Add image to the div
-        $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image'>")
+        $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image'>");
         // Apend it
         $("#game-area").append(newDiv);
     }
@@ -76,7 +78,7 @@ function tableBuild(n) {
     for (let i = 0; i < n; i++) {
         // Create a table row
         let tr1 = document.createElement("tr");
-        tr1.classList.add("table-row")
+        tr1.classList.add("table-row");
         // Create column 1 value: Order number
         let td1 = document.createElement("td");
         td1.innerHTML = parseInt(i) +1;
@@ -136,7 +138,7 @@ function tableBuild(n) {
         document.getElementById("table-body").append(tr1);
     }
     // Update the page
-    let appendScript = "<script id='guessing-script' src='assets/scripts/script2.js'></script>"
+    let appendScript = "<script id='guessing-script' src='assets/scripts/script2.js'></script>";
     $("body").append(appendScript);
 }
 
@@ -176,7 +178,7 @@ $("#play").click(function() {
     makeDivs(sequenceLength);
     // Show the guess button
     $("#guess").removeClass("hidden");
-})
+});
 
 // Guess button
 $("#guess").click(function() {
@@ -195,23 +197,23 @@ $("#reset").click(function() {
     // If length selector has class of hidden, remove hidden class
     if ($("#quantity").hasClass("hidden")) {
         $("#quantity").removeClass("hidden");
-    };
+    }
     // If length selector submit button has class of hidden, remove hidden class
     if ($("#sequence-length").hasClass("hidden")) {
         $("#sequence-length").removeClass("hidden");
-    };
+    }
     // Hide the play now button if not hidden
     if (!($("#play").hasClass("hidden"))) {
         $("#play").addClass("hidden");
-    };
+    }
     // Hide the guess button if not hidden
     if (!($("#guess").hasClass("hidden"))) {
         $("#guess").addClass("hidden");
-    };
+    }
     // Hide the guessing table if not hidden
     if (!($("#guessing-table").hasClass("hidden"))) {
         $("#guessing-table").addClass("hidden");
-    };
+    }
     // Remove any rows added to the table if there are any
     $(".table-row").each(function(){
         $(this).remove();
