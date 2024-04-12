@@ -75,6 +75,7 @@ function tableBuild(n) {
     for (let i = 0; i < n; i++) {
         // Create a table row
         let tr1 = document.createElement("tr");
+        tr1.classList.add("table-row")
         // Create column 1 value: Order number
         let td1 = document.createElement("td");
         td1.innerHTML = parseInt(i) +1;
@@ -187,3 +188,41 @@ $("#guess").click(function() {
     $(".card-image").remove();
 });
 
+// Reset button
+$("#reset").click(function() {
+    // Show the length selector if hidden
+    // If length selector has class of hidden, remove hidden class
+    if ($("#quantity").hasClass("hidden")) {
+        $("#quantity").removeClass("hidden");
+    };
+    // If length selector submit button has class of hidden, remove hidden class
+    if ($("#sequence-length").hasClass("hidden")) {
+        $("#sequence-length").removeClass("hidden");
+    };
+    // Hide the play now button if not hidden
+    if (!($("#play").hasClass("hidden"))) {
+        $("#play").addClass("hidden");
+    };
+    // Hide the guess button if not hidden
+    if (!($("#guess").hasClass("hidden"))) {
+        $("#guess").addClass("hidden");
+    };
+    // Hide the guessing table if not hidden
+    if (!($("#guessing-table").hasClass("hidden"))) {
+        $("#guessing-table").addClass("hidden");
+    };
+    // Remove any rows added to the table if there are any
+    $(".table-row").each(function(){
+        $(this).remove();
+    });
+    // Remove any cards on screen
+    $(".card-div").each(function(){
+        $(this).remove();
+    });
+    // Remove the JavaScript script link to the guessing functions 
+    $("#guessing-script").each(function(){
+        $(this).remove();
+    });
+    // Reset the selected length display
+    $("#sequence-length-display").text('');
+});
