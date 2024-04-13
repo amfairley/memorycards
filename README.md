@@ -344,6 +344,144 @@ After reseting the game, when the guess button is pressed linking the script to 
 **Bug 3:**
 When entering an invalid number into the sequence length selector, it will assign this value to the sequenceLength regardless. This was fixed by moving the sequenceLength assignment inside the conditional and replacing it's original use with a new global variable named lengthCheck.
 
+**Bug 4:**
+When submitting guess, if no value or suit is submitted, it will accept the submitted answer as being "disableddisabled". This is bad user experience, as it prevents the user from enetering an actual guess and disables the button. This was solved by wrapping most of the code in an if/else statement to set an alert if either of the submitted values are "disabled" and to continue the code if the entries are valid.
+<br> Before:
+```
+// Submit guess button
+$(".submit-guess").click(function() {
+    // Takes the sibling elements that are select elements in an array
+    let siblings = $(this).siblings();
+
+    console.log(siblings);
+
+    // takes value 1 + value 2 = submitted answer
+    let submittedAnswerInitial = siblings[0].value +siblings[1].value;
+
+    console.log(submittedAnswerInitial);
+
+    // Get the key from this value in the cardObject
+    let submittedAnswer = cardObject[String(submittedAnswerInitial)];
+
+    console.log(submittedAnswer);
+
+    // checks this answer against parent's next sibling
+    let pSiblings = $(this).parent().siblings();
+
+    // Show the answer column
+    pSiblings[1].classList.remove("hidden");
+    let correctAnswer = pSiblings[1].innerHTML;
+    let results = pSiblings[2];
+    
+    console.log(correctAnswer);
+
+    // Compare the two values
+    if (submittedAnswer === correctAnswer) {
+        $(results).html("Y");
+    } else {
+        $(results).html("N");
+    }
+
+    // Disable the select and submit fields
+    $(this).prop("disabled", true);
+    $(siblings[0]).prop("disabled", true);
+    $(siblings[1]).prop("disabled", true);
+
+    // Add a class to the submit button to track submissions
+    $(this).addClass("submitted");
+
+    // Check score
+    // Array of the result cell
+    let resultsArray = $(".result");
+    // Score counter starts at 0
+    let counter = 0;
+    // If an answer is correct, add 1 to counter
+    for (let i = 0; i < sequenceLength; i++) {
+        if (resultsArray[i].textContent==="Y") {
+            counter++;
+        }
+    }
+    console.log(counter);
+    let finalScore = Math.floor(100* counter / sequenceLength);
+
+    // An alert to show when the game is finished
+    if ($(".submitted").length === sequenceLength) {
+        alert("Game over. You scored " + finalScore + "%");
+    }
+}); 
+```
+
+After:
+```
+// Submit guess button
+$(".submit-guess").click(function() {
+    // Takes the sibling elements that are select elements in an array
+    let siblings = $(this).siblings();
+
+    console.log(siblings);
+
+    // Check for valid input 
+    if ((siblings[0].value === 'disabled') || (siblings[1].value === 'disabled')) {
+        alert("Please select a valid card value and suit.")
+    } else {
+        // takes value 1 + value 2 = submitted answer
+        let submittedAnswerInitial = siblings[0].value +siblings[1].value;
+
+        console.log(submittedAnswerInitial);
+
+        // Get the key from this value in the cardObject
+        let submittedAnswer = cardObject[String(submittedAnswerInitial)];
+
+        console.log(submittedAnswer);
+
+        // checks this answer against parent's next sibling
+        let pSiblings = $(this).parent().siblings();
+
+        // Show the answer column
+        pSiblings[1].classList.remove("hidden");
+        let correctAnswer = pSiblings[1].innerHTML;
+        let results = pSiblings[2];
+        
+        console.log(correctAnswer);
+
+        // Compare the two values
+        if (submittedAnswer === correctAnswer) {
+            $(results).html("Y");
+        } else {
+            $(results).html("N");
+        }
+
+        // Disable the select and submit fields
+        $(this).prop("disabled", true);
+        $(siblings[0]).prop("disabled", true);
+        $(siblings[1]).prop("disabled", true);
+
+        // Add a class to the submit button to track submissions
+        $(this).addClass("submitted");
+
+        // Check score
+        // Array of the result cell
+        let resultsArray = $(".result");
+        // Score counter starts at 0
+        let counter = 0;
+        // If an answer is correct, add 1 to counter
+        for (let i = 0; i < sequenceLength; i++) {
+            if (resultsArray[i].textContent==="Y") {
+                counter++;
+            }
+        }
+        console.log(counter);
+        let finalScore = Math.floor(100* counter / sequenceLength);
+
+        // An alert to show when the game is finished
+        if ($(".submitted").length === sequenceLength) {
+            alert("Game over. You scored " + finalScore + "%");
+        }
+    } 
+});
+```
+
+
 ### Known Bugs
 
 ### Mistakes
