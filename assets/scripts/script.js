@@ -180,15 +180,27 @@ $("#sequence-length").click(function() {
 
 // Play button 
 $("#play").click(function() {
+
+    console.log("The play button has been pressed");
+
     // Hide the play button
     $(this).addClass("hidden");
     // Hide the choosing length select and button
     $("#quantity").addClass("hidden");
     $("#sequence-length").addClass("hidden");
     // shuffle the cards
+
+    console.log(cards);
+
     shuffle(cards);
+
+    console.log(cards);
+
     // Selects a portion of the shuffled cards to play
     cardsToPlay = cards.slice(0, sequenceLength);
+
+    console.log(cardsToPlay);
+    console.log(cardsToPlay.length === sequenceLength);
     // Make separate divs
     makeDivs(sequenceLength);
     // Show the guess button
@@ -197,6 +209,9 @@ $("#play").click(function() {
 
 // Guess button
 $("#guess").click(function() {
+
+    console.log("The guess button has been pressed");
+
     // Hide the guess button
     $("#guess").addClass("hidden");
     // Show the guessing table

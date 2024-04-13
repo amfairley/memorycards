@@ -23,12 +23,15 @@ $(".submit-guess").click(function() {
         // checks this answer against parent's next sibling
         let pSiblings = $(this).parent().siblings();
 
+        console.log(pSiblings);
+
         // Show the answer column
         pSiblings[1].classList.remove("hidden");
         let correctAnswer = pSiblings[1].innerHTML;
         let results = pSiblings[2];
         
         console.log(correctAnswer);
+        console.log(pSiblings[2]);
 
         // Compare the two values
         if (submittedAnswer === correctAnswer) {
