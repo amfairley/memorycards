@@ -14,6 +14,7 @@
     - [shuffle() Function](#shuffle-function)
     - [makeDivs() Function](#makedivs-function)
     - [tableBuild() Function](#tablebuild-function)
+    - [Sequence-Length click event](#sequence-length-click-event)
 
 ## HTML Validation
 
@@ -67,3 +68,17 @@
 | Reapply the hidden class to the table | The table will be hidden from the start | As expected |
 ![tableBuild test console](/documentation/testing/javascript_testing/javascript_manual_test_tableBuild_function_a.png)
 ![tableBuild test game area](/documentation/testing/javascript_testing/javascript_manual_test_tableBuild_function_b.png)
+
+### Sequence-Length click event:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| Add ```console.log("The sequence length button has been pressed");``` as the first action of the function to check it is connected properly | "The sequence length button has been pressed" will appear in the console | As expected |
+| Add ```console.log("The sequence length is: "+sequenceLength);``` after defining the sequenceLength | The correct sequenceLength will be displayed in the console | As expected |
+| Try to enter 0 as the sequence length | An alert will show, informing the user to enter a number between 1 and 52 | An alert shows but the sequenceLength is set to 0 and the game can continue. FIX: move the sequenceLength assignment inside the conditional and set the original check to a new variable |
+| Add ```console.log("The length check is: "+lengthCheck);``` below the lengthCheck assignment | The entered value will appear in the console even if outside the range of 1-52 | As expected |
+| Try to enter 0 as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
+| Try to enter a negative number as the sequence length | The lengthCheck will be displayed in the console, as the negative number, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
+| Try to enter an integer larger than 52 in as the sequence length | The lengthCheck will be displayed in the console, as the integer, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
+| Try to enter e as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
+| Try to enter a decimal number 0-1 as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
+| Try to enter a decimal number greater than 1 and less than 53 as the sequence length | The lengthCheck will be displayed in the console, as a rounded down integer, the sequenceLength will be assigned the same value and logged to the console, the Play Now button will appear, the sequenceLength value will be displayed in the display box | As expected |
