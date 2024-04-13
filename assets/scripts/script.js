@@ -18,6 +18,7 @@ const cards = [
 ];
 let cardsToPlay;
 var sequenceLength;
+let lengthCheck;
 var cardObject = {
     'ac': "Ace of Clubs",
     '2c': "Two of Clubs",
@@ -82,6 +83,9 @@ function tableBuild(n) {
         // Create column 1 value: Order number
         let td1 = document.createElement("td");
         td1.innerHTML = parseInt(i) +1;
+
+        console.log("The current order number is " + (parseInt(i)+1));
+
         // Create column 2: Guessing section
         let td2 = document.createElement("td");
         // Create column 2 Select section 1
@@ -123,6 +127,9 @@ function tableBuild(n) {
         // Create column 3: Actual Answer
         let td3 = document.createElement("td");
         let currentCard = cardsToPlay[i].slice(0,2);
+
+        console.log("The current card is "+cardObject[currentCard]);
+
         td3.innerHTML = cardObject[currentCard];
         td3.classList.add("hidden");
         // Correct column 4: Result
@@ -148,12 +155,20 @@ function tableBuild(n) {
 
 // Apply length button chooses how many cards to show, shuffles the cards, displays the play button
 $("#sequence-length").click(function() {
+
+    console.log("The sequence length button has been pressed");
+
     // Save the number as length
     // Math.floor is used in case the user enters a float value
-    sequenceLength = Math.floor($("#quantity").val());
+    lengthCheck = Math.floor($("#quantity").val());
+
+    console.log("The length check is: "+lengthCheck);
+    
     // Testing that the input is within limits
-    if ((sequenceLength > 0) && (sequenceLength <= 52)) {
-            // Allow the play button to appear
+    if ((lengthCheck > 0) && (lengthCheck <= 52)) {
+        sequenceLength = lengthCheck;
+        console.log("The sequence length is: "+sequenceLength);
+        // Allow the play button to appear
         $("#play").removeClass("hidden");
         // Display the sequence length
         $("#sequence-length-display").text(sequenceLength);
@@ -193,6 +208,8 @@ $("#guess").click(function() {
 
 // Reset button
 $("#reset").click(function() {
+    // Reset the sequence length
+    sequenceLength = undefined;
     // Show the length selector if hidden
     // If length selector has class of hidden, remove hidden class
     if ($("#quantity").hasClass("hidden")) {
