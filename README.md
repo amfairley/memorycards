@@ -341,6 +341,9 @@ This allowed a second JavaScript file to be appended to the html body, where the
 **Bug 2:**
 After reseting the game, when the guess button is pressed linking the script to the guessing functions file, there are errors due to the global variables on that file having already been defined on the first run through of the game. To get around this, I used var to define the necessary global variables within the game script file, so that they were accessible from the guessing functions file, removing the need for them to be redefined in the latter.
 
+**Bug 3:**
+When entering an invalid number into the sequence length selector, it will assign this value to the sequenceLength regardless. This was fixed by moving the sequenceLength assignment inside the conditional and replacing it's original use with a new global variable named lengthCheck.
+
 ### Known Bugs
 
 ### Mistakes
