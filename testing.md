@@ -15,6 +15,7 @@
     - [makeDivs() Function](#makedivs-function)
     - [tableBuild() Function](#tablebuild-function)
     - [Sequence-Length click event](#sequence-length-click-event)
+    - [Play click event](#play-click-event)
 
 ## HTML Validation
 
@@ -72,13 +73,25 @@
 ### Sequence-Length click event:
 | Test Step |  Expected | Outcome |
 | --------- | ------------- | ----------------- |
-| Add ```console.log("The sequence length button has been pressed");``` as the first action of the function to check it is connected properly | "The sequence length button has been pressed" will appear in the console | As expected |
-| Add ```console.log("The sequence length is: "+sequenceLength);``` after defining the sequenceLength | The correct sequenceLength will be displayed in the console | As expected |
-| Try to enter 0 as the sequence length | An alert will show, informing the user to enter a number between 1 and 52 | An alert shows but the sequenceLength is set to 0 and the game can continue. FIX: move the sequenceLength assignment inside the conditional and set the original check to a new variable |
-| Add ```console.log("The length check is: "+lengthCheck);``` below the lengthCheck assignment | The entered value will appear in the console even if outside the range of 1-52 | As expected |
-| Try to enter 0 as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
-| Try to enter a negative number as the sequence length | The lengthCheck will be displayed in the console, as the negative number, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
-| Try to enter an integer larger than 52 in as the sequence length | The lengthCheck will be displayed in the console, as the integer, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
-| Try to enter e as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
-| Try to enter a decimal number 0-1 as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined | As expected |
-| Try to enter a decimal number greater than 1 and less than 53 as the sequence length | The lengthCheck will be displayed in the console, as a rounded down integer, the sequenceLength will be assigned the same value and logged to the console, the Play Now button will appear, the sequenceLength value will be displayed in the display box | As expected |
+| Add ```console.log("The sequence length button has been pressed");``` as the first action of the function to check it is connected properly | "The sequence length button has been pressed" will appear in the console when the button is clicked | As expected |
+| Add ```console.log("The sequence length is: "+sequenceLength);``` after defining the sequenceLength | The correct sequenceLength will be displayed in the console when the button is clicked  | As expected |
+| Try to enter 0 as the sequence length | An alert will show, informing the user to enter a number between 1 and 52 when the button is clicked | An alert shows but the sequenceLength is set to 0 and the game can continue. FIX: move the sequenceLength assignment inside the conditional and set the original check to a new variable |
+| Add ```console.log("The length check is: "+lengthCheck);``` below the lengthCheck assignment | The entered value will appear in the console even if outside the range of 1-52 when the button is clicked | As expected |
+| Try to enter 0 as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined when the button is clicked | As expected |
+| Try to enter a negative number as the sequence length | The lengthCheck will be displayed in the console, as the negative number, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined when the button is clicked | As expected |
+| Try to enter an integer larger than 52 in as the sequence length | The lengthCheck will be displayed in the console, as the integer, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined when the button is clicked | As expected |
+| Try to enter e as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined when the button is clicked | As expected |
+| Try to enter a decimal number 0-1 as the sequence length | The lengthCheck will be displayed in the console, as zero, an alert will inform the user to enter a number between 1-52 and the sequenceLength will not be defined when the button is clicked | As expected |
+| Try to enter a decimal number greater than 1 and less than 53 as the sequence length | The lengthCheck will be displayed in the console, as a rounded down integer, the sequenceLength will be assigned the same value and logged to the console, the Play Now button will appear, the sequenceLength value will be displayed in the display box when the button is clicked | As expected |
+| Enter an integer number from 1-52 and click the button | The lengthCheck will be displayed in the console as the integer, the sequenceLength will be assigned the same value and logged to the console, the Play Now button will appear, the sequenceLength value will be displayed in the display box | As expected |
+
+### Play click event:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| Add ```console.log("The play button has been pressed");``` as the first action of the function to check it is connected properly and click the play button | "The play button has been pressed" will appear in the console | As expected |
+| Click the play button | The play button will be assigned the class of hidden and disappear from the game area | As expected |
+| Click the play button | The sequence length picker and submit buttons will be assigned the class of hidden and disappear from the game area | As expected |
+| Add code to log the cards array before and after shuffling, then click the play button | The console will log the cards array twice, with the second being a shuffled version of the first array | As expected |
+| Add ```console.log(cardsToPlay);``` and ```console.log(cardsToPlay.length === sequenceLength);``` after defining the cards to play and click the button | The console will log the first n cards from the cards array where n is the sequenceLength, it will then log true showing that the cardsToPlay array length is the same as the chosen sequenceLength | As expected |
+| Click the play button | A number of shuffled cards equal to the chosen sequenceLength will appear in the game area | As expected |
+| Click the play button | The guess button will appear in the game area with the hidden class removed | As expected |
