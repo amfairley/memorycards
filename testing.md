@@ -17,6 +17,7 @@
     - [Sequence-Length click event](#sequence-length-click-event)
     - [Play click event](#play-click-event)
     - [Guess click event](#guess-click-event)
+    - [Submit guess event](#submit-guess-event)
 
 ## HTML Validation
 
@@ -105,3 +106,20 @@
 | Click the guess button | The guessing table will have the hidden class removed and will appear in the game area | As expected |
 | Click the guess button | The guessing table will have the sequenceLength number of rows attached with correct values | As expected |
 | Click the guess button | The card image divs will be removed from the html file and disappear from the game area | As expected |
+
+### Submit guess event:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| Add ```console.log(siblings);``` below assigning the siblings variable to the select elements and click the submit button | The console will log an object containing the two select elements | As expected |
+| Add ```console.log(submittedAnswerInitial);``` below reading the submittedInitialAnswer and click the submit button | The submittedInitialAnswer will appear in the console log | Works as expected but will display "disableddisabled" if no card value or suit are selected. This is **bug 4**. |
+| Fix bug 4 and submit a selection of "Card Value" and "Suit" | An alert will appear informing the user to choose a valid card value and suit and allow the user to resubmit | As expected |
+| Submit a valid card value selection and "Suit" | An alert will appear informing the user to choose a valid card value and suit and allow the user to resubmit | As expected |
+| Submit a valid suit selection and "Card Value" | An alert will appear informing the user to choose a valid card value and suit and allow the user to resubmit | As expected |
+| Submit two valid options | The submittedInitialAnswer will appear in the console log | As expected |
+| Add ```console.log(submittedAnswer);``` below assigning the submittedAnswer to the associated value of the submittedAnswerInitial in the cardObject object | The cardObject value associated to the submitted guess will be logged to the console | As expected |
+| Add ```console.log(pSiblings);``` after assigning the parent siblings to a variable | The console will log an object consisting of three table data cell elements, the first having the order value in, the second having the answer value in and the third being the empty result | As expected |
+| Add ```console.log(correctAnswer);``` after accessing the correct answer from the DOM | The console will log the contents of the answer column for that row | As expected |
+| Add ```console.log(pSiblings[2]);``` after accessing the result table data cell from the DOM |The console will log the contents of the results column for that row | As expected |
+| Submit a valid incorrect answer | That row's guess select and submission buttons will be disabled, the answer column will be revealed and the result column will show an N | As expected |
+| Submit the correct answer | That row's guess select and submission buttons will be disabled, the answer column will be revealed and the result column will show a Y | As expected |
+| Submit all answers | An alert will appear informing the user that the game is over and their score | As expected |
