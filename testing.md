@@ -16,6 +16,7 @@
     - [tableBuild() Function](#tablebuild-function)
     - [Sequence-Length click event](#sequence-length-click-event)
     - [Play click event](#play-click-event)
+    - [Guess click event](#guess-click-event)
 
 ## HTML Validation
 
@@ -95,3 +96,12 @@
 | Add ```console.log(cardsToPlay);``` and ```console.log(cardsToPlay.length === sequenceLength);``` after defining the cards to play and click the button | The console will log the first n cards from the cards array where n is the sequenceLength, it will then log true showing that the cardsToPlay array length is the same as the chosen sequenceLength | As expected |
 | Click the play button | A number of shuffled cards equal to the chosen sequenceLength will appear in the game area | As expected |
 | Click the play button | The guess button will appear in the game area with the hidden class removed | As expected |
+
+### Guess click event:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| Add ```console.log("The guess button has been pressed");``` as the first action of the function to check it is connected properly and click the guess button | The console will log "The guess button has been pressed" | As expected |
+| Click the guess button | The guess button will be hidden and the hidden class will be attached to the html element | As expected |
+| Click the guess button | The guessing table will have the hidden class removed and will appear in the game area | As expected |
+| Click the guess button | The guessing table will have the sequenceLength number of rows attached with correct values | As expected |
+| Click the guess button | The card image divs will be removed from the html file and disappear from the game area | As expected |
