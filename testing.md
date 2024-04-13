@@ -17,7 +17,8 @@
     - [Sequence-Length click event](#sequence-length-click-event)
     - [Play click event](#play-click-event)
     - [Guess click event](#guess-click-event)
-    - [Submit guess event](#submit-guess-event)
+    - [Submit guess click event](#submit-guess-click-event)
+    - [Reset click event](#reset-click-event)
 
 ## HTML Validation
 
@@ -107,7 +108,7 @@
 | Click the guess button | The guessing table will have the sequenceLength number of rows attached with correct values | As expected |
 | Click the guess button | The card image divs will be removed from the html file and disappear from the game area | As expected |
 
-### Submit guess event:
+### Submit guess click event:
 | Test Step |  Expected | Outcome |
 | --------- | ------------- | ----------------- |
 | Add ```console.log(siblings);``` below assigning the siblings variable to the select elements and click the submit button | The console will log an object containing the two select elements | As expected |
@@ -123,3 +124,21 @@
 | Submit a valid incorrect answer | That row's guess select and submission buttons will be disabled, the answer column will be revealed and the result column will show an N | As expected |
 | Submit the correct answer | That row's guess select and submission buttons will be disabled, the answer column will be revealed and the result column will show a Y | As expected |
 | Submit all answers | An alert will appear informing the user that the game is over and their score | As expected |
+
+### Reset click event:
+| Test Step |  Expected | Outcome |
+| --------- | ------------- | ----------------- |
+| Play a game, log the value of sequenceLength to the console, click reset and log the value again | The value will be reset to undefined | As expected |
+| Refresh the page and click the reset button | No change to the game area | As expected |
+| Submit a valid sequence length and press reset (1)| The play button will have the hidden class reattached (for a total of 1) and disappear | As expected |
+| Submit a valid sequence length and press reset (2)| The sequenceLength will be removed from the display area | As expected |
+| Submit a valid sequence length, press the play button, then press reset (1) | The guess button will have the hidden class reattached (for a total of 1) and disappear | As expected |
+| Submit a valid sequence length, press the play button, then press reset (2) | The sequence length select and submission button will have the hidden class removed and reappear | As expected |
+| Submit a valid sequence length, press the play button, then press reset (3) | The card image divs with a class of card-div will be removed from the html code and the images will disappear from the game area | As expected |
+| Submit a valid sequence length, press the play button, then press reset (4) | The sequenceLength will be removed from the display area | As expected |
+| Submit a valid sequence length, press the play button, press guess, then press reset (1) | The sequence length select and submission button will have the hidden class removed and reappear | As expected |
+| Submit a valid sequence length, press the play button, press guess, then press reset (2) | The guessing table will have the hidden class reattached and disappear from the game area | As expected |
+| Submit a valid sequence length, press the play button, press guess, then press reset (3) | The guessing table will have the rows removed from the HTML file | As expected |
+| Submit a valid sequence length, press the play button, press guess, then press reset (4) | The script element linking the second JavaScript file will be removed from the body | As expected |
+| Submit a valid sequence length, press the play button, press guess, then press reset (5) | The sequenceLength will be removed from the display area | As expected |
+| Resetting the game during the guessing stage after submitting multiple guesses | Same as the above 5 | As expected |
