@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Cabin:ital,wght@0,500;1,500&family=Josefin+Sans&display=swap');
+
 /* Global class: remove presets on hyperlinks */
 a {
     color: inherit;
@@ -21,27 +23,15 @@ a {
     text-transform: uppercase;
 }
 
+
 body {
     background-color: grey;
 }
 
 
-/* ID specific: header > whole header section */
-#header-section {
-    height: 120px;
-    border: 1px solid black;
-    background-color: white;
-}
 
-/* ID specific: header > header logo */
-#header-logo {
-    color: black;
-}
 
-/* ID specific header > navbar div > navbar */
-#nav {
 
-}
 
 /* ID specific footer */
 #footer {
@@ -88,4 +78,82 @@ main {
     height: 100px;
     width: 100px;
     border: solid 1px black;
+}
+
+
+/* Test navbar */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Whole header secion */
+#header-section {
+    height: 120px;
+    background-color: white;
+}
+
+/* Div that holds the logo and div that holds the nav bar list */
+.header-item {
+    display: inline-block;
+}
+
+/* Header logo div (LHS)*/
+#header-logo {
+    color: black;
+    width: 50%;
+    font-family: "Josefin Sans";
+}
+
+/* Nav links div (RHS) */
+#nav-links-div {
+    width: 50%;
+}
+
+/* UL nav list list */
+#nav-list {
+    justify-content: right;
+}
+
+/*Individual list items */
+.nav-list-item {
+    width: 80px;
+    
+}
+
+/* Navigation anchor */
+.nav-link {
+    width: 95%;
+    height: 116px;
+    border: 2px solid black;
+    border-radius: 8%;
+    margin: auto;
+}
+
+/* Navigation font-awesome: top */
+.nav-icon-top {
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* Navigation link name */
+.nav-item-name {
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation font-awesome: bottom */
+.nav-icon-bottom {
+    text-align: right;
+    align-self: flex-end;
+    margin: 0;
+    padding-top: 23px;
+    padding-right: 5px;
 }
