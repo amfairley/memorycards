@@ -23,11 +23,149 @@ a {
     text-transform: uppercase;
 }
 
-
+/* Global class: colour body */
 body {
     background-color: grey;
 }
 
+/* Active page class */
+.active-page {
+    text-decoration: underline wavy;
+}
+
+/*------------NAVIGATION BAR-----------------*/
+/* Whole header secion */
+#header-section {
+    height: 120px;
+    background-color: #F5F5F5;
+}
+
+/* Divs that hold the logo and navigation bar list */
+.header-item {
+    display: inline-block;
+    margin: auto;
+}
+
+/* Header logo div */
+#header-logo {
+    color: black;
+    width: 60%;
+    font-family: "Josefin Sans";
+}
+
+/* Header logo contents */
+#logo {
+    margin: auto;
+    padding-top: 37px;
+    padding-left: 10px;
+}
+
+/* Logo font awesome */
+.brand-icon {
+    color:#CF1020;
+}
+
+/* Logo link anchor */
+#logo-link {
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+}
+
+/* Navigation links div */
+#nav-links-div {
+    width: 40%;
+}
+
+/* Navigation unordered list */
+#nav-list {
+    justify-content: right;
+}
+
+/*Individual list items */
+.nav-list-item {
+    width: 90px;
+}
+
+/* Navigation anchor */
+
+.nav-link-red,
+.nav-link-black {
+    display: inline-block;
+    width: 95%;
+    height: 116px;
+    border: 2px solid black;
+    border-radius: 8%;
+    margin: auto;
+    background-color: #F5F5F5;
+}
+
+.nav-link-red {
+    color: #CF1020;
+}
+
+.nav-link-black {
+    color: #333A3F;
+}
+.nav-link-red-hover{
+    display: inline-block;
+    width: 95%;
+    height: 116px;
+    border: 2px solid black;
+    border-radius: 8%;
+    margin: auto;
+    background-color: #CF1020;
+    color: #F5F5F5;
+}
+.nav-link-black-hover{
+    display: inline-block;
+    width: 95%;
+    height: 116px;
+    border: 2px solid black;
+    border-radius: 8%;
+    margin: auto;
+    background-color: #333A3F;
+    color: #F5F5F5;
+}
+
+/* Navigation font-awesome: top */
+.nav-icon-top {
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* Navigation link name */
+.nav-item-name {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+#home-text {
+    padding-top: 15px;
+}
+
+#how-to-play-text,
+#contact-me-text {
+    padding-top: 6px;
+}
+
+/* Navigation font-awesome: bottom */
+.nav-icon-bottom {
+    text-align: right;
+    align-self: flex-end;
+    margin: 0;
+    padding-right: 5px;
+}
+
+#nav-icon-bottom-home {
+    padding-top: 23px;
+}
+
+#nav-icon-bottom-how,
+#nav-icon-bottom-contact {
+    padding-top: 9px;
+}
 
 
 
@@ -81,79 +219,4 @@ main {
 }
 
 
-/* Test navbar */
 
-
-
-
-
-
-
-
-
-
-
-
-/* Whole header secion */
-#header-section {
-    height: 120px;
-    background-color: white;
-}
-
-/* Div that holds the logo and div that holds the nav bar list */
-.header-item {
-    display: inline-block;
-}
-
-/* Header logo div (LHS)*/
-#header-logo {
-    color: black;
-    width: 50%;
-    font-family: "Josefin Sans";
-}
-
-/* Nav links div (RHS) */
-#nav-links-div {
-    width: 50%;
-}
-
-/* UL nav list list */
-#nav-list {
-    justify-content: right;
-}
-
-/*Individual list items */
-.nav-list-item {
-    width: 80px;
-    
-}
-
-/* Navigation anchor */
-.nav-link {
-    width: 95%;
-    height: 116px;
-    border: 2px solid black;
-    border-radius: 8%;
-    margin: auto;
-}
-
-/* Navigation font-awesome: top */
-.nav-icon-top {
-    text-align: left;
-    padding-left: 5px;
-}
-
-/* Navigation link name */
-.nav-item-name {
-    text-align: center;
-    margin: 0;
-}
-
-/* Navigation font-awesome: bottom */
-.nav-icon-bottom {
-    text-align: right;
-    align-self: flex-end;
-    margin: 0;
-    padding-top: 23px;
-    padding-right: 5px;
-}
