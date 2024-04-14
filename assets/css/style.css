@@ -16,29 +16,15 @@ a {
     margin: auto;
 }
 
+/* Global class: Uppercase */
+.upper-case {
+    text-transform: uppercase;
+}
+
 body {
     background-color: grey;
 }
 
-.colour-div {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    text-align: center;
-}
-
-#cdiv1 {
-    background-color: #f5f5f5;
-    color: #333A3F;
-}
-#cdiv2 {
-    background-color: #333A3F;
-    color: #f5f5f5;
-}
-#cdiv3 {
-    background-color: #CF1020;
-    color: #f5f5f5;
-}
 
 /* ID specific: header > whole header section */
 #header-section {
