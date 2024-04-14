@@ -243,35 +243,33 @@ There will be no sub-category navigation links within each webpage.
 ### Surface
 
 #### Colour Scheme
-Describe starting colour scheme
-Used [adobe’s colour wheel](https://color.adobe.com/create/color-wheel) to create the following colour palletes:
+The colour scheme for this website will match the colour scheme of a deck of cards with a white, red, and black colour pallette. To enhance user experience, an off-black with hints of blue and off-white were used so as to reduce eye strain. These work well with the chosen hue of red.
 
-**Shades**
+![Colour Scheme](/documentation/colour_scheme.png)
 
-![shades]()
-
-**Analogous**
-
-![analogous]()
-
-**Complementary**
-
-![complementary]()
-
-Chosen colours:
--   Colour1 from above: what its used for
--   Colour2 from above: what its used for
+As can be seen the chosen colours provide adequate contrast in line with the accessibility criteria for the webpage. The chosen colours are:
+- **Off-Black #333A3F**: Used for
+- **Off-White #F5F5F5**: Used for
+- **Lava #CF1020**: Used for
 
 Extra colours:
 -   Colour1: what its used for
 -   Colour2: what its used for
 
 #### Typography
-I researched X fonts for Y reasons
+I researched clear legible typefaces that will enhance the user experience of the site and picked one for the navigation bar and titles, one for the button and table text, and one for blocks of text. They were used in this regard across the website to acheive a consistent brand.
 
-**[font1](googlefontlink)**
-![font1](image)
-Description
+**[Cabin](https://fonts.google.com/specimen/Cabin?query=cabin)**<br>
+![Cabin](/documentation/font_cabin.png)<br>
+Cabin is a modern looking sans serif typeface with wide language support. It is clear and legible and makes the perfect choice for informative assets such as buttons and table headings.
+
+**[Arimo](https://fonts.google.com/specimen/Arimo?query=arimo)**<br>
+![Arimo](/documentation/font_arimo.png)<br>
+Arimo is an innovative and refreshing sans serif typeface that improves on screen readability. As such, it is a good choice for blocks of text to decrease eye strain on the user.
+
+**[Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans?query=josefin+sans)**<br>
+![Josefin Sans](/documentation/font_josefin_sans.png)<br>
+Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timelessness design of playing cards.The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character.
 
 #### Images
 All images used were optimised using [adobe photoshop](https://www.adobe.com/uk/) and converted to .webp format for faster loading times using [cloud convert](https://cloudconvert.com/png-to-webp).
@@ -324,6 +322,8 @@ Hero images
     * JavaScript library used for more concise event listeners
 9. [JSHint](https://jshint.com/)
     * Used to validate JavaScript code
+10. [Google Fonts](https://fonts.google.com/)
+    * Used to supply fonts for the website
 
 ## Testing
 For my testing, please see the separate [testing.md](link) file.
