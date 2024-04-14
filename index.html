@@ -33,42 +33,45 @@
     <!-- Navigation bar -->
     <header class="container-fluid row g-0" id="header-section">
         <!-- Logo -->
-        <div class="col-6" id="header-logo">
-            <a href="index.html" aria-label = "Memory card game site logo and link to homepage">
-                <h1>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-diamond"></i>
+        <div class="header-item" id="header-logo">
+            <a href="index.html" aria-label = "Memory card game site logo and link to homepage" id="logo-link">
+                <h1 id="logo">
+                    <i class="fa-solid fa-heart brand-icon"></i>
+                    <i class="fa-solid fa-diamond brand-icon"></i>
                     <span>Memory Card Game</span>
                 </h1>
             </a>
         </div>
         <!-- Navbar -->
-        <div class="col-6">
+        <div class="header-item" id="nav-links-div">
             <nav id="nav">
-                <ul class = "row g-0 list-inline upper-case">
+                <ul class = "row g-0 list-inline upper-case" id="nav-list">
                     <!-- Navbar list items -->
-                    <li class = "col-4">
-                        <a href="index.html" aria-label ="Go back to the website homepage">
-                            <i class="fa fa-home" aria-hidden="true"></i>
-                            <p>
+                    <li class = "nav-list-item">
+                        <a href="index.html" aria-label ="Go back to the website homepage" class="nav-link-red active-page">
+                            <i class="fa fa-home nav-icon-top" aria-hidden="true"></i>
+                            <p class="nav-item-name" id="home-text">
                                 Home
                             </p>
+                            <p class="nav-icon-bottom" id="nav-icon-bottom-home"><i class="fa fa-home" aria-hidden="true"></i></p>
                         </a>
                     </li>
-                    <li class = "col-4">
-                        <a href="how_to_play.html" aria-label ="Go to the how to play page">
-                            <i class="fa-regular fa-circle-question"></i>
-                            <p>
+                    <li class = "nav-list-item">
+                        <a href="how_to_play.html" aria-label ="Go to the how to play page" class="nav-link-black">
+                            <i class="fa-regular fa-circle-question nav-icon-top"></i>
+                            <p class="nav-item-name" id="how-to-play-text">
                                 How to play
                             </p>
+                            <p class="nav-icon-bottom" id="nav-icon-bottom-how"><i class="fa-regular fa-circle-question"></i></p>
                         </a>
                     </li>
-                    <li class = "col-4">
-                        <a href="contact_me.html" aria-label ="Go to the contact me page">
-                            <i class="fa-regular fa-address-book"></i>
-                            <p>
+                    <li class = "nav-list-item">
+                        <a href="contact_me.html" aria-label ="Go to the contact me page" class="nav-link-red">
+                            <i class="fa-regular fa-address-book nav-icon-top"></i>
+                            <p class="nav-item-name" id="contact-me-text">
                                 Contact me
                             </p>
+                            <p class="nav-icon-bottom" id="nav-icon-bottom-contact"><i class="fa-regular fa-address-book"></i></p>
                         </a>
                     </li>
                 </ul>
