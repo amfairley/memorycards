@@ -33,6 +33,14 @@ body {
     text-decoration: underline wavy;
 }
 
+/* Keep footer at the bottom of the page */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
 /*------------NAVIGATION BAR-----------------*/
 /* Whole header secion */
 #header-section {
@@ -50,7 +58,7 @@ body {
 #header-logo {
     color: black;
     width: 60%;
-    font-family: "Josefin Sans";
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
 }
 
 /* Header logo contents */
@@ -168,27 +176,102 @@ body {
 }
 
 
-
-
-
-/* ID specific footer */
-#footer {
-    position:relative;
-    bottom: 0;
-    background-color: white;
-}
-
-
-/* Keep footer at the bottom of the page */
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
+/* --------------- MAIN SECTIONS ------------ */
 main {
     flex: 1 0 auto;
 }
+
+/* --------------- FOOTER ------------------- */
+/* Complete footer */
+#footer {
+    position:relative;
+    bottom: 0;
+    background-color: #F5F5F5;
+    height: 90px;
+    margin: 0;
+}
+
+/* Footer logo outer */
+#footer-logo {
+    height: inherit;
+    width: 70%;
+    display: inline-block;
+    margin: 0;
+}
+
+/* Footer logo anchor tag */
+#logo-link-footer {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer logo text */
+#footer-logo-content {
+    color: #333A3F;
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    padding-left: 30%;
+    padding-top: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Footer logo font awesome icons */
+.footer-logo-icon {
+    color:#CF1020;
+}
+
+/* Footer GitHub outer */
+#footer-github {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    height: inherit;
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    margin: 0;
+}
+
+/* Footer GitHub anchor link */
+#github-link {
+    height: 80px;
+    margin-top: 5px;
+    width: 150px;
+    border-radius: 15%;
+}
+
+/* Footer GitHub Content */
+#github-icon-top{
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin: 0;
+}
+#github-icon-bottom {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+#github-text{
+    text-align: center;
+    padding-top: -5px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Game area */
