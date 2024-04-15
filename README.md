@@ -485,6 +485,7 @@ $(".submit-guess").click(function() {
 ### Known Bugs
 
 ### Mistakes
+- Git commit #100 did not start with a keyword before the description. Care will be taken to prevent this occuring in future.
 
 ## Deployment
 
