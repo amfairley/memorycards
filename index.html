@@ -81,11 +81,14 @@
 
     <main>
         <!-- Game area -->
-        <div class = "row container-fluid g-0 justify-content-around" id = "game-area">
+        <div id = "game-area">
+            <div id="length-box">
+                <p id="length-box-icon-top"><i class="fa-solid fa-hashtag"></i></p>
+                <p id="length-display">Sequence Length: <span id="sequence-length-display"></span></p>
+                <p id="length-box-icon-bottom"><i class="fa-solid fa-hashtag"></i></p>
+            </div>
             <div class= "col-12" id="button-section">
-                <div id="length-box">
-                    <p>Number of cards: <span id="sequence-length-display"></span></p>
-                </div>
+
                 <button id="reset">Reset</button>
                 <button id="play" class="hidden">Play now</button>
                 <input type="number" id="quantity" min="1" max="13" placeholder="Select sequence length">
@@ -105,6 +108,9 @@
                 <tbody id="table-body">
                 </tbody>
             </table>
+            <div id="card-mat" class="row g-0 justify-content-around">
+
+            </div>
         </div>
     </main>
 
