@@ -253,7 +253,7 @@ As can be seen the chosen colours provide adequate contrast in line with the acc
 - **Lava #CF1020**: Used for the font and icon colours of the red card navigation links. On hover, the colour scheme flips so that it is used instead for the card background. Also used for the site logo icons in the header and footer.
 
 Extra colours:
--   Colour1: what its used for
+-   Black (#000000): Used for the card edges in the navigation bar and sequence length display.
 -   Colour2: what its used for
 
 #### Typography
