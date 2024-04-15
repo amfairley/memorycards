@@ -209,7 +209,29 @@ main {
 #button-section {
     text-align: center;
 }
+.game-button {
+    font-family: Cabin, Arial, Helvetica, sans-serif;
+    color:#333A3F;
+    background-color: #F5F5F5;
+    transition: 
+        color 0.7s,
+        background-color 0.7s;
+}
+.game-button:hover {
+    color: #F5F5F5;
+    background-color: #CF1020;
+}
+#quantity {
+    font-family: Cabin, Arial, Helvetica, sans-serif;
+    width: 140px;
+    text-align: center;
+}
+
 /* Card images */
+.card-div {
+    display: inline-block;
+    text-align: center;
+}
 .card-image {
     width: 140px;
     height: 210px;
@@ -218,12 +240,6 @@ main {
     margin-top: 10px;
 }
 
-
-/* Center the cards within the divs */
-.card-div {
-    display: inline-block;
-    text-align: center;
-}
 
 
 /* --------------- FOOTER ------------------- */
