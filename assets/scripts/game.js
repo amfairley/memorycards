@@ -294,6 +294,7 @@ $("#guess").click(function() {
 
     // Hide the guess button
     $("#guess").addClass("hidden");
+    $('#table-container').addClass("table-container-style");
     // Show the guessing table
     $("#guessing-table").removeClass("hidden");
     tableBuild(sequenceLength);
@@ -303,6 +304,7 @@ $("#guess").click(function() {
 
 // Reset button
 $("#reset").click(function() {
+    $('#table-container').removeClass("table-container-style");
     // Reset the sequence length
     sequenceLength = undefined;
     // Show the length selector if hidden
