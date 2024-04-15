@@ -8,7 +8,7 @@ $(".submit-guess").click(function() {
 
     // Check for valid input 
     if ((siblings[0].value === 'disabled') || (siblings[1].value === 'disabled')) {
-        alert("Please select a valid card value and suit.")
+        alert("Please select a valid card value and suit.");
     } else {
         // takes value 1 + value 2 = submitted answer
         let submittedAnswerInitial = siblings[0].value +siblings[1].value;
