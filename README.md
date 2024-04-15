@@ -326,7 +326,7 @@ Hero images
     * Used to supply fonts for the website
 
 ## Testing
-For my testing, please see the separate [testing.md](link) file.
+For my testing, please see the separate [testing.md](/documentation/testing.md) file.
 
 ## Bugs
 **Bug 1:**
