@@ -144,7 +144,7 @@ function makeDivs(n) {
         // Add image to the div
         $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image'>");
         // Apend it
-        $("#game-area").append(newDiv);
+        $("#card-mat").append(newDiv);
     }
 }
 
