@@ -248,9 +248,9 @@ The colour scheme for this website will match the colour scheme of a deck of car
 ![Colour Scheme](/documentation/colour_scheme.png)
 
 As can be seen the chosen colours provide adequate contrast in line with the accessibility criteria for the webpage. The chosen colours are:
-- **Off-Black #333A3F**: Used for
-- **Off-White #F5F5F5**: Used for
-- **Lava #CF1020**: Used for
+- **Off-Black #333A3F**: Used for the font and icon colours of the black card navigation links. On hover, the colour scheme flips so that it is used instead for the card background. Also used for the site logo words in the header and footer.
+- **Off-White #F5F5F5**: Used for background of the header and footer. Also used for the background of the navigation link cards. On hover, the colour scheme is flipped so that it is used for the icon and font colour instead.
+- **Lava #CF1020**: Used for the font and icon colours of the red card navigation links. On hover, the colour scheme flips so that it is used instead for the card background. Also used for the site logo icons in the header and footer.
 
 Extra colours:
 -   Colour1: what its used for
@@ -261,15 +261,15 @@ I researched clear legible typefaces that will enhance the user experience of th
 
 **[Cabin](https://fonts.google.com/specimen/Cabin?query=cabin)**<br>
 ![Cabin](/documentation/font_cabin.png)<br>
-Cabin is a modern looking sans serif typeface with wide language support. It is clear and legible and makes the perfect choice for informative assets such as buttons and table headings.
+Cabin is a modern looking sans serif typeface with wide language support. It is clear and legible and makes the perfect choice for informative assets such as buttons and table headings. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Cabin. These are all sans serif typefaces and act as sufficient backups.
 
 **[Arimo](https://fonts.google.com/specimen/Arimo?query=arimo)**<br>
 ![Arimo](/documentation/font_arimo.png)<br>
-Arimo is an innovative and refreshing sans serif typeface that improves on screen readability. As such, it is a good choice for blocks of text to decrease eye strain on the user.
+Arimo is an innovative and refreshing sans serif typeface that improves on screen readability. As such, it is a good choice for blocks of text to decrease eye strain on the user. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Arimo These are all sans serif typefaces and act as sufficient backups.
 
 **[Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans?query=josefin+sans)**<br>
 ![Josefin Sans](/documentation/font_josefin_sans.png)<br>
-Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timelessness design of playing cards.The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character.
+Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timelessness design of playing cards.The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Josefin Sans. These are all sans serif typefaces and act as sufficient backups. It is used for the site logo in the header and footer of each page, along with the navigation links in the navigation bar. 
 
 #### Images
 All images used were optimised using [adobe photoshop](https://www.adobe.com/uk/) and converted to .webp format for faster loading times using [cloud convert](https://cloudconvert.com/png-to-webp).
