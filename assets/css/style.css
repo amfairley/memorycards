@@ -173,9 +173,9 @@ body {
 main {
     flex: 1 0 auto;
     background-color: #F5F5F5;
-}/* Game area */
-#game-area {
+
 }
+
 
 /* Sequence length display box */
 #length-box {
@@ -204,6 +204,7 @@ main {
     padding-right: 5px;
     padding-top: 10px;
 }
+
 
 /* Buttons */
 #button-section {
@@ -249,9 +250,9 @@ main {
 }
 
 /* Guessing table styling */
-#table-container {
-    width: 95%;
+.table-container-style {
     margin: auto;
+    max-width: 95%;
 }
 #guessing-table {
     width: 100%;
@@ -457,6 +458,5 @@ tbody>tr:hover {
         width: 40%;
     }
 }
-
 
 
