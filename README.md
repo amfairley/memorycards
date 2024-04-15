@@ -1,4 +1,4 @@
-![Website logo]()
+![Website logo](/documentation/site-logo.png)
 
 ---
 
