@@ -81,7 +81,7 @@
 
     <main>
         <!-- Game area -->
-        <section class = "row container-fluid g-0 justify-content-around" id = "game-area">
+        <div class = "row container-fluid g-0 justify-content-around" id = "game-area">
             <div class= "col-12" id="button-section">
                 <div id="length-box">
                     <p>Number of cards: <span id="sequence-length-display"></span></p>
@@ -95,15 +95,17 @@
 
             <table id="guessing-table" class="hidden">
                 <thead>
-                    <th scope="col">Order</th>
-                    <th scope="col">Guess</th>
-                    <th scope="col">Answer</th>
-                    <th scope="col">Correct?</th>
+                    <tr>
+                        <th scope="col">Order</th>
+                        <th scope="col">Guess</th>
+                        <th scope="col">Answer</th>
+                        <th scope="col">Correct?</th>
+                    </tr>
                 </thead>
                 <tbody id="table-body">
                 </tbody>
             </table>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
