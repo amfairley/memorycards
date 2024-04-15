@@ -491,7 +491,22 @@ $(".submit-guess").click(function() {
 
 ### Deployment to GitHub pages
 
+This site was deployed using GitHub pages following these steps:
+- Once in the [GitHub repository](https://github.com/amfairley/memorycards), go to the Settings tab
+- Under the **Code and automation** section on the left hand side; select **Pages**
+- Ensure your build and deployment source is **Deploy from a branch**
+- In the **Branch** section, click on the dropdown menu currently set to none and select the main branch
+- Click save
+
+You can fork the repository by going the [GitHub repository](https://github.com/amfairley/memorycards) and selecting **Fork** in the top right corner.
+
 ### Deploying Locally
+
+To deploy locally; you can clone this project by typing 
+<br>
+`git clone https://github.com/amfairley/memorycards.git`
+<br>
+into the terminal of your IDE of choice.
 
 ### Addition of 404.html
 
