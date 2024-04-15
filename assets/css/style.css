@@ -208,8 +208,11 @@ main {
 /* Buttons */
 #button-section {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.game-button {
+.game-button, 
+.submit-guess {
     font-family: Cabin, Arial, Helvetica, sans-serif;
     color:#333A3F;
     background-color: #F5F5F5;
@@ -217,9 +220,15 @@ main {
         color 0.7s,
         background-color 0.7s;
 }
-.game-button:hover {
+.game-button:hover,
+.submit-guess:hover {
     color: #F5F5F5;
     background-color: #CF1020;
+}
+.submit-guess:disabled {
+    color: #F5F5F5;
+    background-color: #333A3F;
+    opacity: 0.7;
 }
 #quantity {
     font-family: Cabin, Arial, Helvetica, sans-serif;
@@ -240,6 +249,36 @@ main {
     margin-top: 10px;
 }
 
+/* Guessing table styling */
+#table-container {
+    width: 95%;
+    margin: auto;
+}
+#guessing-table {
+    width: 100%;
+    text-align: center;
+}
+thead {
+    color: #F5F5F5;
+    background-color:#CF1020;
+}
+tbody>tr:hover {
+    color:#F5F5F5;
+    background-color: #333A3F;
+}
+/* Table data cell classes */
+.order-column{
+    width: 10%;
+}
+.guess-column{
+    width: 55%;
+}
+.answer-column{
+    width: 25%;
+}
+.correct-column{
+    width: 10%;
+}
 
 
 /* --------------- FOOTER ------------------- */
