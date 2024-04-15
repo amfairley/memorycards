@@ -95,19 +95,20 @@
                 <button id="sequence-length" class="game-button">Apply length</button>
                 <button id="guess" class="game-button hidden">Guess</button>
             </div>
-
-            <table id="guessing-table" class="hidden">
-                <thead>
-                    <tr>
-                        <th scope="col">Order</th>
-                        <th scope="col">Guess</th>
-                        <th scope="col">Answer</th>
-                        <th scope="col">Correct?</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                </tbody>
-            </table>
+            <div id="table-container">
+                <table id="guessing-table" class="hidden">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="order-column">Order</th>
+                            <th scope="col" class="guess-column">Guess</th>
+                            <th scope="col" class="answer-column">Answer</th>
+                            <th scope="col" class="correct-column">Correct?</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
             <div id="card-mat" class="row g-0 justify-content-around">
 
             </div>
