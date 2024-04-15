@@ -1,31 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Cabin:ital,wght@0,500;1,500&family=Josefin+Sans&display=swap');
 
-/* Global class: remove presets on hyperlinks */
+/*-----GLOBAL STYLING ----- */
+/* Default anchor tags */
 a {
     color: inherit;
     text-decoration: inherit;
 }
 
-/* Global class: game: hidden*/
+/* Hidden class*/
 .hidden {
     visibility: hidden;
+    position: absolute;
 }
 
-/* Global class: make width 95% */
-
-.w95 {
-    width: 95%;
-    margin: auto;
-}
-
-/* Global class: Uppercase */
+/* Uppercase font */
 .upper-case {
     text-transform: uppercase;
-}
-
-/* Global class: colour body */
-body {
-    background-color: grey;
 }
 
 /* Active page class */
@@ -182,31 +172,49 @@ body {
 /* --------------- MAIN SECTIONS ------------ */
 main {
     flex: 1 0 auto;
+    background-color: #F5F5F5;
+}/* Game area */
+#game-area {
 }
 
+/* Sequence length display box */
+#length-box {
+    font-family: Cabin, Arial, Helvetica, sans-serif;
+    color: #CF1020;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 83px;
+    height: 112px;
+    border: 2px solid black;
+    border-radius: 8%;
+    background-color: #F5F5F5;
+}
+#length-box-icon-top,
+#length-box-icon-bottom,
+#length-display {
+    margin: 0;
+}
+#length-box-icon-top {
+    text-align: left;
+    padding-left: 5px;
+}
+#length-box-icon-bottom {
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Game area */
-
-
-/* Classes */
+/* Buttons */
+#button-section {
+    text-align: center;
+}
 /* Card images */
 .card-image {
     width: 140px;
     height: 210px;
-    padding: 10px;
     border: 5px solid black;
+    border-radius: 10%;
     margin-top: 10px;
 }
 
@@ -217,12 +225,6 @@ main {
     text-align: center;
 }
 
-/* Game length display box */
-#length-box {
-    height: 100px;
-    width: 100px;
-    border: solid 1px black;
-}
 
 /* --------------- FOOTER ------------------- */
 /* Complete footer */
