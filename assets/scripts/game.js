@@ -158,16 +158,18 @@ function tableBuild(n) {
         tr1.classList.add("table-row");
         // Create column 1 value: Order number
         let td1 = document.createElement("td");
+        td1.classList.add("order-column");
         td1.innerHTML = parseInt(i) +1;
 
         console.log("The current order number is " + (parseInt(i)+1));
 
         // Create column 2: Guessing section
         let td2 = document.createElement("td");
+        td2.classList.add("guess-column");
         // Create column 2 Select section 1
         let select1 = document.createElement("select");
         select1.innerHTML = 
-            "<option value= 'disabled'>Card Value</option>" +
+            "<option value= 'disabled'>Value</option>" +
             "<option value='a'>Ace</option>" +
             "<option value='2'>2</option>" +
             "<option value='3'>3</option>" +
@@ -202,6 +204,7 @@ function tableBuild(n) {
         td2.append(submitButton);
         // Create column 3: Actual Answer
         let td3 = document.createElement("td");
+        td3.classList.add("answer-column");
         let currentCard = cardsToPlay[i].slice(0,2);
 
         console.log("The current card is "+cardObject[currentCard]);
@@ -211,6 +214,7 @@ function tableBuild(n) {
         // Correct column 4: Result
         let td4 = document.createElement("td");
         td4.classList.add("result");
+        td1.classList.add("correct-column");
         // Append all columns to table row
         tr1.append(td1);
         tr1.append(td2);
