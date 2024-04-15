@@ -141,8 +141,6 @@ function makeDivs(n) {
         var newDiv = document.createElement("div");
         // Assign CSS class
         $(newDiv).addClass("col-6 col-sm-4 col-lg-2 card-div");
-        // Assign an id of box + whatever number box it is-----------------NEEDED?
-        $(newDiv).attr("id","cardimage"+i);
         // Add image to the div
         $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image'>");
         // Apend it
