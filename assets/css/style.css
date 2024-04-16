@@ -13,6 +13,11 @@ a {
     position: absolute;
 }
 
+/* Hide modal */
+.hide-modal {
+    display: none;
+}
+
 /* Uppercase font */
 .upper-case {
     text-transform: uppercase;
@@ -258,6 +263,7 @@ main {
 .table-container-style {
     margin: auto;
     max-width: 95%;
+    padding-top: 30px;
 }
 #guessing-table {
     width: 100%;
@@ -286,6 +292,53 @@ tbody>tr:hover {
 }
 .correct-column{
     width: 10%;
+}
+
+/* --------------- MODALS ------------------- */
+
+/* Modal global styling */
+.game-modal {
+    /* Centred in the screen */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 8%;
+    background-color: #F5F5F5;
+    text-align: center;
+} 
+.modal-top-icon {
+    font-size: 1.6rem;
+    text-align: left;
+    color:#CF1020;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.modal-bottom-icon {
+    font-size: 1.6rem;
+    text-align: right;
+    color:#CF1020;
+    padding-right: 15px;
+}
+
+/* Sequence error modal */
+#modal-sequence-header {
+    color:#333A3F;
+    text-align: center;
+}
+#modal-sequence-text {
+    color:#333A3F;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+#modal-sequence-icon {
+    padding-top: 70px;
 }
 
 

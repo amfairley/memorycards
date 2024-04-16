@@ -30,6 +30,19 @@
     <title>Memory Card Game</title>
 </head>
 <body>
+    <!-- Game modals -->
+    <!-- Error modal for invalid sequence length -->
+    <div class="game-modal" id="sequence-error-modal">
+        <div class="modal-container">
+            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+            <h2 id="modal-sequence-header">Oh No!</h2>
+            <div ip="modal-sequence-text">
+                <p id="modal-sequence-text">We can't possibly deal that many cards, please enter a number between 1 and 52.</p>
+            </div>
+            <button class="game-button" id="modal-sequence-button">OK</button>
+            <p class="modal-bottom-icon" id="modal-sequence-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        </div>
+    </div>
     <!-- Navigation bar -->
     <header class="container-fluid row g-0" id="header-section">
         <!-- Logo -->
