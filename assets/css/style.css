@@ -85,7 +85,6 @@ body {
 /*Individual list items */
 .nav-list-item {
     width: 90px;
-    cursor: pointer;
 }
 
 /* Navigation anchor */
@@ -407,7 +406,9 @@ tbody>tr:hover {
 #how-to-play-modal {
     color:#F5F5F5;
     background-color: #333A3F;
+    border-color: #F5F5F5;
     height: 560px;
+    display: none;
 }
 #modal-how-to-play-header {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
