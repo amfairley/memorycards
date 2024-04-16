@@ -296,6 +296,9 @@ tbody>tr:hover {
 
 /* --------------- MODALS ------------------- */
 
+#sequence-error-modal {
+    display: none;
+}
 /* Modal global styling */
 .game-modal {
     /* Centred in the screen */
@@ -325,7 +328,8 @@ tbody>tr:hover {
 }
 
 /* Sequence error modal */
-#modal-sequence-header {
+#modal-sequence-header,
+#modal-guess-header {
     color:#333A3F;
     text-align: center;
 }
@@ -338,7 +342,18 @@ tbody>tr:hover {
     padding-bottom: 70px;
 }
 #modal-sequence-icon {
+    padding-top: 50px;
+}
+#modal-guess-text {
+    color:#333A3F;
+    text-align: center;
+    width: 90%;
+    margin: auto;
     padding-top: 70px;
+    padding-bottom: 80px;
+}
+#modal-guess-icon {
+    padding-top: 50px;
 }
 
 
