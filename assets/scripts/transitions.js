@@ -18,28 +18,36 @@ $(".nav-link-black").on( "mouseleave", function() {
 // Open navigation bar modals
 $("#contact-modal-link").click(function() {
     $("#contact-me-modal").css("display", "block");
+    $("#modal-background").css("display", "block");
 })
 $("#how-to-play-modal-link").click(function() {
     $("#how-to-play-modal").css("display", "block");
+    $("#modal-background").css("display", "block");
 })
 
 // Modal Close Buttons //
 
 $("#modal-sequence-button").click(function() {
     $("#sequence-error-modal").css("display", "none");
+    $("#modal-background").css("display", "none");
 })
 $("#modal-guess-button").click(function() {
     $("#guess-error-modal").css("display", "none");
+    $("#modal-background").css("display", "none");
 })
 $("#modal-results-button-close").click(function() {
     $("#results-modal").css("display", "none");
+    $("#modal-background").css("display", "none");
 })
 $("#modal-results-button-replay").click(function() {
     $("#results-modal").css("display", "none");
+    $("#modal-background").css("display", "none");
 })
 $("#modal-contact-close").click(function() {
     $("#contact-me-modal").css("display", "none");
+    $("#modal-background").css("display", "none");
 })
 $("#modal-how-to-play-button").click(function() {
     $("#how-to-play-modal").css("display", "none");
+    $("#modal-background").css("display", "none");
 })
