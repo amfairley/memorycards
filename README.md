@@ -332,7 +332,7 @@ For my testing, please see the separate [testing.md](/documentation/testing.md) 
 **Bug 1:**
 When populating the guessing table, the JavaScript could not connect event listeners for the guess submission buttons. This turned out to be because the buttons were added to the DOM after the JavaScript file was loaded. To solve this, I added the following lines of code to the bottom of the tableBuild() function:
 
-```
+``` JS
     let appendScript = "<script id='guessing-script' src='assets/scripts/script2.js'></script>"
     $("body").append(appendScript);
 ```
@@ -347,7 +347,7 @@ When entering an invalid number into the sequence length selector, it will assig
 **Bug 4:**
 When submitting guess, if no value or suit is submitted, it will accept the submitted answer as being "disableddisabled". This is bad user experience, as it prevents the user from enetering an actual guess and disables the button. This was solved by wrapping most of the code in an if/else statement to set an alert if either of the submitted values are "disabled" and to continue the code if the entries are valid.
 <br> Before:
-```
+```JS
 // Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
