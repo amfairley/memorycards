@@ -278,6 +278,9 @@ tbody>tr:hover {
 .guess-column{
     width: 55%;
 }
+.guess-column > select {
+    text-align: center;
+}
 .answer-column{
     width: 25%;
 }
