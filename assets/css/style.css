@@ -30,6 +30,11 @@ body {
     flex-direction: column;
 }
 
+/* Spacers for game area on small screens */
+.spacer {
+    display: none;
+}
+
 
 /*------------NAVIGATION BAR-----------------*/
 /* Whole header secion */
@@ -461,10 +466,11 @@ tbody>tr:hover {
 #footer-logo-content {
     color: #333A3F;
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-    padding-left: 30%;
+    margin-left: 30%;
     padding-top: 32px;
     margin: 0;
     text-align: center;
+    height: 90px;
 }
 
 /* Footer logo font awesome icons */
@@ -617,4 +623,20 @@ tbody>tr:hover {
     }
 }
 
+@media screen and (max-width: 420px) {
+    /* Header logo smaller */
+    #logo {
+        font-size: 16pt;
+    }
 
+    /* Put space between reset and game buttons */
+    .spacer {
+        display: block;
+    }
+
+    /* Footer logo smaller */
+    #footer-logo-content {
+        font-size: 12pt;
+        width: 100%;
+    }
+}
