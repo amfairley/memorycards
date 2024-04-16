@@ -330,14 +330,16 @@ tbody>tr:hover {
     padding-right: 15px;
 }
 
-/* Sequence error modal */
+/* Game modals */
 #modal-sequence-header,
 #modal-guess-header,
 #modal-results-header {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
     color:#333A3F;
     text-align: center;
 }
 #modal-sequence-text {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
     color:#333A3F;
     text-align: center;
     width: 90%;
@@ -349,6 +351,7 @@ tbody>tr:hover {
     padding-top: 50px;
 }
 #modal-guess-text {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
     color:#333A3F;
     text-align: center;
     width: 90%;
@@ -360,6 +363,7 @@ tbody>tr:hover {
     padding-top: 50px;
 }
 #modal-results-text {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
     color:#333A3F;
     text-align: center;
     width: 90%;
@@ -371,6 +375,30 @@ tbody>tr:hover {
     padding-top: 55px;
 }
 
+/* Contact me modal */
+#contact-me-modal {
+    height: 90%;
+    background-color: #CF1020;
+}
+#modal-contact-header {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    color:#F5F5F5;
+    padding-top: 10px;
+}
+#contact-message {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+#contact-text,
+.contact-label {
+    color: #F5F5F5;
+}
+#modal-contact-close {
+    margin-top: 10px;
+}
 
 /* --------------- FOOTER ------------------- */
 /* Complete footer */
