@@ -3,51 +3,32 @@
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
     let siblings = $(this).siblings();
-
-    console.log(siblings);
-
     // Check for valid input 
     if ((siblings[0].value === 'disabled') || (siblings[1].value === 'disabled')) {
         alert("Please select a valid card value and suit.");
     } else {
-        // takes value 1 + value 2 = submitted answer
+        // Takes value 1 + value 2 = submitted answer
         let submittedAnswerInitial = siblings[0].value +siblings[1].value;
-
-        console.log(submittedAnswerInitial);
-
         // Get the key from this value in the cardObject
         let submittedAnswer = cardObject[String(submittedAnswerInitial)];
-
-        console.log(submittedAnswer);
-
-        // checks this answer against parent's next sibling
+        // Checks this answer against parent's next sibling
         let pSiblings = $(this).parent().siblings();
-
-        console.log(pSiblings);
-
         // Show the answer column
         pSiblings[1].classList.remove("hidden");
         let correctAnswer = pSiblings[1].innerHTML;
         let results = pSiblings[2];
-        
-        console.log(correctAnswer);
-        console.log(pSiblings[2]);
-
         // Compare the two values
         if (submittedAnswer === correctAnswer) {
             $(results).html("Y");
         } else {
             $(results).html("N");
         }
-
         // Disable the select and submit fields
         $(this).prop("disabled", true);
         $(siblings[0]).prop("disabled", true);
         $(siblings[1]).prop("disabled", true);
-
         // Add a class to the submit button to track submissions
         $(this).addClass("submitted");
-
         // Check score
         // Array of the result cell
         let resultsArray = $(".result");
@@ -59,9 +40,7 @@ $(".submit-guess").click(function() {
                 counter++;
             }
         }
-        console.log(counter);
         let finalScore = Math.floor(100* counter / sequenceLength);
-
         // An alert to show when the game is finished
         if ($(".submitted").length === sequenceLength) {
             alert("Game over. You scored " + finalScore + "%");

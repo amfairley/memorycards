@@ -160,9 +160,6 @@ function tableBuild(n) {
         let td1 = document.createElement("td");
         td1.classList.add("order-column");
         td1.innerHTML = parseInt(i) +1;
-
-        console.log("The current order number is " + (parseInt(i)+1));
-
         // Create column 2: Guessing section
         let td2 = document.createElement("td");
         td2.classList.add("guess-column");
@@ -206,9 +203,6 @@ function tableBuild(n) {
         let td3 = document.createElement("td");
         td3.classList.add("answer-column");
         let currentCard = cardsToPlay[i].slice(0,2);
-
-        console.log("The current card is "+cardObject[currentCard]);
-
         td3.innerHTML = cardObject[currentCard];
         td3.classList.add("hidden");
         // Correct column 4: Result
@@ -235,19 +229,12 @@ function tableBuild(n) {
 
 // Apply length button chooses how many cards to show, shuffles the cards, displays the play button
 $("#sequence-length").click(function() {
-
-    console.log("The sequence length button has been pressed");
-
     // Save the number as length
     // Math.floor is used in case the user enters a float value
     lengthCheck = Math.floor($("#quantity").val());
-
-    console.log("The length check is: "+lengthCheck);
-    
     // Testing that the input is within limits
     if ((lengthCheck > 0) && (lengthCheck <= 52)) {
         sequenceLength = lengthCheck;
-        console.log("The sequence length is: "+sequenceLength);
         // Allow the play button to appear
         $("#play").removeClass("hidden");
         // Display the sequence length
@@ -260,27 +247,15 @@ $("#sequence-length").click(function() {
 
 // Play button 
 $("#play").click(function() {
-
-    console.log("The play button has been pressed");
-
     // Hide the play button
     $(this).addClass("hidden");
     // Hide the choosing length select and button
     $("#quantity").addClass("hidden");
     $("#sequence-length").addClass("hidden");
     // shuffle the cards
-
-    console.log(cards);
-
     shuffle(cards);
-
-    console.log(cards);
-
     // Selects a portion of the shuffled cards to play
     cardsToPlay = cards.slice(0, sequenceLength);
-
-    console.log(cardsToPlay);
-    console.log(cardsToPlay.length === sequenceLength);
     // Make separate divs
     makeDivs(sequenceLength);
     // Show the guess button
@@ -289,9 +264,6 @@ $("#play").click(function() {
 
 // Guess button
 $("#guess").click(function() {
-
-    console.log("The guess button has been pressed");
-
     // Hide the guess button
     $("#guess").addClass("hidden");
     $('#table-container').addClass("table-container-style");
@@ -304,6 +276,7 @@ $("#guess").click(function() {
 
 // Reset button
 $("#reset").click(function() {
+    // Remove table container class for page styling
     $('#table-container').removeClass("table-container-style");
     // Reset the sequence length
     sequenceLength = undefined;
