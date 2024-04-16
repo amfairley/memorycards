@@ -54,6 +54,18 @@
             <p class="modal-bottom-icon" id="modal-guess-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
         </div>
     </div>
+    <div class="game-modal" id="results-modal">
+        <div class="modal-container">
+            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+            <h2 id="modal-results-header">Congratulations</h2>
+            <div id="modal-results-text">
+                <p>You scored <span id="total-correct">10</span> out of <span id="total-answers">20</span>, that's <span id="total-percent">50</span>%!</p>
+            </div>
+            <button class="game-button" id="modal-results-button-close">Close</button>
+            <button class="game-button reset-game" id="modal-results-button-replay">Replay</button>
+            <p class="modal-bottom-icon" id="modal-results-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        </div>
+    </div>
     <!-- Navigation bar -->
     <header class="container-fluid row g-0" id="header-section">
         <!-- Logo -->
@@ -113,7 +125,7 @@
             </div>
             <div class= "col-12" id="button-section">
                 <div id="reset-container">
-                    <button id="reset" class="game-button">Reset Game</button>
+                    <button id="reset" class="game-button reset-game">Reset Game</button>
                 </div>
                 <input type="number" id="quantity" min="1" max="13" placeholder="Pick up to 52 cards">
                 <button id="play" class="game-button">Play now</button>
