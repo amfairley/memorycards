@@ -35,3 +35,6 @@ $("#modal-results-button-replay").click(function() {
 $("#modal-contact-close").click(function() {
     $("#contact-me-modal").css("display", "none");
 })
+$("#modal-how-to-play-button").click(function() {
+    $("#how-to-play-modal").css("display", "none");
+})
