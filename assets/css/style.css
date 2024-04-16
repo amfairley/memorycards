@@ -212,6 +212,11 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+#reset-container {
+    float: left;
+    padding-left: 20px;
+    position: absolute;
+}
 .game-button, 
 .submit-guess {
     font-family: Cabin, Arial, Helvetica, sans-serif;
