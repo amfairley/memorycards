@@ -277,7 +277,7 @@ All images used were optimised using [adobe photoshop](https://www.adobe.com/uk/
 ### Features
 
 #### The Game Area
-For an in depth description of the functionality of the game area, please see the [game.md](/documentation/game.md).
+For an in depth description of the functionality of the game area, please see the [game.md](/GAME.md).
 #### Browser tab:
 
 <details><summary>Browser Tab</summary>
@@ -326,7 +326,7 @@ Hero images
     * Used to supply fonts for the website
 
 ## Testing
-For my testing, please see the separate [testing.md](/documentation/testing.md) file.
+For my testing, please see the separate [testing.md](/testing.md) file.
 
 ## Bugs
 **Bug 1:**
