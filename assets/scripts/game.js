@@ -250,7 +250,7 @@ $("#play").click(function() {
         // Show the guess button
         $("#guess").removeClass("hidden");
     } else {
-        alert("Please enter a valid number between 1 and 52");
+        $("#sequence-error-modal").css("display", "block");
     }
 
 });

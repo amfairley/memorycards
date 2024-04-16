@@ -13,3 +13,11 @@ $(".nav-link-black").on( "mouseenter", function() {
 $(".nav-link-black").on( "mouseleave", function() {
     $(this).removeClass("nav-link-black-hover").addClass("nav-link-black");
 });
+
+// Modal Close Buttons //
+function hideModal(modal) {
+    modal.style.display = 'none';
+}
+$("#modal-sequence-button").click (function() {
+    $("#sequence-error-modal").css("display", "none");
+})
