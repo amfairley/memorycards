@@ -228,38 +228,31 @@ function tableBuild(n) {
 // Button event listeners
 
 // Apply length button chooses how many cards to show, shuffles the cards, displays the play button
-$("#sequence-length").click(function() {
+$("#play").click(function() {
     // Save the number as length
     // Math.floor is used in case the user enters a float value
     lengthCheck = Math.floor($("#quantity").val());
     // Testing that the input is within limits
     if ((lengthCheck > 0) && (lengthCheck <= 52)) {
         sequenceLength = lengthCheck;
-        // Allow the play button to appear
-        $("#play").removeClass("hidden");
         // Display the sequence length
         $("#sequence-length-display").text(sequenceLength);
+        // Hide the play button
+        $(this).addClass("hidden");
+        // Hide the choosing length select
+        $("#quantity").addClass("hidden");
+        // shuffle the cards
+        shuffle(cards);
+        // Selects a portion of the shuffled cards to play
+        cardsToPlay = cards.slice(0, sequenceLength);
+        // Make separate divs
+        makeDivs(sequenceLength);
+        // Show the guess button
+        $("#guess").removeClass("hidden");
     } else {
         alert("Please enter a valid number between 1 and 52");
     }
 
-});
-
-// Play button 
-$("#play").click(function() {
-    // Hide the play button
-    $(this).addClass("hidden");
-    // Hide the choosing length select and button
-    $("#quantity").addClass("hidden");
-    $("#sequence-length").addClass("hidden");
-    // shuffle the cards
-    shuffle(cards);
-    // Selects a portion of the shuffled cards to play
-    cardsToPlay = cards.slice(0, sequenceLength);
-    // Make separate divs
-    makeDivs(sequenceLength);
-    // Show the guess button
-    $("#guess").removeClass("hidden");
 });
 
 // Guess button
@@ -285,13 +278,9 @@ $("#reset").click(function() {
     if ($("#quantity").hasClass("hidden")) {
         $("#quantity").removeClass("hidden");
     }
-    // If length selector submit button has class of hidden, remove hidden class
-    if ($("#sequence-length").hasClass("hidden")) {
-        $("#sequence-length").removeClass("hidden");
-    }
-    // Hide the play now button if not hidden
-    if (!($("#play").hasClass("hidden"))) {
-        $("#play").addClass("hidden");
+      // Show the play button if hidden
+    if (($("#play").hasClass("hidden"))) {
+        $("#play").removeClass("hidden");
     }
     // Hide the guess button if not hidden
     if (!($("#guess").hasClass("hidden"))) {
