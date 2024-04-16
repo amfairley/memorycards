@@ -1,13 +1,15 @@
 // Hover transitions for navigation bar
 
 $(".nav-link-red").on( "mouseenter", function() {
-    $(this).removeClass("nav-link-red").addClass("nav-link-red-hover");
+    $(this).removeClass("nav-link-red").addClass("nav-link-red-hover")
+    $(this).css("cursor", "pointer");
 });
 $(".nav-link-red").on( "mouseleave", function() {
     $(this).removeClass("nav-link-red-hover").addClass("nav-link-red");
 });
 $(".nav-link-black").on( "mouseenter", function() {
     $(this).removeClass("nav-link-black").addClass("nav-link-black-hover");
+    $(this).css("cursor", "pointer");
 });
 $(".nav-link-black").on( "mouseleave", function() {
     $(this).removeClass("nav-link-black-hover").addClass("nav-link-black");
@@ -16,6 +18,9 @@ $(".nav-link-black").on( "mouseleave", function() {
 // Open navigation bar modals
 $("#contact-modal-link").click(function() {
     $("#contact-me-modal").css("display", "block");
+})
+$("#how-to-play-modal-link").click(function() {
+    $("#how-to-play-modal").css("display", "block");
 })
 
 // Modal Close Buttons //
