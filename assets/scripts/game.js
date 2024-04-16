@@ -251,6 +251,7 @@ $("#play").click(function() {
         $("#guess").removeClass("hidden");
     } else {
         $("#sequence-error-modal").css("display", "block");
+        $("#modal-background").css("display", "block");
     }
 
 });
