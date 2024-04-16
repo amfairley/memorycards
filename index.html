@@ -31,6 +31,30 @@
 </head>
 <body>
     <!-- Game modals -->
+    <!-- Contact me modal -->
+    <div class="game-modal" id="contact-me-modal">
+        <div class="modal-container">
+            <h2 id="modal-contact-header">&#9824 &#9830 &#9827 &#9829 <br>Contact me!</h2>
+            <div id="modal-contact-text">
+                <p id="contact-text">Contact me for more information, collaboration opportunites or to give feedback.</p>
+            </div>
+            <form id="contact-me-form">
+                <label class="contact-label" for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Derren Brown" required>
+                <br>
+                <label class="contact-label" for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="derren@brown.com" required>
+                <br>
+                <textarea id="contact-message" name="message" rows="10" cols="80" required></textarea>
+                <br>
+                <button class="game-button" id="modal-contact-submit">Submit</button>
+            </form>
+            <button class="game-button" id="modal-contact-close">Close</button>
+            <p class="modal-bottom-icon" id="modal-sequence-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        </div>
+    </div>
     <!-- Error modal for invalid sequence length -->
     <div class="game-modal" id="sequence-error-modal">
         <div class="modal-container">
@@ -43,6 +67,7 @@
             <p class="modal-bottom-icon" id="modal-sequence-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
         </div>
     </div>
+    <!-- Error modal for invalid guesses -->
     <div class="game-modal" id="guess-error-modal">
         <div class="modal-container">
             <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
@@ -54,6 +79,7 @@
             <p class="modal-bottom-icon" id="modal-guess-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
         </div>
     </div>
+    <!-- Results modal for the end of the game -->
     <div class="game-modal" id="results-modal">
         <div class="modal-container">
             <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
