@@ -22,3 +22,9 @@ $("#modal-sequence-button").click (function() {
 $("#modal-guess-button").click (function() {
     $("#guess-error-modal").css("display", "none");
 })
+$("#modal-results-button-close").click (function() {
+    $("#results-modal").css("display", "none");
+})
+$("#modal-results-button-replay").click (function() {
+    $("#results-modal").css("display", "none");
+})
