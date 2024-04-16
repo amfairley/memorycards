@@ -268,7 +268,7 @@ $("#guess").click(function() {
 });
 
 // Reset button
-$("#reset").click(function() {
+$(".reset-game").click(function() {
     // Remove table container class for page styling
     $('#table-container').removeClass("table-container-style");
     // Reset the sequence length
