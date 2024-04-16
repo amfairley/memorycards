@@ -15,9 +15,10 @@ $(".nav-link-black").on( "mouseleave", function() {
 });
 
 // Modal Close Buttons //
-function hideModal(modal) {
-    modal.style.display = 'none';
-}
+
 $("#modal-sequence-button").click (function() {
     $("#sequence-error-modal").css("display", "none");
+})
+$("#modal-guess-button").click (function() {
+    $("#guess-error-modal").css("display", "none");
 })
