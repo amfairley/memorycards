@@ -628,7 +628,10 @@ tbody>tr:hover {
     #logo {
         font-size: 16pt;
     }
-
+    /* Move reset button left */
+    #reset-container {
+        padding-left: 7px;
+    }
     /* Put space between reset and game buttons */
     .spacer {
         display: block;
@@ -638,5 +641,12 @@ tbody>tr:hover {
     #footer-logo-content {
         font-size: 12pt;
         width: 100%;
+        text-align: center;
+    }
+    #footer-logo-name {
+        display: none;
+    }
+    #footer-logo {
+        width: 50%;
     }
 }
