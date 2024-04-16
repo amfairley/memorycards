@@ -296,7 +296,9 @@ tbody>tr:hover {
 
 /* --------------- MODALS ------------------- */
 
-#sequence-error-modal {
+#sequence-error-modal,
+#guess-error-modal,
+#results-modal {
     display: none;
 }
 /* Modal global styling */
@@ -312,6 +314,7 @@ tbody>tr:hover {
     border-radius: 8%;
     background-color: #F5F5F5;
     text-align: center;
+    z-index: 5;
 } 
 .modal-top-icon {
     font-size: 1.6rem;
@@ -329,7 +332,8 @@ tbody>tr:hover {
 
 /* Sequence error modal */
 #modal-sequence-header,
-#modal-guess-header {
+#modal-guess-header,
+#modal-results-header {
     color:#333A3F;
     text-align: center;
 }
@@ -354,6 +358,17 @@ tbody>tr:hover {
 }
 #modal-guess-icon {
     padding-top: 50px;
+}
+#modal-results-text {
+    color:#333A3F;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+#modal-results-icon {
+    padding-top: 55px;
 }
 
 
