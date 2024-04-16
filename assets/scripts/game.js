@@ -279,6 +279,8 @@ $(".reset-game").click(function() {
     if ($("#quantity").hasClass("hidden")) {
         $("#quantity").removeClass("hidden");
     }
+    // Reset the length select element
+    $("#quantity").prop('value', "");
       // Show the play button if hidden
     if (($("#play").hasClass("hidden"))) {
         $("#play").removeClass("hidden");
