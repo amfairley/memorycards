@@ -43,7 +43,19 @@ $(".submit-guess").click(function() {
         let finalScore = Math.floor(100* counter / sequenceLength);
         // An alert to show when the game is finished
         if ($(".submitted").length === sequenceLength) {
-            alert("Game over. You scored " + finalScore + "%");
+            $("#results-modal").css("display", "block");
+            $("#total-correct").html(counter);
+            $("#total-answers").html(sequenceLength);
+            $("#total-percent").html(finalScore);
+        }
+        if (finalScore >= 75) {
+            $("#modal-results-header").html("Amazing!");
+        } else if (finalScore >= 50) {
+            $("#modal-results-header").html("Good Job!");
+        } else if (finalScore >= 25) {
+            $("#modal-results-header").html("Nice try!");
+        } else {
+            $("#modal-results-header").html("Try again...");
         }
     } 
 });
