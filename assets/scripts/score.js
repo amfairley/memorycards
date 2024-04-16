@@ -6,6 +6,7 @@ $(".submit-guess").click(function() {
     // Check for valid input 
     if ((siblings[0].value === 'disabled') || (siblings[1].value === 'disabled')) {
         $("#guess-error-modal").css("display", "block");
+        $("#modal-background").css("display", "block");
     } else {
         // Takes value 1 + value 2 = submitted answer
         let submittedAnswerInitial = siblings[0].value +siblings[1].value;
@@ -44,6 +45,7 @@ $(".submit-guess").click(function() {
         // An alert to show when the game is finished
         if ($(".submitted").length === sequenceLength) {
             $("#results-modal").css("display", "block");
+            $("#modal-background").css("display", "block");
             $("#total-correct").html(counter);
             $("#total-answers").html(sequenceLength);
             $("#total-percent").html(finalScore);
