@@ -186,10 +186,10 @@ function tableBuild(n) {
         let select2 = document.createElement("select");
         select2.innerHTML =
             "<option value= 'disabled'>Suit</option>" +
-            "<option value='c'>Clubs</option>" +
-            "<option value='d'>Diamonds</option>" +
-            "<option value='h'>Hearts</option>" +
-            "<option value='s'>Spades</option>";
+            "<option value='c'>&#9827</option>" +
+            "<option value='d'>&#9830</option>" +
+            "<option value='h'>&#9829</option>" +
+            "<option value='s'>&#9824</option>";
         // append Select 2 to td2
         td2.append(select2);
         // Create column 2 submit button
