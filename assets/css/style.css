@@ -180,7 +180,7 @@ main {
 /* Sequence length display box */
 
 #length-box {
-    font-family: Cabin, Arial, Helvetica, sans-serif;
+    font-family: "Cabin", Arial, Helvetica, sans-serif;
     color: #CF1020;
     text-align: center;
     margin: auto;
@@ -220,7 +220,7 @@ main {
 }
 .game-button, 
 .submit-guess {
-    font-family: Cabin, Arial, Helvetica, sans-serif;
+    font-family: "Cabin", Arial, Helvetica, sans-serif;
     color:#333A3F;
     background-color: #F5F5F5;
     transition: 
@@ -238,7 +238,7 @@ main {
     opacity: 0.7;
 }
 #quantity {
-    font-family: Cabin, Arial, Helvetica, sans-serif;
+    font-family: "Cabin", Arial, Helvetica, sans-serif;
     width: 150px;
     text-align: center;
 }
@@ -401,6 +401,26 @@ tbody>tr:hover {
 #modal-contact-close {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* How to play modal */
+#how-to-play-modal {
+    color:#F5F5F5;
+    background-color: #333A3F;
+    height: 560px;
+}
+#modal-how-to-play-header {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    padding-top: 10px; 
+}
+#how-to-intro {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
+}
+#modal-how-to-play-text {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
 }
 
 /* --------------- FOOTER ------------------- */
