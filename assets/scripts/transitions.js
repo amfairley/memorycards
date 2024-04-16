@@ -6,7 +6,6 @@ $(".nav-link-red").on( "mouseenter", function() {
 $(".nav-link-red").on( "mouseleave", function() {
     $(this).removeClass("nav-link-red-hover").addClass("nav-link-red");
 });
-
 $(".nav-link-black").on( "mouseenter", function() {
     $(this).removeClass("nav-link-black").addClass("nav-link-black-hover");
 });
@@ -14,17 +13,25 @@ $(".nav-link-black").on( "mouseleave", function() {
     $(this).removeClass("nav-link-black-hover").addClass("nav-link-black");
 });
 
+// Open navigation bar modals
+$("#contact-modal-link").click(function() {
+    $("#contact-me-modal").css("display", "block");
+})
+
 // Modal Close Buttons //
 
-$("#modal-sequence-button").click (function() {
+$("#modal-sequence-button").click(function() {
     $("#sequence-error-modal").css("display", "none");
 })
-$("#modal-guess-button").click (function() {
+$("#modal-guess-button").click(function() {
     $("#guess-error-modal").css("display", "none");
 })
-$("#modal-results-button-close").click (function() {
+$("#modal-results-button-close").click(function() {
     $("#results-modal").css("display", "none");
 })
-$("#modal-results-button-replay").click (function() {
+$("#modal-results-button-replay").click(function() {
     $("#results-modal").css("display", "none");
+})
+$("#modal-contact-close").click(function() {
+    $("#contact-me-modal").css("display", "none");
 })
