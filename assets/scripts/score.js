@@ -5,7 +5,7 @@ $(".submit-guess").click(function() {
     let siblings = $(this).siblings();
     // Check for valid input 
     if ((siblings[0].value === 'disabled') || (siblings[1].value === 'disabled')) {
-        alert("Please select a valid card value and suit.");
+        $("#guess-error-modal").css("display", "block");
     } else {
         // Takes value 1 + value 2 = submitted answer
         let submittedAnswerInitial = siblings[0].value +siblings[1].value;
