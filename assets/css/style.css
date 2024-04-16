@@ -176,13 +176,13 @@ main {
 
 }
 
-
 /* Sequence length display box */
+
 #length-box {
     font-family: Cabin, Arial, Helvetica, sans-serif;
     color: #CF1020;
     text-align: center;
-    margin-left: 20px;
+    margin: auto;
     margin-bottom: 20px;
     width: 83px;
     height: 112px;
