@@ -372,9 +372,15 @@ tbody>tr:hover {
 }
 
 /* Contact me modal */
+#contact-me-modal::-webkit-scrollbar {
+    display: none;
+  }
 #contact-me-modal {
-    height: 90%;
+    height: auto;
+    max-height:95vh;
+    overflow: scroll;
     background-color: #CF1020;
+    display: none;
 }
 #modal-contact-header {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
@@ -394,6 +400,7 @@ tbody>tr:hover {
 }
 #modal-contact-close {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* --------------- FOOTER ------------------- */
@@ -571,6 +578,12 @@ tbody>tr:hover {
     }
     #footer-github {
         width: 40%;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    #contact-me-modal {
+        border-radius: 0;
     }
 }
 
