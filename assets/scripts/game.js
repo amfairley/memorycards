@@ -266,6 +266,8 @@ $("#guess").click(function() {
     tableBuild(sequenceLength);
     // Remove the card images from the screen
     $(".card-image").remove();
+    // Remove spacers on small screen
+    $(".spacer").css("display", "none");
 });
 
 // Reset button
