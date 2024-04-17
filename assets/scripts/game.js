@@ -214,7 +214,6 @@ function tableBuild(n) {
         tr1.append(td2);
         tr1.append(td3);
         tr1.append(td4);
-
         // Append table row to table
         document.getElementById("table-body").append(tr1);
     }
@@ -256,7 +255,6 @@ $("#play").click(function() {
         $("#sequence-error-modal").css("display", "block");
         $("#modal-background").css("display", "block");
     }
-
 });
 
 // Guess button
@@ -280,15 +278,14 @@ $(".reset-game").click(function() {
     // Reset the sequence length
     sequenceLength = undefined;
     // Show the length selector if hidden
-    // If length selector has class of hidden, remove hidden class
     if ($("#quantity").hasClass("hidden")) {
         $("#quantity").removeClass("hidden");
     }
-    // Hide the sequence length display
-    $("#length-box").css("display", "none");
     // Reset the length select element
     $("#quantity").prop('value', "");
-      // Show the play button if hidden
+    // Hide the sequence length display
+    $("#length-box").css("display", "none");
+    // Show the play button if hidden
     if (($("#play").hasClass("hidden"))) {
         $("#play").removeClass("hidden");
     }
@@ -312,8 +309,6 @@ $(".reset-game").click(function() {
     $("#guessing-script").each(function(){
         $(this).remove();
     });
-    // Reset the selected length display
-    $(".sequence-length-display").text('');
     // Add spacers back in for small screens
     if ($("#button-section").children().length === 3) {
         let x = "<br class='spacer'>";
