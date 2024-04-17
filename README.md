@@ -39,12 +39,11 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Information Architecture](#information-architecture)
         - [Interactive Experience](#interactive-experience)
     4. [Skeleton](#skeleton)
-        - [Preliminary Wireframes](#preliminary-wireframes)
+        - [Wireframes](#wireframes)
             - [Home page](#home-page)
             - [How to play](#how-to-play)
             - [Contact me](#contact-me)
             - [404](#404)
-        - [Changes to Wireframes](#changes-to-wireframes)
     5. [Surface](#surface)
         - [Colour Scheme](#colour-scheme)
         - [Typography](#typography)
@@ -194,13 +193,14 @@ Required pages and their main sections:
         - The user can select a number of cards to memorise.
         - The cards will then be shuffled.
         - The shuffled cards will be displayed to the user.
+        - The amount of shuffled cards will be displayed to the user.
         - The shuffled cards will then be hidden and the user must recreate the sequence.
+        - The user will be informed of their final score.
 - **How to play**: This page will meet the requirement for an explanation of gameplay.
     1. This page will have a hero image and title allowing the user to quickly gauge the intent of the page.
     2. This page will house the rules for the game.
     3. It must include how to play the game and what the functions of the buttons are.
-    4. It will also include some hints and/or tips to allow the user to increase their score.
-    5. There will be an image to break up the text and make it more appealing to the user.
+    4. There will be an image to break up the text and make it more appealing to the user.
 - **Contact me**: This page will meet the requirement for allowing players to contact the developer.
     1. There will be a page title indicating the purpose of the page.
     2. This page will have a text box and a submit button allowing messages to be sent to the developer's email address.
@@ -225,7 +225,7 @@ There will be no sub-category navigation links within each webpage.
 
 [Balsamiq Wireframes](https://balsamiq.com/) was used during this section to create wireframes.
 
-#### Preliminary Wireframes
+#### Wireframes
 
 ##### Home page
 - [Mobile](documentation/wireframes/home_mobile.png)
@@ -243,11 +243,6 @@ There will be no sub-category navigation links within each webpage.
 - [Mobile](documentation/wireframes/404_mobile.png)
 - [Tablet](documentation/wireframes/404_tablet.png)
 - [Desktop](documentation/wireframes/404_desktop.png)
-
-#### Changes to Wireframes
-
-**Change 1**
-**Change 2**
 
 ### Surface
 
