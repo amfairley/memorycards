@@ -312,7 +312,8 @@ Arimo is an innovative and refreshing sans serif typeface that improves on scree
 Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timelessness design of playing cards.The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Josefin Sans. These are all sans serif typefaces and act as sufficient backups.
 
 #### Images
-The icons used in the game were from [Font Awesome](https://fontawesome.com/) or UTF-8 icons with the codes retrieved from [UTF-8 icons](https://www.utf8icons.com/)
+The icons used in the game were from [Font Awesome](https://fontawesome.com/) or UTF-8 icons with the codes retrieved from [UTF-8 icons](https://www.utf8icons.com/). The images of the playing cards were taken from [Wikipedia](https://en.wikipedia.org/wiki/Standard_52-card_deck) and are not under any copywrite.
+
 ### Features
 
 #### The Game Area
