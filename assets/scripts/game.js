@@ -235,7 +235,8 @@ $("#play").click(function() {
     // Testing that the input is within limits
     if ((lengthCheck > 0) && (lengthCheck <= 52)) {
         sequenceLength = lengthCheck;
-        // Display the sequence length
+        // Display the sequence length box
+        $("#length-box").css("display", "block");
         $(".sequence-length-display").text(sequenceLength);
         // Hide the play button
         $(this).addClass("hidden");
@@ -249,6 +250,8 @@ $("#play").click(function() {
         makeDivs(sequenceLength);
         // Show the guess button
         $("#guess").removeClass("hidden");
+        // Hide spacers on small screen 
+        $(".spacer").remove();
     } else {
         $("#sequence-error-modal").css("display", "block");
         $("#modal-background").css("display", "block");
@@ -281,6 +284,8 @@ $(".reset-game").click(function() {
     if ($("#quantity").hasClass("hidden")) {
         $("#quantity").removeClass("hidden");
     }
+    // Hide the sequence length display
+    $("#length-box").css("display", "none");
     // Reset the length select element
     $("#quantity").prop('value', "");
       // Show the play button if hidden
@@ -309,6 +314,13 @@ $(".reset-game").click(function() {
     });
     // Reset the selected length display
     $(".sequence-length-display").text('');
+    // Add spacers back in for small screens
+    if ($("#button-section").children().length === 3) {
+        let x = "<br class='spacer'>";
+        $(x).insertAfter($("#quantity"));
+        $("#button-section").prepend(x);
+        $("#button-section").prepend(x);
+        }
 });
 
 
