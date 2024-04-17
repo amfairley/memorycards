@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="memory, card, game, playing card game, playing cards, brain, testing, fun, momorisation, memorization">
+    <meta name="description" content="Enjoy a fun card memory game!">
+    <meta name="author" content="Adam Michael Fairley">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Fontawesome Link -->
+    <script src="https://kit.fontawesome.com/e1041abfbd.js" crossorigin="anonymous"></script>
+
+    <!-- Personal CSS stylesheet link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <title>Memory Card Game</title>
+</head>
+<body>
+    <!-- Modals -->
+        <!-- Contact me modal -->
+        <div class="game-modal" id="contact-me-modal">
+            <div class="modal-container">
+                <h2 id="modal-contact-header">&#9824 &#9830 &#9827 &#9829 <br>Contact me!</h2>
+                <div id="modal-contact-text">
+                    <p id="contact-text">Contact me for more information, collaboration opportunites or to give feedback.</p>
+                </div>
+                <form id="contact-me-form">
+                    <label class="contact-label" for="name">Name</label>
+                    <br>
+                    <input type="text" name="from_name" id="name" placeholder="Derren Brown" required>
+                    <br>
+                    <label class="contact-label" for="email" id="email">Email</label>
+                    <br>
+                    <input type="email" name="email_id" id="email" placeholder="derren@brown.com" required>
+                    <br>
+                    <textarea id="contact-message" name="message" rows="10" cols="80" required></textarea>
+                    <br>
+                    <button class="game-button" id="modal-contact-submit">Submit</button>
+                </form>
+                <button class="game-button" id="modal-contact-close">Close</button>
+            </div>
+        </div>
+        <!-- How to play modal -->
+        <div class="game-modal" id="how-to-play-modal">
+            <div class="modal-container">
+                <h2 id="modal-how-to-play-header">How to play</h2>
+                <p id="how-to-intro">The goal is to memorise the order of shuffled playing cards. Can you memorise the whole deck?</p>
+                <div id="modal-how-to-play-text">
+                    <p>&#9824 Choose between 1 and 52 cards to memorise and enter this value into the box.</p>
+                    <p>&#9830 Click play now to lock in your choice and display the cards</p>
+                    <p>&#9827 When you have memorised the cards, click on guess to hide the cards</p>   
+                    <p>&#9829 Test your memory by filling out the order of the cards in the table. Submit your answers to see if you are right!</p>
+                </div>
+                <button class="game-button" id="modal-how-to-play-button">Close</button>
+            </div>
+        </div>
+    <!-- Navigation bar -->
+    <header class="container-fluid row g-0" id="header-section">
+        <!-- Logo -->
+        <div class="header-item" id="header-logo">
+            <a href="index.html" aria-label = "Memory card game site logo and link to homepage" id="logo-link">
+                <h1 id="logo">
+                    <i class="fa-solid fa-heart brand-icon"></i>
+                    <i class="fa-solid fa-diamond brand-icon"></i>
+                    <span>Memory Card Game</span>
+                </h1>
+            </a>
+        </div>
+        <!-- Navbar -->
+        <div class="header-item" id="nav-links-div">
+            <nav id="nav">
+                <ul class = "row g-0 list-inline upper-case" id="nav-list">
+                    <!-- Navbar list items -->
+                    <li class = "nav-list-item">
+                        <div aria-label ="Go to the how to play page" class="nav-link-black" id="how-to-play-modal-link">
+                            <p class="nav-icon-top"><i class="fa-regular fa-circle-question"></i></p>
+                            <p class="nav-item-name" id="how-to-play-text">
+                                How to play
+                            </p>
+                            <p class="nav-icon-bottom" id="nav-icon-bottom-how"><i class="fa-regular fa-circle-question"></i></p>
+                        </div>
+                    </li>
+                    <li class = "nav-list-item">
+                        <div aria-label ="Open the contact me modal" class="nav-link-red" id="contact-modal-link">
+                            <p class = "nav-icon-top"><i class="fa-regular fa-address-book"></i></p>
+                            <p class="nav-item-name" id="contact-me-text">
+                                Contact me
+                            </p>
+                            <p class="nav-icon-bottom" id="nav-icon-bottom-contact"><i class="fa-regular fa-address-book"></i></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-404">
+        <div id="display-404">
+            <p id="top-404">404</p>
+            <h2 id="header-404">Oops!</h2>
+            <p id="message-404">You've taken a wrong turn! </p>
+            <a href="index.html" id="link-404">Come back and join us on the game page.</a>
+            <p id="bottom-404">404</p>
+        </div> 
+    </main>
+
+        <!-- Footer -->
+    <footer id="footer" class="container-fluid row g-0">
+        <!-- Site Logo -->
+        <div id="footer-logo">
+            <a href="index.html" aria-label="Memory card game site logo and link to homepage" id="logo-link-footer">
+                <h2 id="footer-logo-content">
+                    <i class="fa-solid fa-heart footer-logo-icon"></i>
+                    <i class="fa-solid fa-diamond footer-logo-icon"></i>
+                    <span id="footer-logo-name">Memory Card Game</span>
+                </h2>
+            </a>
+        </div>
+        <div id = "footer-github">
+            <a href="https://github.com/amfairley" target="_blank" rel="noopener" aria-label="Go to developer's github page" class="nav-link-black" id="github-link">
+                <p id="github-icon-top"><i class="fa-brands fa-github"></i></p>
+                <p id="github-text">GitHub</p>
+                <p id="github-icon-bottom"><i class="fa-brands fa-github"></i></p>
+            </a>
+        </div>
+    </footer>
+
+        <!-- Bootstrap javascript link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- emailjs SDK link-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- initialise emailjs-->
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "5Il-1n7VCJG_mw70w",
+            });
+        })();
+    </script>
+    <!-- Link emailjs.js -->
+    <script src="assets/scripts/emailjs.js"></script>
+
+    <!-- Game JavaScript link-->
+    <script src="assets/scripts/game.js"></script>
+
+    <!-- Transitions JavaScript link -->
+    <script src="assets/scripts/transitions.js"></script>
+
+</body>
