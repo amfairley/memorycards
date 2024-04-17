@@ -44,6 +44,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
             - [How to play](#how-to-play)
             - [Contact me](#contact-me)
             - [404](#404)
+        - [Changes during development](#changes-during-development)
     5. [Surface](#surface)
         - [Colour Scheme](#colour-scheme)
         - [Typography](#typography)
@@ -244,6 +245,13 @@ There will be no sub-category navigation links within each webpage.
 - [Tablet](documentation/wireframes/404_tablet.png)
 - [Desktop](documentation/wireframes/404_desktop.png)
 
+#### Changes during development
+The decision was taken to reduce the website to a single page, replacing the how-to and contact-me pages with modals instead. This resulted in the following changes:
+- Change to the information architecture: no internal links are required, resulting in a 1-page website providing the full proposed value to the user and developer on a single intuitive page
+- The nav bar no longer requires a home section and as it will be a 1-page website any styling to identify the current page to the user will not be required
+- The how-to-play and contact-me pages are replaced with modals providing the same intended value as the separate pages would have had
+- The how-to-play modal no longer requires a hero image nor an image to break up the text, as the design of the modal will make it aesthetically pleasing to the user
+
 ### Surface
 
 #### Colour Scheme
@@ -304,8 +312,7 @@ Arimo is an innovative and refreshing sans serif typeface that improves on scree
 Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timelessness design of playing cards.The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Josefin Sans. These are all sans serif typefaces and act as sufficient backups.
 
 #### Images
-All images used were optimised using [adobe photoshop](https://www.adobe.com/uk/) and converted to .webp format for faster loading times using [cloud convert](https://cloudconvert.com/png-to-webp).
-
+The icons used in the game were from [Font Awesome](https://fontawesome.com/) or UTF-8 icons with the codes retrieved from [UTF-8 icons](https://www.utf8icons.com/)
 ### Features
 
 #### The Game Area
