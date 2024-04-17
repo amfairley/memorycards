@@ -129,7 +129,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
     - Accessibility
 
 #### Viability and Feasibility
-Followed is an analysis of the above value and user and business needs ranked from 1 (least important/viable) to 5 (most important/viable):
+Followed is an analysis of the above user and business needs ranked from 1 (least important/viable) to 5 (most important/viable):
 |   Task |   Importance | Viability/Feasibility |
 | --------- | ------------- | ----------------- |
 | Card Memory Game | 5 | 5 |
@@ -139,7 +139,13 @@ Followed is an analysis of the above value and user and business needs ranked fr
 | 404 page | 4 | 4 |
 | How to play | 3 | 4 |
 | Link to developer GitHub | 2 | 5 |
+| A reset button | 3 | 3 |
+| Knowing if individual answers are correct | 3 | 3 |
+| Knowing the final score | 5 | 5 |
+| Preventing the user entering invalid values | 5 | 3 |
+| A way to tune the difficult of the game | 3 | 5 |
 
+Based on the above assessment, all the tasks look to be implementable.
 
 ### Scope
 
