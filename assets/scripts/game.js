@@ -236,7 +236,7 @@ $("#play").click(function() {
     if ((lengthCheck > 0) && (lengthCheck <= 52)) {
         sequenceLength = lengthCheck;
         // Display the sequence length
-        $("#sequence-length-display").text(sequenceLength);
+        $(".sequence-length-display").text(sequenceLength);
         // Hide the play button
         $(this).addClass("hidden");
         // Hide the choosing length select
@@ -308,7 +308,7 @@ $(".reset-game").click(function() {
         $(this).remove();
     });
     // Reset the selected length display
-    $("#sequence-length-display").text('');
+    $(".sequence-length-display").text('');
 });
 
 
