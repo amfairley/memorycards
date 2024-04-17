@@ -649,4 +649,8 @@ tbody>tr:hover {
     #footer-logo {
         width: 50%;
     }
+    #github-link {
+        margin: auto;
+        width: 100%;
+    }
 }
