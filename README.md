@@ -8,9 +8,9 @@
 
 This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. t provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
 
-![A mock-up image of the website]()
+![A mock-up image of the website](/documentation/site-mock-up.png)
 
-[Click here to access the site]()
+[Click here to access the site](https://amfairley.github.io/memorycards/)
 
 ---
 
@@ -125,7 +125,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
     - Accessibility
 
 #### Viability and Feasibility
-Followed is an analysis of the above value and user and business needs:
+Followed is an analysis of the above value and user and business needs ranked from 1 (least important/viable) to 5 (most important/viable):
 |   Task |   Importance | Viability/Feasibility |
 | --------- | ------------- | ----------------- |
 | Card Memory Game | 5 | 5 |
@@ -176,7 +176,6 @@ Each page will consist of:
 - **Navigation bar**: Meets the navigation requirement.
 - **Main section**: Meeting the page-specific requirements.
 - **Footer**: Meeting the requirement for a link to the developer's GitHub profile.
-- **Ratio sizes of elements**: Key sections will maintain the same ratio of sizes aceross each page to create uniformity.
 
 Required pages and their main sections:
 - **Homepage**: This page will meet the requirement for an interactive game.
