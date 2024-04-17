@@ -54,6 +54,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Browser tab](#browser-tab)
         - [Website header](#website-header)
         - [How to play](#how-to-play-1)
+        - [Contact me](#contact-me-1)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -363,6 +364,21 @@ For an in depth description of the functionality of the game area, please see th
 - All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
 - User stories covered: 3.
 
+#### Contact Me
+
+<details><summary>Contact Me</summary>
+<img src="/documentation/features/contact-me.png">
+</details>
+
+- Clicking the contact me link in the header opens the contact me modal.
+- It is bordered in the shape of a playing card to continue the theme of the game.
+- It has the inverted colour scheme to the contact me link, relating them in the user's mind.
+- It provides the user with a brief description on why they would contact the developer.
+- It allows the user to enter their name, email and a message to the developer. All fields are required for submission.
+- The form utilises the [emailjs](https://www.emailjs.com/) API to send the message directly to the email inbox of the developer.
+- It has a close button that hides the modal and modal background.
+- All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
+- User stories covered: 7.
 
 #### Website Footer
 
