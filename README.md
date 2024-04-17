@@ -52,6 +52,8 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
     6. [Features](#features)
         - [The Game Area](#the-game-area)
         - [Browser tab](#browser-tab)
+        - [Website header](#website-header)
+        - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks and Tools](#frameworks-and-tools)
@@ -321,19 +323,57 @@ For an in depth description of the functionality of the game area, please see th
 #### Browser tab:
 
 <details><summary>Browser Tab</summary>
-<img src="">
+<img src="/documentation/features/browser-tab.png">
 </details>
 
-- Explain favicon
-- Explain title change per page
-- User stories covered: 
+- A red diamond favicon is used and it appears in the browser tab.
+- The website title appears in the browser tab.
+- User stories covered: 1.
 
-Others: Logo and navigation bar, any hover effect
-Footer
+#### Website Header
+
+<details><summary>Website Header</summary>
+<img src="/documentation/features/website-header.png">
+<img src="/documentation/features/website-header-mobile.png">
+</details>
+
+- The website logo is clear and provides a link to the current page, refreshing the page when clicked.
+- The website logo has the only two font awesome icons of playing card suits that are available for free, indicating the nature of the website to the user. 
+- There are clear links to the how-to-play and contact-me modals that are responsive to user interaction and styled as black and red playing cards to fit the theme of the page. The cursor changes when hovered to indicate it can be clicked. The colour scheme also inverts implying functionality.
+- Appropriate font awesome icons are used to indicate the purpose of the links at a glance.
+- On smaller screens the link cards are rotated and centred beneath the site logo.
+<br> 
+<details><summary>Hovered navigation bar links</summary>
+<img src="/documentation/features/hover-how-to.png"><img src="/documentation/features/hover-contact.png">
+</details>
+- User stories covered: 1, 2, 3, 7.
+
+#### Website Footer
+
+<details><summary>Website Footer</summary>
+<img src="/documentation/features/website-footer.png">
+<img src="/documentation/features/website-footer-mobile.png">
+</details>
+
+- The footer displays the website logo again and clicking it will refresh the page.
+- A link to the developer GitHub profile is provided, styled as a playing card with the GitHub logo as the card values. It has an inverse hover effect when hovered indicating the functionality and the website opens in a new tab and rel is set to noopener preventing any malicious behaviour.
+- On smaller screens the site logo is replaced by just the font awesome icons and the logo and link are centred.
+<details><summary>GitHub hover</summary>
+<img src="/documentation/features/hover-github.png">
+</details>
+- User stories covered: 1, 7, 11
+
+Header on smaller screens
 Homepage
 Contact me
-Hero images
+How to
 404
+Buttons
+Sequence length and error modal
+Cards
+Guessing table and error modal
+Results modal
+
 
 ## Technologies Used
 
