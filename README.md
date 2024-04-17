@@ -157,13 +157,13 @@ A mobile-first approach is taken to ensure optimal performance on mobile devices
 - It will include the site name and logo, so that the website is easily identifiable.
 - It will have links to the homepage, how to play page, and contact me page.
 - The links will be responsive to a mouse hover and click to provide feedback to the user.
-- The current page will have it's link identified in some way to indicate the current page.
+- The current page will have its link identified in some way to indicate the current page.
 
 ##### Section: Footer
 - The footer section will be present on every page to create a cohesive structure across the website.
 - It will include the site name and logo, so that the website is easily identifiable.
 - It will include external links such as a link to the developer's GitHub profile.
-- External links will be responsive to a mouse hove and click to provide feedback to the user.
+- External links will be responsive to a mouse hover and click to provide feedback to the user.
 - External links will open in a new tab to provide good user experience.
 
 ##### Webpage: Homepage
