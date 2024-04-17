@@ -247,18 +247,46 @@ There will be no sub-category navigation links within each webpage.
 ### Surface
 
 #### Colour Scheme
-The colour scheme for this website will match the colour scheme of a deck of cards with a white, red, and black colour pallette. To enhance user experience, an off-black with hints of blue and off-white were used so as to reduce eye strain. These work well with the chosen hue of red.
+The colour scheme for this website will match the colour scheme of a deck of cards with a white, red, and black colour palette. To enhance user experience, an off-black with hints of blue and off-white were used to reduce eye strain. These work well with the chosen hue of red.
 
 ![Colour Scheme](/documentation/colour_scheme.png)
 
 As can be seen the chosen colours provide adequate contrast in line with the accessibility criteria for the webpage. The chosen colours are:
-- **Off-Black #333A3F**: Used for the font and icon colours of the black card navigation links. On hover, the colour scheme flips so that it is used instead for the card background. Also used for the site logo words in the header and footer.
-- **Off-White #F5F5F5**: Used for background of the header and footer. Also used for the background of the navigation link cards. On hover, the colour scheme is flipped so that it is used for the icon and font colour instead.
-- **Lava #CF1020**: Used for the font and icon colours of the red card navigation links. On hover, the colour scheme flips so that it is used instead for the card background. Also used for the site logo icons in the header and footer.
+- **Off-Black #333A3F**
+    - Font and icon colours of the black card navigation links (how-to and GitHub)
+    - On hover, the black card colour scheme flips so that it is used instead for the card background
+    - Similarly used for the background on the how-to-play modal
+    - Site logo words in the header and footer
+    - Text in the game buttons
+    - Hover effect for guessing table rows
+    - Text on the results and error modals
+    - Text for the 404 error 
+- **Off-White #F5F5F5**: 
+    - The background of the header, footer, and website
+    - The background for the how-to-play, contact-me, and GitHub link cards 
+    - On hover, used for the font colour of the above instead
+    - Font colour in the how-to-play modal
+    - Font colour in the contact-me modal
+    - Background for the error modals
+    - Background colour for the buttons
+    - Font colour for the hovered buttons
+    - Font colour for the guessing table header
+    - Font colour for the guessing table rows when hovered
+    - Background for the 404 alert card
+- **Lava #CF1020**: 
+    - Icon font colour for the header and footer site logos
+    - Text colour for the contact-me link
+    - Background colour for the contact-me link on hover
+    - Background colour to the contact-me modal
+    - Background to site buttons on hover
+    - Text colour of the sequence length display
+    - Fill colour for the guessing table header 
+    - Icon font colour for the results and error modals
 
 Extra colours:
--   Black (#000000): Used for the card edges in the navigation bar and sequence length display.
--   Colour2: what its used for
+-   Black (#000000): 
+    - Card edges in the navigation bar and sequence length display
+    - Borders for the playing cards
 
 #### Typography
 I researched clear legible typefaces that will enhance the user experience of the site and picked one for the navigation bar and titles, one for the button and table text, and one for blocks of text. They were used in this regard across the website to acheive a consistent brand.
