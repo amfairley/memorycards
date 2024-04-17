@@ -53,6 +53,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [The Game Area](#the-game-area)
         - [Browser tab](#browser-tab)
         - [Website header](#website-header)
+        - [How to play](#how-to-play-1)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -348,6 +349,21 @@ For an in depth description of the functionality of the game area, please see th
 </details>
 - User stories covered: 1, 2, 3, 7.
 
+#### How To Play
+
+<details><summary>How To Play</summary>
+<img src="/documentation/features/how-to-play.png">
+</details>
+
+- Clicking the how to play link in the header opens up the how to play modal.
+- It is bordered in the shape of a playing card to continue the theme of the game.
+- It has the inverted colour scheme to the how to play link, relating them in the user's mind.
+- It provides the user with information on how to play the game in a concise and fun way.
+- It has a close button that hides the modal and modal background.
+- All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
+- User stories covered: 3.
+
+
 #### Website Footer
 
 <details><summary>Website Footer</summary>
@@ -361,10 +377,10 @@ For an in depth description of the functionality of the game area, please see th
 <details><summary>GitHub hover</summary>
 <img src="/documentation/features/hover-github.png">
 </details>
-- User stories covered: 1, 7, 11
+- User stories covered: 1, 7, 11.
 
-Header on smaller screens
-Homepage
+
+
 Contact me
 How to
 404
