@@ -194,6 +194,7 @@ main {
     border: 2px solid black;
     border-radius: 8%;
     background-color: #F5F5F5;
+    display: none;
 }
 #length-box-icon-top,
 #length-box-icon-bottom,
