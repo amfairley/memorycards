@@ -57,6 +57,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Contact me](#contact-me-1)
         - [Sequence select](#sequence-select)
         - [Sequence select error modal](#sequence-selector-error-modal)
+        - [Play now button](#play-now-button)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -406,6 +407,22 @@ For an in depth description of the functionality of the game area, please see th
 - There is an OK button to accept the message and close the modal and modal background.
 - All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
 - User stories covered: 9, 10.
+
+#### Play Now Button
+
+<details><summary>Play Now Button</summary>
+<img src="/documentation/features/button-play-now.png"><img src="/documentation/features/button-play-now-hover.png">
+</details>
+
+- The play now button changes colour scheme with a slight transitional period when hovered to indicate functionality to the user in a pleasing way.
+- Pressing this button with an invalid value entered into the sequence selector will show the sequence selector error modal.
+- Pressing the button with a valid value in the sequence selector will:
+    - Hide the sequence select preventing the user from changing the submitted value.
+    - Hide the play button preventing multiple clicks.
+    - Display the selected sequence length. 
+    - Show the guess button to allow the user to advance the game.
+    - Show the chosen amount of playing cards from a shuffled deck in the game area.
+- User stories covered: 6, 9, 12.
 
 #### Website Footer
 
