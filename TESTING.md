@@ -168,6 +168,77 @@ The website was tested on the following browsers:
 
 ## Manual Testing
 
+| Feature | Action | Expected result | Passed | Comments |
+|-----|-----|-----|-----|-----|
+| Navigation bar | | | | |
+| Navigation bar | Reduce screen width below 767 pixels | The logo will resize smaller, be stacked above the icons and the icons will rotate and centre themselves | Y | N/A |
+| Site logo | Click the site logo | Page will be refreshed | Y | N/A |
+| How to play icon | Hover over | Colours will invert and mouse will become pointer | Y | N/A |
+| How to play icon | Click | How to play modal will appear | Y | N/A |
+| Modal background | Try to click background buttons | Nothing | Y | N/A |
+| How to play modal close button | Hover | Background will change to lava and text to off white (this is the button hover effect)| Y | N/A |
+| How to play modal close button | Click | How to play modal and modal background will close | Y | N/A |
+| Contact me icon | Hover over | Colours will invert and the mouse will become a pointer | Y | N/A |
+| Contact me icon | Click | The contact me form will appear in a modal | Y | N/A |
+| Contact me form submit button | Hover | The button hover effect will occur | Y | N/A |
+| Contact me form | Submit an empty form | The user will be asked to fill in the name field | Y | N/A |
+| Contact me form | Fill the name and submit | The user will be asked to provide an email address | Y | N/A |
+| Contact me form | Fill the name and invalid email and submit | The user will be asked to provide a valid email containing the @ symbol | Y | N/A |
+| Contact me form | Fill the name and valid email and submit | The user will be asked to provide a message | Y | N/A |
+| Contact me form | Fill the form and submit | The user will see an alert thanking them for their message and the form will be reset | Y | N/A |
+| Contact me close button | Hover | The button hover effect will occur | Y | N/A |
+| Contact me close button | Click | The contact me modal and background will close | Y | N/A |
+| Game elements | | | | |
+| Reset button | Hover | The button hover effect will occur | Y | N/A |
+| Reset button | Click at start | Nothing | Y | N/A |
+| Reset button | Click after selecting a sequence length, on the guessing stage, after submitting some guesses and after submitting all guesses | The game area is reset | Y | N/A |
+| Play now button | Hover | The button hover effect will occur | Y | N/A |
+| Play now button | Click with an invalid sequence length (0, negative, "e") | An error modal will appear explaining the error and letting the user know to use a valid number | Y | N/A |
+| Sequence length error modal OK button | Hover | The button hover effect will occur | Y | N/A |
+| Sequence length error modal OK button | Click | The sequence length error modal and background will close | Y | N/A |
+| Play now button | Click with a valid sequence length | The sequence length selector will disappear | Y | N/A |
+| Play now button | Click with a valid sequence length | The play now button will disappear | Y | N/A |
+| Play now button | Click with a valid sequence length | The sequence length display will appear with the sequence length in it | Y | N/A |
+| Play now button | Click with a valid sequence length | The correct amount of shuffled cards will appear on the screen | Y | N/A |
+| Card area | Have more than 6 cards and resize the page | 2 cards per row on small screens, 3 cards per row on medium screens and 6 cards per row on large screens | Y | N/A |
+| Guess button | Hover | The button hover effect will occur | Y | N/A |
+| Guess button | Click | The cards will be removed from the game area | Y | N/A |
+| Guess button | Click | The guess button will be removed from the game area | Y | N/A |
+| Guess button | Click | The guessing table will appear with the correct number of rows | Y | N/A |
+| Guessing table | Hover over a row | The background and text colours will invert | Y | N/A |
+| Guessing table submit button | Click without selecting a suit or card number | A guessing error modal will appear informing the user of the mistake and informing them to select valid inputs | Y | N/A |
+| Guessing table submit button | Click without selecting a suit | A guessing error modal will appear informing the user of the mistake and informing them to select valid inputs | Y | N/A |
+| Guessing table submit button | Click without selecting a card number | A guessing error modal will appear informing the user of the mistake and informing them to select valid inputs | Y | N/A |
+| Guessing error modal OK button | Hover | The button hover effect will occur | Y | N/A |
+| Guessing error modal OK button | Click | The error modal and modal background will close | Y | N/A |
+| Guessing table submit button | Submit a valid guess | That rows select elements will be disabled | Y | N/A |
+| Guessing table submit button | Submit a valid guess | That rows submit button will be disabled and colours inverted | Y | N/A |
+| Guessing table submit button | Submit a valid guess | That correct answer will appear in the answer column | Y | N/A |
+| Guessing table submit button | Submit a valid correct guess | The Correct? column will show a Y | Y | N/A |
+| Guessing table submit button | Submit a valid incorrect guess | The Correct? column will show a N | Y | N/A |
+| Guessing table submit button | Submit all valid guesses | The results modal will appear | Y | N/A |
+| Results modal | Submit all valid guesses | The results modal will show the score that the user achieved | Y | N/A |
+| Results modal close button | Hover | The button hover effect will occur | Y | N/A |
+| Results modal close button | Click | The results modal and the modal background will close allowing the user to review the guessing table | Y | N/A |
+| Results modal replay button | Hover | The button hover effect will occur | Y | N/A |
+| Results modal replay button | Click | The modal will close and the game area will be reset | Y | N/A |
+| Footer | | | | |
+| Footer | Resize the page width below 767px | The site logo will move to the left | Y | N/A |
+| Footer | Resize the page width below 462px | The site logo will be replaced with just the icons | Y | N/A |
+| Site logo | Click | The site page will refresh | Y | N/A |
+| GitHub icon | Hover | The font and background colours will invert | Y | N/A |
+| GitHub icon | Click | The developers GitHub profile will load in a new tab | Y | N/A |
+| 404 page | Head to a website page that does not exist | The browser will be redirected to the 404 page | Y | N/A |
+| 404 link back to homepage | Hover | Text colour changes to lava | Y | N/A |
+| 404 link back to homepage | Click | The browser is redirected back to the game page | Y | N/A |
+
+
+
+
+
+
+
+
 ## Manual Testing: JavaScript
 
 ### shuffle() Function:
