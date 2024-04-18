@@ -59,6 +59,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Sequence select error modal](#sequence-selector-error-modal)
         - [Play now button](#play-now-button)
         - [Sequence length display](#sequence-length-display)
+        - [Playing card display](#playing-card-display)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -118,6 +119,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 10. As a Frequent Visitor, I want to be able to tune the difficulty of the game.
 11. As a Frequent Visitor, I want to be able to see other work from the developer.
 12. As a Frequent Visitor, I want to be able to see my chosen sequence length after the game starts.
+13. As a Frequent Visitor, I want to be able to play the game on different devices.
 
 ## Five Planes of UX
 
@@ -435,6 +437,26 @@ For an in depth description of the functionality of the game area, please see th
 - It is designed in the shape of a card in keeping with the theme of the page and shows the sequence length as the card value.
 - Its purpose is to be an easy reference to the user of what value that they have selected.
 - User stories covered: 12.
+
+#### Playing Card Display
+
+<details><summary>Playing Card Display: Mobile</summary>
+<img src="/documentation/features/card-display-mobile.png">
+</details>
+
+<details><summary>Playing Card Display: Tablet</summary>
+<img src="/documentation/features/card-display-tablet.png">
+</details>
+
+<details><summary>Playing Card Display: Desktop</summary>
+<img src="/documentation/features/card-display-desktop.png">
+</details>
+
+- The shuffled cards are displayed in the game area, neatly separated with gaps in between for a more pleasing appearance.
+- They are bordered with a thick rounded border to highlight them against the background.
+- If there are too many cards to show on the page, content hinting is utilised to indicate to the user that they need to scroll down to see the rest of the cards.
+- Bootstrap 5 classes are used to change the number of cards in each row depending on the screen size, with 6 per row for large screens, 3 per row for medium screens and 2 per row for smaller screens, achieving good user experience across all device sizes.
+- User stories covered: 13.
 
 #### Website Footer
 
