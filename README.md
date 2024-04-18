@@ -64,6 +64,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Guessing table](#guessing-table)
         - [Guessing table error modal](#guessing-table-error-modal)
         - [Results modal](#results-modal)
+        - [Reset button](#reset-button)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -527,6 +528,14 @@ For an in depth description of the functionality of the game area, please see th
 - User stories covered: 5, 8.
 
 #### Reset Button
+
+<details><summary>Reset Game Button</summary>
+<img src="/documentation/features/reset-button.png"><img src="/documentation/features/reset-button-hover.png">
+</details>
+
+- The reset button allows the user to start a new game at any point.
+- It features the same hover animation as other buttons in the game.
+- User stories covered: 8.
 
 #### Website Footer
 
