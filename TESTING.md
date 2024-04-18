@@ -27,6 +27,9 @@
 ## Javascript Validation
 
 ## Accessibility
+The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/). It displayed no erros 6 alerts. The reasons that these alerts were deemed acceptible are:
+- **Alert 1 Redundant link:** This occurs because the site logo in the header and the site logo in the footer both link back to the game page. It is my determination that this is not redundant and is part of the functionality of the site, therefore this alert may be ignored.
+- **Alerts 2-6 Justified Text:** These errors appeared because the game buttons are set to text-align: justify. This is acceptible in this instance because the text appears in small buttons so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
 
 ## Performance
 
