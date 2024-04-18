@@ -568,41 +568,40 @@ For an in depth description of the functionality of the game area, please see th
 1. [Bootstrap v5.3.3](https://getbootstrap.com/)
 	* CSS library used for its grid system and easier styling and responsiveness 
 2. [jQuery](https://jquery.com/)
-    * JavaScript library used for more concise event listeners
-3. [Git](https://git-scm.com/)
-	* Used for version control
-4. [Github](https://github.com/)
-	* Used to store the code
-5. [Balsamiq Wireframes](https://balsamiq.com/)
-    * Used to create wireframes for the project
-6. [Multi Mock-up](https://techsini.com/multi-mockup/index.php)
-    * Used to create mock-up images of the site for README.md
-7. [Google Fonts](https://fonts.google.com/)
-    * Used to supply fonts for the website
-8. [Font Awesome](https://fontawesome.com/)
-    * Used throughout for decorative icons
-9. [UTF-8 characters](https://www.utf8icons.com/)
-    * Used for the playing card suit UTF-8 html codes
-10. [Favicon](https://favicon.io/)
-	* Used to supply the image for the browser tab
-11. [emailJS](https://www.emailjs.com/)
-    * API used to send the contents of the contact me form to the developers email inbox
-12. [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
-    * Used for testing the webpage
-13. [W3C HTML Validation Service](https://validator.w3.org/)
-    * Used to validate the HTML code
-14. [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-    * Used to validate the CSS code
-15. [JSHint](https://jshint.com/)
-    * Used to validate JavaScript code
-16. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
-    * Used to validate the accessibility of the web page
-
+    * JavaScript library used for concise ways to grab elements from the DOM
 
 ### Tools
 1. [Visual Studio Code](https://code.visualstudio.com/)
     * This is my IDE of choice for writing my HTML, CSS, and JavaScript code for this project
-2. 
+2. [Git](https://git-scm.com/)
+	* Used for version control
+3. [Github](https://github.com/)
+	* Used to store the code
+4. [Balsamiq Wireframes](https://balsamiq.com/)
+    * Used to create wireframes for the project
+5. [Multi Mock-up](https://techsini.com/multi-mockup/index.php)
+    * Used to create mock-up images of the site for README.md
+6. [Google Fonts](https://fonts.google.com/)
+    * Used to supply fonts for the website
+7. [Font Awesome](https://fontawesome.com/)
+    * Used throughout for decorative icons
+8. [UTF-8 characters](https://www.utf8icons.com/)
+    * Used for the playing card suit UTF-8 html codes
+9. [Favicon](https://favicon.io/)
+	* Used to supply the image for the browser tab
+10. [emailJS](https://www.emailjs.com/)
+    * API used to send the contents of the contact me form to the developers email inbox
+11. [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+    * Used for testing the webpage
+12. [W3C HTML Validation Service](https://validator.w3.org/)
+    * Used to validate the HTML code
+13. [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    * Used to validate the CSS code
+14. [JSHint](https://jshint.com/)
+    * Used to validate JavaScript code
+15. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+    * Used to validate the accessibility of the web page
+
 ## Testing
 For my testing, please see the separate [testing.md](/testing.md) file.
 
