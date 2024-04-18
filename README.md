@@ -603,7 +603,7 @@ For an in depth description of the functionality of the game area, please see th
     * Used to validate the accessibility of the web page
 
 ## Testing
-For my testing, please see the separate [testing.md](/testing.md) file.
+For my testing, please see the separate [testing.md](/TESTING.md) file.
 
 ## Bugs
 **Bug 1:**
