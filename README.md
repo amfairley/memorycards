@@ -68,7 +68,8 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
-    2. [Frameworks and Tools](#frameworks-and-tools)
+    2. [Frameworks](#frameworks)
+    3. [Tools](#tools)
 5. [Testing](#testing)
 6. [Bugs](#bugs)
     1. [Known Bugs](#known-bugs)
@@ -552,47 +553,56 @@ For an in depth description of the functionality of the game area, please see th
 </details>
 - User stories covered: 1, 7, 11.
 
-
-
-
-404
-Buttons
-Sequence length and error modal
-Cards
-Guessing table and error modal
-Results modal
-
-
 ## Technologies Used
 
 ### Languages
 
 - [HTML](https://en.wikipedia.org/wiki/HTML)
+    - Used for the structure of the index.html page
 - [CSS](https://en.wikipedia.org/wiki/CSS)
+    - Used for styling the elements on the webpage
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - Used for game functionality, hover transitions, and modal operations
 
-### Frameworks and Tools
+### Frameworks
+1. [Bootstrap v5.3.3](https://getbootstrap.com/)
+	* CSS library used for its grid system and easier styling and responsiveness 
+2. [jQuery](https://jquery.com/)
+    * JavaScript library used for more concise event listeners
+3. [Git](https://git-scm.com/)
+	* Used for version control
+4. [Github](https://github.com/)
+	* Used to store the code
+5. [Balsamiq Wireframes](https://balsamiq.com/)
+    * Used to create wireframes for the project
+6. [Multi Mock-up](https://techsini.com/multi-mockup/index.php)
+    * Used to create mock-up images of the site for README.md
+7. [Google Fonts](https://fonts.google.com/)
+    * Used to supply fonts for the website
+8. [Font Awesome](https://fontawesome.com/)
+    * Used throughout for decorative icons
+9. [UTF-8 characters](https://www.utf8icons.com/)
+    * Used for the playing card suit UTF-8 html codes
+10. [Favicon](https://favicon.io/)
+	* Used to supply the image for the browser tab
+11. [emailJS](https://www.emailjs.com/)
+    * API used to send the contents of the contact me form to the developers email inbox
+12. [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+    * Used for testing the webpage
+13. [W3C HTML Validation Service](https://validator.w3.org/)
+    * Used to validate the HTML code
+14. [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    * Used to validate the CSS code
+15. [JSHint](https://jshint.com/)
+    * Used to validate JavaScript code
+16. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+    * Used to validate the accessibility of the web page
+
+
+### Tools
 1. [Visual Studio Code](https://code.visualstudio.com/)
     * This is my IDE of choice for writing my HTML, CSS, and JavaScript code for this project
-2. [Git](https://git-scm.com/)
-	* Used for version control
-3. [Github](https://github.com/)
-	* Used to store the code
-4. [Balsamiq Wireframes](https://balsamiq.com/)
-    * Used to create wireframes for the project
-5. [Bootstrap v5.3.3](https://getbootstrap.com/)
-	* CSS library used for its grid system and easier styling and responsiveness 
-6. [Font Awesome](https://fontawesome.com/)
-    * Used throughout for decorative icons
-7. [Favicon](https://favicon.io/)
-	* Used to supply the image for the browser tab
-8. [jQuery](https://jquery.com/)
-    * JavaScript library used for more concise event listeners
-9. [JSHint](https://jshint.com/)
-    * Used to validate JavaScript code
-10. [Google Fonts](https://fonts.google.com/)
-    * Used to supply fonts for the website
-
+2. 
 ## Testing
 For my testing, please see the separate [testing.md](/testing.md) file.
 
