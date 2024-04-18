@@ -5,6 +5,8 @@
 2. [CSS Validation](#css-validation)
 3. [JavaScript Validation](#javascript-validation)
 4. [Accessibility](#accessibility)
+    -[Game page](#game-page)
+    -[404 page](#404-page)
 5. [Performance](#performance)
 6. [Performance tests of various devices](#performance-tests-of-various-devices)
 7. [Browser Compatability](#browser-compatability)
@@ -27,12 +29,25 @@
 ## Javascript Validation
 
 ## Accessibility
-The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/). It displayed 1 error and 6 alerts. The reasons that these are deemed acceptable are:
+The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/). 
+
+### Game Page
+1 error and 6 alerts are shown for the game page. The reasons that these are deemed acceptable are:
 - **Error 1 Missing Form Label:** This refers to the sequence length selector having no form label, but no form label is required here and the place holder text will be read by the majority of screen readers, giving the user the required information.
 - **Alert 1 Redundant Link:** This occurs because the site logo in the header and the site logo in the footer both link back to the game page. It is my determination that this is not redundant and is part of the functionality of the site, therefore this alert may be ignored.
-- **Alerts 2-6 Justified Text:** These errors appeared because the game buttons are set to text-align: justify. This is acceptable in this instance because the text appears in small buttons so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
-<details><summary>Accessibility Results</summary>
-<img src="/documentation/testing/">
+- **Alerts 2-6 Justified Text:** These errors appeared because the how-to-play instructions are set to text-align: justify. This is acceptable in this instance because the text appears in no more than 4 lines so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
+<details><summary>Accessibility Results: Homepage</summary>
+<img src="/documentation/testing/wave-results-homepage.png">
+</details>
+
+### 404 Page
+9 alerts are shown for the 404 page. The reasons that these are deemed acceptable are:
+- **Error 1 and 2 Possible heading:** This is referring to the corner 404s in the display card and is being flagged by the size and weight of the font. These are not headings, so these alerts can be ignored.
+- **Error 3 and 4 Redundant link:** Similar to the game page, this is flagged because there are multiple links to the homepage on this page. This is by design. The 2 links of the site logo in the header and footer are intentional and the additional link in the 404 alert provides and quick and intuitive way for the user to get back to the game page.
+- **Errors 5-9 Justified Text:** This refers to the text in the how-to-play instructions and is not applicable for the same reasons as the game page.
+
+<details><summary>Accessibility Results: 404</summary>
+<img src="/documentation/testing/wave-results-404.png">
 </details>
 
 ## Performance
