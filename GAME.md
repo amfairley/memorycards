@@ -21,7 +21,7 @@
 - **shuffle(array):** The shuffle function takes an array as a parameter and shuffles the indexes of the elements in the array. It is used in this game to shuffle a deck of cards.
 - **makeDivs(n):** The makeDivs function takes an integer parameter and uses it to produce a grid of that many playing cards in the game area. It loops through a range of i from 0 up to 1 less than n. On each iteration it: 
     - Creates a div
-    - Assigns it classes for css styling and later manipulation
+    - Assigns it classes for css styling and later manipulation and an alt attribute for accessibility
     - Sets the div innerHTML to be an img element with the source being the i<sup>th</sup> card in the current cardsToPlay array
     - Appends the div it to the game area
 - **tableBuild(n):** The tableBuild() takes an integer parameter and uses it to create that many rows to populate the guessing table. After the loop, it appends a script element to the body, linking the score JavaScript file. During the loop, it iterates through a range of i from 0 up to 1 less than n. On each iteration it:

@@ -142,7 +142,7 @@ function makeDivs(n) {
         // Assign CSS class
         $(newDiv).addClass("col-6 col-sm-4 col-lg-2 card-div");
         // Add image to the div
-        $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image'>");
+        $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image' alt='The card " + cardObject[cardsToPlay[i].slice(0,2)] +"'>");
         // Apend it
         $("#card-mat").append(newDiv);
     }
