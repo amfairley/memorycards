@@ -30,82 +30,6 @@
     <title>Memory Card Game</title>
 </head>
 <body>
-    <!-- Game modals -->
-    <!-- Contact me modal -->
-    <div class="game-modal" id="contact-me-modal">
-        <div class="modal-container">
-            <h2 id="modal-contact-header">&#9824 &#9830 &#9827 &#9829 <br>Contact me!</h2>
-            <div id="modal-contact-text">
-                <p id="contact-text">Contact me for more information, collaboration opportunites or to give feedback.</p>
-            </div>
-            <form id="contact-me-form">
-                <label class="contact-label" for="name">Name</label>
-                <br>
-                <input type="text" name="from_name" id="name" placeholder="Derren Brown" required>
-                <br>
-                <label class="contact-label" for="email" id="email">Email</label>
-                <br>
-                <input type="email" name="email_id" id="email" placeholder="derren@brown.com" required>
-                <br>
-                <textarea id="contact-message" name="message" rows="10" cols="80" required></textarea>
-                <br>
-                <button class="game-button" id="modal-contact-submit">Submit</button>
-            </form>
-            <button class="game-button" id="modal-contact-close">Close</button>
-        </div>
-    </div>
-    <!-- How to play modal -->
-    <div class="game-modal" id="how-to-play-modal">
-        <div class="modal-container">
-            <h2 id="modal-how-to-play-header">How to play</h2>
-            <p id="how-to-intro">The goal is to memorise the order of shuffled playing cards. Can you memorise the whole deck?</p>
-            <div id="modal-how-to-play-text">
-                <p>&#9824 Choose between 1 and 52 cards to memorise and enter this value into the box.</p>
-                <p>&#9830 Click play now to lock in your choice and display the cards</p>
-                <p>&#9827 When you have memorised the cards, click on guess to hide the cards</p>   
-                <p>&#9829 Test your memory by filling out the order of the cards in the table. Submit your answers to see if you are right!</p>
-            </div>
-            <button class="game-button" id="modal-how-to-play-button">Close</button>
-        </div>
-    </div>
-    <!-- Error modal for invalid sequence length -->
-    <div class="game-modal" id="sequence-error-modal">
-        <div class="modal-container">
-            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
-            <h2 id="modal-sequence-header">Oh No!</h2>
-            <div id="modal-sequence-text">
-                <p>We can't possibly deal that many cards, please enter a number between 1 and 52.</p>
-            </div>
-            <button class="game-button" id="modal-sequence-button">OK</button>
-            <p class="modal-bottom-icon" id="modal-sequence-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
-        </div>
-    </div>
-    <!-- Error modal for invalid guesses -->
-    <div class="game-modal" id="guess-error-modal">
-        <div class="modal-container">
-            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
-            <h2 id="modal-guess-header">Oh No!</h2>
-            <div id="modal-guess-text">
-                <p>Please enter a valid card value and valid suit to submit your guess.</p>
-            </div>
-            <button class="game-button" id="modal-guess-button">OK</button>
-            <p class="modal-bottom-icon" id="modal-guess-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
-        </div>
-    </div>
-    <!-- Results modal for the end of the game -->
-    <div class="game-modal" id="results-modal">
-        <div class="modal-container">
-            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
-            <h2 id="modal-results-header">Congratulations</h2>
-            <div id="modal-results-text">
-                <p>You scored <span id="total-correct">10</span> out of <span id="total-answers">20</span>, that's <span id="total-percent">50</span>%!</p>
-            </div>
-            <button class="game-button" id="modal-results-button-close">Close</button>
-            <button class="game-button reset-game" id="modal-results-button-replay">Replay</button>
-            <p class="modal-bottom-icon" id="modal-results-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
-        </div>
-    </div>
-    <div id="modal-background"></div>
     <!-- Navigation bar -->
     <header class="container-fluid row g-0" id="header-section">
         <!-- Logo -->
@@ -145,7 +69,82 @@
             </nav>
         </div>
     </header>
-
+        <!-- Game modals -->
+    <!-- Contact me modal -->
+    <aside class="game-modal" id="contact-me-modal">
+        <div class="modal-container">
+            <h2 id="modal-contact-header">&#9824 &#9830 &#9827 &#9829 <br>Contact me!</h2>
+            <div id="modal-contact-text">
+                <p id="contact-text">Contact me for more information, collaboration opportunites or to give feedback.</p>
+            </div>
+            <form id="contact-me-form">
+                <label class="contact-label" for="name">Name</label>
+                <br>
+                <input type="text" name="from_name" id="name" placeholder="Derren Brown" required>
+                <br>
+                <label class="contact-label" for="email" id="email">Email</label>
+                <br>
+                <input type="email" name="email_id" id="email" placeholder="derren@brown.com" required>
+                <br>
+                <textarea id="contact-message" name="message" rows="10" cols="80" required></textarea>
+                <br>
+                <button class="game-button" id="modal-contact-submit">Submit</button>
+            </form>
+            <button class="game-button" id="modal-contact-close">Close</button>
+        </div>
+    </aside>
+    <!-- How to play modal -->
+    <aside class="game-modal" id="how-to-play-modal">
+        <div class="modal-container">
+            <h2 id="modal-how-to-play-header">How to play</h2>
+            <p id="how-to-intro">The goal is to memorise the order of shuffled playing cards. Can you memorise the whole deck?</p>
+            <div id="modal-how-to-play-text">
+                <p>&#9824 Choose between 1 and 52 cards to memorise and enter this value into the box.</p>
+                <p>&#9830 Click play now to lock in your choice and display the cards</p>
+                <p>&#9827 When you have memorised the cards, click on guess to hide the cards</p>   
+                <p>&#9829 Test your memory by filling out the order of the cards in the table. Submit your answers to see if you are right!</p>
+            </div>
+            <button class="game-button" id="modal-how-to-play-button">Close</button>
+        </div>
+    </aside>
+    <!-- Error modal for invalid sequence length -->
+    <aside class="game-modal" id="sequence-error-modal">
+        <div class="modal-container">
+            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+            <h2 id="modal-sequence-header">Oh No!</h2>
+            <div id="modal-sequence-text">
+                <p>We can't possibly deal that many cards, please enter a number between 1 and 52.</p>
+            </div>
+            <button class="game-button" id="modal-sequence-button">OK</button>
+            <p class="modal-bottom-icon" id="modal-sequence-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        </div>
+    </aside>
+    <!-- Error modal for invalid guesses -->
+    <aside class="game-modal" id="guess-error-modal">
+        <div class="modal-container">
+            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+            <h2 id="modal-guess-header">Oh No!</h2>
+            <div id="modal-guess-text">
+                <p>Please enter a valid card value and valid suit to submit your guess.</p>
+            </div>
+            <button class="game-button" id="modal-guess-button">OK</button>
+            <p class="modal-bottom-icon" id="modal-guess-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        </div>
+    </aside>
+    <!-- Results modal for the end of the game -->
+    <aside class="game-modal" id="results-modal">
+        <div class="modal-container">
+            <p class="modal-top-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+            <h2 id="modal-results-header">Congratulations</h2>
+            <div id="modal-results-text">
+                <p>You scored <span id="total-correct">10</span> out of <span id="total-answers">20</span>, that's <span id="total-percent">50</span>%!</p>
+            </div>
+            <button class="game-button" id="modal-results-button-close">Close</button>
+            <button class="game-button reset-game" id="modal-results-button-replay">Replay</button>
+            <p class="modal-bottom-icon" id="modal-results-icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        </div>
+    </aside>
+    <div id="modal-background"></div>
     <main>
         <!-- Game area -->
         <div id = "game-area">
@@ -160,7 +159,7 @@
             <div id="button-section">
                 <br class="spacer">
                 <br class="spacer">
-                <input type="number" id="quantity" min="1" max="13" placeholder="Pick up to 52 cards">
+                <input type="number" id="quantity" min="1" max="52" placeholder="Pick up to 52 cards">
                 <br class="spacer">
                 <button id="play" class="game-button">Play now</button>
                 <button id="guess" class="game-button hidden">Guess</button>
