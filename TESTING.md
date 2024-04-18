@@ -1,5 +1,7 @@
 # Testing
 
+Manual testing (often called user testing) is where the site is manually tested by clicking buttons, filling out forms, and testing all the logic. Automatic testing involves using scripts and a testing framework such as Jest. Automated testing can be quick, thorough, and allow the developer to pick up errors early on but rely on the developer asking the right questions and do not test the user experience. For this project, I have concentrated on manual testing, as automated testing was not required and this left me with more time to concentrate on the game logic and user experience.
+
 ## Table Of Contents
 1. [HTML Validation](#HTML-validation)
 2. [CSS Validation](#css-validation)
@@ -231,13 +233,6 @@ The website was tested on the following browsers:
 | 404 page | Head to a website page that does not exist | The browser will be redirected to the 404 page | Y | N/A |
 | 404 link back to homepage | Hover | Text colour changes to lava | Y | N/A |
 | 404 link back to homepage | Click | The browser is redirected back to the game page | Y | N/A |
-
-
-
-
-
-
-
 
 ## Manual Testing: JavaScript
 
