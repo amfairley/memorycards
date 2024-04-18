@@ -9,7 +9,7 @@
     -[404 page](#404-page)
 5. [Performance](#performance)
 6. [Performance tests of various devices](#performance-tests-of-various-devices)
-7. [Browser Compatability](#browser-compatability)
+7. [Browser Compatibility](#browser-compatability)
 8. [Testing User Stories](#testing-user-stories)
 9. [Manual Testing](#manual-testing)
 10. [Manual Testing: JavaScript](#manual-testing-javascript)
@@ -64,7 +64,14 @@ The performance of the webpage was tested using Lighthouse within the google chr
 
 ## Performance tests of various devices
 
-## Browser Compatability
+The game was tested on a 14" laptop, 15.5" laptop and using the Google Chrome Developer Tools device toggle option for all available device options. All work as expected.
+
+## Browser Compatibility
+
+The website was tested on the following browsers:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 
 ## Testing User Stories
 
