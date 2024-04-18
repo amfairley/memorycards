@@ -60,6 +60,8 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Play now button](#play-now-button)
         - [Sequence length display](#sequence-length-display)
         - [Playing card display](#playing-card-display)
+        - [Guess button](#guess-button)
+        - [Guessing table](#guessing-table)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -457,6 +459,41 @@ For an in depth description of the functionality of the game area, please see th
 - If there are too many cards to show on the page, content hinting is utilised to indicate to the user that they need to scroll down to see the rest of the cards.
 - Bootstrap 5 classes are used to change the number of cards in each row depending on the screen size, with 6 per row for large screens, 3 per row for medium screens and 2 per row for smaller screens, achieving good user experience across all device sizes.
 - User stories covered: 13.
+
+#### Guess Button
+
+<details><summary>Guess Button</summary>
+<img src="/documentation/features/button-guess.png"><img src="/documentation/features/button-guess-hover.png">
+</details>
+
+- The guess button advances the game from the memorisation stage to the guessing stage by:
+    - Hiding the guess button so it cannot be clicked twice.
+    - Populating and showing the guessing table for the user to enter their guesses.
+- The guess button changes colour scheme with a slight transitional period when hovered to indicate functionality to the user in a pleasing way.
+- User stories covered: N/A.
+
+#### Guessing Table
+
+<details><summary>Guessing Table</summary>
+<img src="/documentation/features/guessing-table.png"><img src="/documentation/features/guessing-table-mobile.png>
+</details>
+
+- The guessing table provides an area for the user to submit their guesses of the sequence of cards. It has four columns:
+    1. The order number letting the user know which card they will be guessing.
+    2. The guessing section consisting of two drop down selects and a submission button. The first select menu has the card values from Ace to King and the second has the card suit using UTF-8 icons for accessibility and easy recognition compared to the written suit names. 
+    3. The third column shows the correct answer. It is hidden prior to guessing but is revealed upon submitting a guess.
+    4. The fourth column shows if the user was correct with a Y or incorrect with an N.
+- When a guess is submitted:
+    - The two select elements and submit button on that row are disabled preventing the user from submitting another guess.
+    - The disabled submit button has the colours inverted to indicate that submission has occurred.
+    - The correct answer is revealed to the user. 
+    - The user is informed whether they were right or wrong.
+- When hovering a row, the colour scheme is inverted clearly showing the user which row they are selecting.
+- The submit buttons show an error modal if the user does not choose both a valid card value and suit, preventing the user from wasting a guess.
+- The row sizes are responsive so that the guessing table is usable, even on very small screens.
+- User stories covered: 4, 9, 13.
+
+#### Guessing Table Error Modal
 
 #### Website Footer
 
