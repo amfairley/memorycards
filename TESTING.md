@@ -27,11 +27,22 @@
 ## Javascript Validation
 
 ## Accessibility
-The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/). It displayed no erros 6 alerts. The reasons that these alerts were deemed acceptible are:
-- **Alert 1 Redundant link:** This occurs because the site logo in the header and the site logo in the footer both link back to the game page. It is my determination that this is not redundant and is part of the functionality of the site, therefore this alert may be ignored.
-- **Alerts 2-6 Justified Text:** These errors appeared because the game buttons are set to text-align: justify. This is acceptible in this instance because the text appears in small buttons so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
+The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/). It displayed 1 error and 6 alerts. The reasons that these are deemed acceptable are:
+- **Error 1 Missing Form Label:** This refers to the sequence length selector having no form label, but no form label is required here and the place holder text will be read by the majority of screen readers, giving the user the required information.
+- **Alert 1 Redundant Link:** This occurs because the site logo in the header and the site logo in the footer both link back to the game page. It is my determination that this is not redundant and is part of the functionality of the site, therefore this alert may be ignored.
+- **Alerts 2-6 Justified Text:** These errors appeared because the game buttons are set to text-align: justify. This is acceptable in this instance because the text appears in small buttons so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
+<details><summary>Accessibility Results</summary>
+<img src="/documentation/testing/">
+</details>
 
 ## Performance
+
+The performance of the webpage was tested using Lighthouse within the google chrome devtools to confirm that the site was performing well, is accessible, following best practices, and follows basic SEO (search engine optimisation advice). The website passed all of these.
+
+<details><summary>Performance Results</summary>
+<img src="/documentation/testing/lighthouse-performance.png">
+</details>
+
 
 ## Performance tests of various devices
 
