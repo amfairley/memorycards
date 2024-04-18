@@ -315,7 +315,5 @@ $(".reset-game").click(function() {
         $(x).insertAfter($("#quantity"));
         $("#button-section").prepend(x);
         $("#button-section").prepend(x);
-        }
+    }
 });
-
-
