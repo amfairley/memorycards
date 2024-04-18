@@ -62,6 +62,8 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Playing card display](#playing-card-display)
         - [Guess button](#guess-button)
         - [Guessing table](#guessing-table)
+        - [Guessing table error modal](#guessing-table-error-modal)
+        - [Results modal](#results-modal)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -408,9 +410,9 @@ For an in depth description of the functionality of the game area, please see th
 </details>
 
 - If an invalid value is entered into the sequence select, this modal will appear on the screen informing the user of their error and suggesting they use a value between 1 and 52.
-- The modal is designed like a playing card with exclamation mark font awesome icons in place of the placing card values.
-- There is an OK button to accept the message and close the modal and modal background.
-- All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
+    - The modal is designed like a playing card with exclamation mark font awesome icons in place of the placing card values.
+    - There is an OK button to accept the message and close the modal and modal background.
+    - All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
 - User stories covered: 9, 10.
 
 #### Play Now Button
@@ -494,6 +496,37 @@ For an in depth description of the functionality of the game area, please see th
 - User stories covered: 4, 9, 13.
 
 #### Guessing Table Error Modal
+
+<details><summary>Guessing Table Error Modal</summary>
+<img src="/documentation/features/guessing-error-modal.png">
+</details>
+
+- The guessing table error modal appears when the user tries to submit a guess without selecting a value for the card value or card suit.
+- The modal is designed like a playing card with exclamation mark font awesome icons in place of the placing card values.
+- There is an OK button to accept the message and close the modal and modal background.
+- All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
+- User stories covered: 9.
+
+#### Results Modal
+
+<details><summary>Results Modals</summary>
+<img src="/documentation/features/results-modal-00.png"><img src="/documentation/features/results-modal-25.png"><img src="/documentation/features/results-modal-50.png"><img src="/documentation/features/results-modal-75.png"><img src="/documentation/features/results-modal-100.png">
+</details>
+
+- The results modal appears when the user has submitted all of their guesses.
+- The modal is designed like a playing card with exclamation mark font awesome icons in place of the placing card values.
+- All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
+- The results modal shows different heading content depending on the score personalising the experience and incentivising the user to play again and get a higher score:
+    - 0-24%: Try again...
+    - 25-49%: Nice try!
+    - 50-74%: Good Job!
+    - 75%-100%: Amazing!
+- The results modal shows the score in the form of x out of y and a percentage for the user to easily comprehend their score.
+- The close button closes the modal and lets the user look at their completed guessing table should they wish.
+- The replay button resets the game area for another game.
+- User stories covered: 5, 8.
+
+#### Reset Button
 
 #### Website Footer
 
