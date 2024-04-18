@@ -75,6 +75,97 @@ The website was tested on the following browsers:
 
 ## Testing User Stories
 
+1. As a First Time Visitor, I want to know the purpose of the website immediately.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Header site logo | Load up the website | The website loads and displays the site logo at the top | As expected |
+| Browser tab | Load up the website | The website title is displayed in the browser along with an icon | As expected |
+| Website footer | Load up the website and scroll to the bottom | The website logo is displayed in the footer | As expected |
+
+
+2. As a First Time Visitor, I want to be able to navigate the website easily and intuitively.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Website navigation bar | Load up the website | The website is only one page but the links in the navigation bar will their respective modals | As expected |
+
+3. As a First Time Visitor, I want to be able to learn how to play the game.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| How to play modal | Click how to play in the header | The how to play modal will appear on the screen displaying the game instructions. The background will be darker and unavailable to the user. | As expected |
+| Close button | Click the close button in the modal | The modal and the modal background will close | As expected |
+
+
+4. As a First Time Visitor, I want to know if my individual guesses are correct.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Guessing table | Submit individual guesses | The correct answer will appear and the game will tell you if you are right or wrong | As expected |
+
+5. As a First Time Visitor, I want to know my final score.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Results modal | Complete the game | A modal will appear informing the user of their score and inviting them to play again | As expected |
+
+6. As a Returning Visitor, I want to be able to quickly play the game.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Play now button | Enter a valid sequence length and click play now | The game will start immediately | As expected |
+
+7. As a Returning Visitor, I want to be able to contact the website developer.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| The contact me modal | Click the contact me icon in the navigation bar | The contact me modal will appear | As expected |
+| The contact me modal | Fill out the form elements and click submit | The name, email, and message will be sent to the developers email address | As expected | 
+| GitHub link | Click the GitHub icon in the footer | The developers GitHub profile will appear in a new window | As expected |
+
+8. As a Returning Visitor, I want to be able to reset the game at any point.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Results modal | Play the game and click the replay button in the results modal | The game area will be reset | As expected |
+| Reset button | Click the reset button at any stage of the game | The game area will reset | As expected |
+
+9. As a Returning Visitor, I want the game to prevent me entering invalid guesses.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Sequence select and play now button | Enter invalid values (0, negative, "e") and click play now | A modal will appear informing the user to enter a valid value | As expected |
+| Sequence select error modal and play now button | Enter an invalid sequence length and click play now | A modal will appear informing the user to enter a valid value | As expected |
+| Guessing table | Enter invalid card value or suits and click submit | A modal will appear preventing the user from submitting the guess and informing the user of the error | As expected |
+| Guessing table error modal | Enter invalid card value or suits and click submit | A modal will appear preventing the user from submitting the guess and informing the user of the error | As expected |
+
+10. As a Frequent Visitor, I want to be able to tune the difficulty of the game.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Sequence select | Use the values of 3, 10, and 30 | 3, 10 and 30 cards will appear respectively giving the user varying degrees of difficulty | As expected |
+
+11. As a Frequent Visitor, I want to be able to see other work from the developer.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| GitHub link | Click the GitHub icon in the footer | The developers GitHub profile will appear in a new window | As expected |
+
+12. As a Frequent Visitor, I want to be able to see my chosen sequence length after the game starts.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Play now button | Click play now with a valid sequence length | The sequence length will be displayed on screen | As expected |
+| Sequence length display | Play the game | The sequence length is displayed from clicking play now until the end of the game | As expected |
+
+13. As a Frequent Visitor, I want to be able to play the game on different devices.
+
+| Feature | Action | Expected Result | Actual Result |
+|-----|-----|-----|-----|
+| Card display area | Play the game on different screen sizes | On small sizes the rows of cards are 2 wide, on medium screens 3 wide, and on large screens 6 wide | As expected |
+| Guessing table | Play the game on different screen sizes | The guessing table resizes to screen size and is usable on all devices | As expected |
+
 ## Manual Testing
 
 ## Manual Testing: JavaScript
