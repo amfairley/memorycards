@@ -56,6 +56,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [How to play](#how-to-play-1)
         - [Contact me](#contact-me-1)
         - [Sequence select](#sequence-select)
+        - [Sequence select error modal](#sequence-selector-error-modal)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -392,6 +393,19 @@ For an in depth description of the functionality of the game area, please see th
 - The type is set to number, preventing the user from entering anything that isn't numerical, -, +, ., or e.
 - If an invalid number is entered (negative, integer > 52, or . or e) a modal will appear to inform the user to enter a valid number.
 - The input is rounded down to the nearest integer, meaning that if 29.9 was entered, the game will continue with the value 29.
+- User stories covered: 9, 10.
+
+#### Sequence Selector Error Modal
+
+<details><summary>Sequence Select Error Modal</summary>
+<img src="/documentation/features/sequence-select-error-modal.png">
+</details>
+
+- If an invalid value is entered into the sequence select, this modal will appear on the screen informing the user of their error and suggesting they use a value between 1 and 52.
+- The modal is designed like a playing card with exclamation mark font awesome icons in place of the placing card values.
+- There is an OK button to accept the message and close the modal and modal background.
+- All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
+- User stories covered: 9, 10.
 
 #### Website Footer
 
