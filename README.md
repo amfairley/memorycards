@@ -50,7 +50,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Typography](#typography)
         - [Images](#images)
     6. [Features](#features)
-        - [The Game Area](#the-game-area)
+        - [The game area](#the-game-area)
         - [Browser tab](#browser-tab)
         - [Website header](#website-header)
         - [How to play](#how-to-play-1)
@@ -58,6 +58,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Sequence select](#sequence-select)
         - [Sequence select error modal](#sequence-selector-error-modal)
         - [Play now button](#play-now-button)
+        - [Sequence length display](#sequence-length-display)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -423,6 +424,17 @@ For an in depth description of the functionality of the game area, please see th
     - Show the guess button to allow the user to advance the game.
     - Show the chosen amount of playing cards from a shuffled deck in the game area.
 - User stories covered: 6, 9, 12.
+
+#### Sequence Length Display
+
+<details><summary>Sequence Length Display</summary>
+<img src="/documentation/features/sequence-length-display.png">
+</details>
+
+- The sequence length display is shown when the play button is pressed with a valid sequence length.
+- It is designed in the shape of a card in keeping with the theme of the page and shows the sequence length as the card value.
+- Its purpose is to be an easy reference to the user of what value that they have selected.
+- User stories covered: 12.
 
 #### Website Footer
 
