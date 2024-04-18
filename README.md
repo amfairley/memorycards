@@ -397,8 +397,7 @@ For an in depth description of the functionality of the game area, please see th
 
 
 
-Contact me
-How to
+
 404
 Buttons
 Sequence length and error modal
