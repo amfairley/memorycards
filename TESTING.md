@@ -52,10 +52,13 @@ The accessibility testing was performed using the [Wave Web Accessibility Evalua
 
 ## Performance
 
-The performance of the webpage was tested using Lighthouse within the google chrome devtools to confirm that the site was performing well, is accessible, following best practices, and follows basic SEO (search engine optimisation advice). The website passed all of these.
+The performance of the webpage was tested using Lighthouse within the google chrome devtools to confirm that the site was performing well, is accessible, following best practices, and follows basic SEO (search engine optimisation) advice. The website homepage passed all of these. The performance of the 404 page was also tested here. Its SEO result should be ignored as it shouldn't be included in search results, so should not meet SEO requirements and getting access to the 404 page inherently throws an error, so reduces the best practices from 100 to 96.
 
-<details><summary>Performance Results</summary>
-<img src="/documentation/testing/lighthouse-performance.png">
+<details><summary>Performance Results: Homepage</summary>
+<img src="/documentation/testing/lighthouse-performance-homepage.png">
+</details>
+<details><summary>Performance Results: 404</summary>
+<img src="/documentation/testing/lighthouse-performance-404.png">
 </details>
 
 
