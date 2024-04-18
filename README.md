@@ -55,6 +55,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Website header](#website-header)
         - [How to play](#how-to-play-1)
         - [Contact me](#contact-me-1)
+        - [Sequence select](#sequence-select)
         - [Website footer](#website-footer)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -379,6 +380,18 @@ For an in depth description of the functionality of the game area, please see th
 - It has a close button that hides the modal and modal background.
 - All modals have a background that appears with them, darkening the rest of the webpage making the user focus on the modal, along with preventing the user to click any functionality behind the modal.
 - User stories covered: 7.
+
+#### Sequence Select
+
+<details><summary>Sequence Select</summary>
+<img src="/documentation/features/sequence-select.png">
+</details>
+
+- The sequence select area gives the user a space to select the number of cards to memorise.
+- The user can either use the up and down arrows that appear when hovering to change the input to a number between 1 and 52 or type the number themselves. 
+- The type is set to number, preventing the user from entering anything that isn't numerical, -, +, ., or e.
+- If an invalid number is entered (negative, integer > 52, or . or e) a modal will appear to inform the user to enter a valid number.
+- The input is rounded down to the nearest integer, meaning that if 29.9 was entered, the game will continue with the value 29.
 
 #### Website Footer
 
