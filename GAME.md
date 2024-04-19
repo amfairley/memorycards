@@ -1,4 +1,4 @@
-# Memory Cards Game Area
+# Memory Cards Game Logic
 
 ## Required components
 **Game area**: The game requires a game area to take place in <br>
@@ -85,3 +85,11 @@
     - Remove the script element produced by tableBuild() function by targetting its ID
     - Reset any removed spacers for styling purposes
     - It should be noted that this reset button does not unshuffle the cards, but as the cards are shuffled each time the play button is pressed, this does not affect gameplay 
+
+### Styling
+
+## JavaScript files breakdown 
+The JavaScript for this project is split across 4 script files; [game.js](/assets/scripts/game.js), [score.js](/assets/scripts/score.js), [transitions.js](/assets/scripts/transitions.js) and [emailjs.js](/assets/scripts/emailjs.js).
+- **game.js**: Defines the variables for the deck of cards, some global variables, and the cardObject. var is used to define the cardObject and sequenceLength because, despite being not as safe as let, these two need to be accessed by other script files. This risk was deemed acceptible for this small project as no malicious behaviour is expected. Functions for shuffling the deck of cards, building the card area, and building the guessing table are also defined here. The functionality of the play now, guess, and reset buttons are defined here.
+- **score.js**: The submit guess function is defined here. It is in a separate script file as a fix to **bug 1**.
+- **transitions.js**: This houses the JavaScript for styling on the page; hover effects for the navigation icons, opening the navigation icon modals, and the closing functionality for all modals.
