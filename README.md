@@ -630,9 +630,9 @@ After reseting the game, when the guess button is pressed linking the script to 
 When entering an invalid number into the sequence length selector, it will assign this value to the sequenceLength regardless. This was fixed by moving the sequenceLength assignment inside the conditional and replacing it's original use with a new global variable named lengthCheck.
 
 **Bug 4:**
-When submitting guess, if no value or suit is submitted, it will accept the submitted answer as being "disableddisabled". This is bad user experience, as it prevents the user from enetering an actual guess and disables the button. This was solved by wrapping most of the code in an if/else statement to set an alert if either of the submitted values are "disabled" and to continue the code if the entries are valid.
-<br> Before:
-`JS
+When submitting guess, if no value or suit is submitted, it will accept the submitted answer as being "disableddisabled". This is bad user experience, as it prevents the user from enetering an actual guess and disables the button. This was solved by wrapping most of the code in an if/else statement to set an alert if either of the submitted values are "disabled" and to continue the code if the entries are valid. <br>
+Before: <br>
+```
 // Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
@@ -693,11 +693,11 @@ $(".submit-guess").click(function() {
     if ($(".submitted").length === sequenceLength) {
         alert("Game over. You scored " + finalScore + "%");
     }
-}); 
-`
+});
+```
 
 After:
-`JS
+```
 // Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
@@ -764,7 +764,7 @@ $(".submit-guess").click(function() {
         }
     } 
 });
-`
+```
 **Bug 5:**
 On smaller screen heights, the contact me modal contents became blurred like so: <br>
 ![blurred modal](/documentation/bug-5-issue.png) <br>
