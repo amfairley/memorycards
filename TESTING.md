@@ -11,7 +11,7 @@ Manual testing (often called user testing) is where the site is manually tested 
     - [404 page](#404-page)
 5. [Performance](#performance)
 6. [Performance tests of various devices](#performance-tests-of-various-devices)
-7. [Browser Compatibility](#browser-compatability)
+7. [Browser Compatibility](#browser-compatibility)
 8. [Testing User Stories](#testing-user-stories)
 9. [Manual Testing](#manual-testing)
 10. [Manual Testing: JavaScript](#manual-testing-javascript)
@@ -78,7 +78,7 @@ However this does not test the HTML elements added to the page using the JavaScr
 ### 404 Page
 9 alerts are shown for the 404 page. The reasons that these are deemed acceptable are:
 - **Alerts 1 and 2 Possible heading:** This is referring to the corner 404s in the display card and is being flagged by the size and weight of the font. These are not headings, so these alerts can be ignored.
-- **Alerts 3 and 4 Redundant link:** Similar to the game page, this is flagged because there are multiple links to the homepage on this page. This is by design. The 2 links of the site logo in the header and footer are intentional and the additional link in the 404 alert provides and quick and intuitive way for the user to get back to the game page.
+- **Alerts 3 and 4 Redundant link:** Similar to the game page, this is flagged because there are multiple links to the homepage on this page. This is by design. The 2 links of the site logo in the header and footer are intentional and the additional link in the 404 alert provides a quick and intuitive way for the user to get back to the game page.
 - **Alerts 5-9 Justified Text:** This refers to the text in the how-to-play instructions and is not applicable for the same reasons as the game page.
 
 <details><summary>Accessibility Results: 404</summary>
@@ -99,7 +99,7 @@ The performance of the webpage was tested using Lighthouse within the google chr
 
 ## Performance tests of various devices
 
-The game was tested on a 14" laptop, 15.5" laptop and using the Google Chrome Developer Tools device toggle option for all available device options. All work as expected.
+The game was tested on a 14" laptop, 15.5" laptop and using the Google Chrome Developer Tools device toggle option for all available device options going the screen sizes as low as iPhone 5/SE. All work as expected.
 
 ## Browser Compatibility
 
@@ -123,7 +123,7 @@ The website was tested on the following browsers:
 
 | Feature | Action | Expected Result | Actual Result |
 |-----|-----|-----|-----|
-| Website navigation bar | Load up the website | The website is only one page but the links in the navigation bar will their respective modals | As expected |
+| Website navigation bar | Load up the website | The website is only one page but the links in the navigation bar will open their respective modals | As expected |
 
 3. As a First Time Visitor, I want to be able to learn how to play the game.
 
@@ -157,14 +157,14 @@ The website was tested on the following browsers:
 |-----|-----|-----|-----|
 | The contact me modal | Click the contact me icon in the navigation bar | The contact me modal will appear | As expected |
 | The contact me modal | Fill out the form elements and click submit | The name, email, and message will be sent to the developers email address | As expected | 
-| GitHub link | Click the GitHub icon in the footer | The developers GitHub profile will appear in a new window | As expected |
+| GitHub link | Click the GitHub icon in the footer | The developers GitHub profile will appear in a new tab | As expected |
 
 8. As a Returning Visitor, I want to be able to reset the game at any point.
 
 | Feature | Action | Expected Result | Actual Result |
 |-----|-----|-----|-----|
 | Results modal | Play the game and click the replay button in the results modal | The game area will be reset | As expected |
-| Reset button | Click the reset button at any stage of the game | The game area will reset | As expected |
+| Reset button | Click the reset button at any stage of the game | The game area will be reset | As expected |
 
 9. As a Returning Visitor, I want the game to prevent me entering invalid guesses.
 
@@ -185,7 +185,7 @@ The website was tested on the following browsers:
 
 | Feature | Action | Expected Result | Actual Result |
 |-----|-----|-----|-----|
-| GitHub link | Click the GitHub icon in the footer | The developers GitHub profile will appear in a new window | As expected |
+| GitHub link | Click the GitHub icon in the footer | The developers GitHub profile will appear in a new tab | As expected |
 
 12. As a Frequent Visitor, I want to be able to see my chosen sequence length after the game starts.
 
@@ -234,6 +234,7 @@ The website was tested on the following browsers:
 | Play now button | Click with a valid sequence length | The sequence length selector will disappear | Y | N/A |
 | Play now button | Click with a valid sequence length | The play now button will disappear | Y | N/A |
 | Play now button | Click with a valid sequence length | The sequence length display will appear with the sequence length in it | Y | N/A |
+| Play now button | Click with a valid sequence length | The guess button will appear | Y | N/A |
 | Play now button | Click with a valid sequence length | The correct amount of shuffled cards will appear on the screen | Y | N/A |
 | Card area | Have more than 6 cards and resize the page | 2 cards per row on small screens, 3 cards per row on medium screens and 6 cards per row on large screens | Y | N/A |
 | Guess button | Hover | The button hover effect will occur | Y | N/A |
@@ -342,13 +343,13 @@ The website was tested on the following browsers:
 | Click the reset button and inspect the table-container | The table-container-style class will be removed | Y | N/A |
 | Play a game, log the value of sequenceLength to the console, click reset and log the value again | The value will be reset to undefined | Y | N/A |
 | Refresh the page and click the reset button | No change to the game area | Y | N/A |
-| Submit a valid sequence length and press reset (1)| Sequence length selector and label will reappear showing the placeholder text | Y | N/A |
-| Submit a valid sequence length and press reset (2)| The sequenceLength display box will be removed from the display area | Y | N/A |
-| Submit a valid sequence length and press reset (3) | The play button will reappear | Y | N/A |
-| Submit a valid sequence length and press reset (4) | The guess button will be hidden | Y | N/A |
-| Submit a valid sequence length and press reset (5) | The cards will be removed from the game area | Y | N/A |
-| Submit a valid sequence length, press guess, then press reset (1) | The guessing table will be hidden with all added rows removed | Y | N/A |
-| Submit a valid sequence length, press guess, then press reset (1) | The JavaScript link to score.js will be removed from the HTML body | Y | N/A |
+| Submit a valid sequence length and press reset | Sequence length selector and label will reappear showing the placeholder text | Y | N/A |
+| Submit a valid sequence length and press reset | The sequenceLength display box will be removed from the display area | Y | N/A |
+| Submit a valid sequence length and press reset | The play button will reappear | Y | N/A |
+| Submit a valid sequence length and press reset | The guess button will be hidden | Y | N/A |
+| Submit a valid sequence length and press reset | The cards will be removed from the game area | Y | N/A |
+| Submit a valid sequence length, press guess, then press reset | The guessing table will be hidden with all added rows removed | Y | N/A |
+| Submit a valid sequence length, press guess, then press reset | The JavaScript link to score.js will be removed from the HTML body | Y | N/A |
 | Press reset at any time | Any spacers will be replaced for smaller screens | Y | N/A |
 
 ### Submit guess click event:
