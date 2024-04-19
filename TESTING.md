@@ -26,17 +26,29 @@ Manual testing (often called user testing) is where the site is manually tested 
     - [EmailJS](#emailjs)
 
 ## HTML Validation
+HTML validation was completed using the [W3C HTML validation service](https://validator.w3.org/) for the homepage and 404 page.
+Each page passed with no errors or warnings to show. Screenshots of the results are shown below:
+<details><summary>Homepage</summary>
+<img src="/documentation/testing/html-validation-homepage.png">
+</details>
+<details><summary>404</summary>
+<img src="/documentation/testing/html-validation-404.png">
+</details>
 
 ## CSS Validation
+CSS validation was completed using the [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). The results can be seen [here]() or as a screenshot below.
+<details><summary>CSS Validation</summary>
+<img src="">
+</details>
 
 ## Javascript Validation
 
 ## Accessibility
-The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/). 
+The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/).
+However this does not test the HTML elements added to the page using the JavaScript scripts. To accommodate these, the card images all have unique identifying alt attributes so there are no accessibility issues with them; and the options in the select elements in the guessing table are self-explanatory, so no labels were deemed necessary for those.
 
 ### Game Page
-1 error and 6 alerts are shown for the game page. The reasons that these are deemed acceptable are:
-- **Error 1 Missing Form Label:** This refers to the sequence length selector having no form label, but no form label is required here and the place holder text will be read by the majority of screen readers, giving the user the required information.
+6 alerts are shown for the game page. The reasons that these are deemed acceptable are:
 - **Alert 1 Redundant Link:** This occurs because the site logo in the header and the site logo in the footer both link back to the game page. It is my determination that this is not redundant and is part of the functionality of the site, therefore this alert may be ignored.
 - **Alerts 2-6 Justified Text:** These errors appeared because the how-to-play instructions are set to text-align: justify. This is acceptable in this instance because the text appears in no more than 4 lines so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
 <details><summary>Accessibility Results: Homepage</summary>
@@ -285,7 +297,7 @@ The website was tested on the following browsers:
 | Enter an integer number from 1-52 and click the button | The lengthCheck will be displayed in the console as the integer, the sequenceLength will be assigned the same value and logged to the console, the game will continue | Y | N/A |
 | Enter a valid number and click play now | The sequence length display will show with the correct sequence length | Y | N/A |
 | Enter a valid number and click play now | The play button will be assigned the class of hidden and disappear from the game area | Y | N/A |
-| Enter a valid number and click play now | The sequence length picker will be assigned the class of hidden and disappear from the game area | Y | N/A |
+| Enter a valid number and click play now | The sequence length picker and label will be assigned the class of hidden and disappear from the game area | Y | N/A |
 | Add code to log the cards array before and after shuffling, then click the play button | The console will log the cards array twice, with the second being a shuffled version of the first array | Y | N/A |
 | Add `console.log(cardsToPlay);` and `console.log(cardsToPlay.length === sequenceLength);` after defining the cards to play and click the button | The console will log the first n cards from the cards array where n is the sequenceLength, it will then log true showing that the cardsToPlay array length is the same as the chosen sequenceLength | Y | N/A |
 | Enter a valid number and click play now | A number of shuffled cards equal to the chosen sequenceLength will appear in the game area | Y | N/A |
@@ -310,7 +322,7 @@ The website was tested on the following browsers:
 | Click the reset button and inspect the table-container | The table-container-style class will be removed | Y | N/A |
 | Play a game, log the value of sequenceLength to the console, click reset and log the value again | The value will be reset to undefined | Y | N/A |
 | Refresh the page and click the reset button | No change to the game area | Y | N/A |
-| Submit a valid sequence length and press reset (1)| Sequence length selector will reappear showing the placeholder text | Y | N/A |
+| Submit a valid sequence length and press reset (1)| Sequence length selector and label will reappear showing the placeholder text | Y | N/A |
 | Submit a valid sequence length and press reset (2)| The sequenceLength display box will be removed from the display area | Y | N/A |
 | Submit a valid sequence length and press reset (3) | The play button will reappear | Y | N/A |
 | Submit a valid sequence length and press reset (4) | The guess button will be hidden | Y | N/A |
