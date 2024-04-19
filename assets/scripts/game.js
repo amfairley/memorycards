@@ -324,7 +324,7 @@ $(".reset-game").click(function() {
         $(this).remove();
     });
     // Add spacers back in for small screens
-    if ($("#button-section").children().length === 3) {
+    if ($("#button-section").children().length === 5) {
         let x = "<br class='spacer'>";
         $(x).insertAfter($("#quantity"));
         $("#button-section").prepend(x);
