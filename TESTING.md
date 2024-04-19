@@ -42,10 +42,25 @@ CSS validation was completed using the [W3C Jigsaw CSS Validation Service](https
 </details>
 
 ## Javascript Validation
+
 The JavaScript validation was done by copying the JavaScript code into [JSHint](https://jshint.com/). The scripts were combined into one file for validation, as the score.js script accesses variables defined within game.js so would cause an error otherwise. The only error highlighted was an undefined variable of emailjs in the emailjs.js script. This is acceptable, as this portion of code is taken directly from the emailjs documentation and the initialised at the bottom of the body element in the html pages.
 <details><summary>JavaScript Validation</summary>
 <img src="/documentation/testing/validation-js.png">
 </details>
+
+Testing was also done by running each script file through the linter [JSLint](https://www.jslint.com/). On the first run through, this highlighted inconsistencies such as trailing whitespace and code lines exceeding 80 characters. These oversights were corrected and the scripts were put through the linter again. The emailjs.js script showed issues in JSLint but these were entirely contained to the copied code from the emailJS documentation, so were left untouched. The other results were:
+<details><summary>game.js JSLint results</summary>
+<img src="/documentation/testing/validation-jslint-game.png">
+</details>
+These showed warnings; 2 on the use of var instead of let (explained previously to allow script.js to access these vairables) and one with the for loop, which works as expected so this warning was disregarded.
+<details><summary>score.js JSLint results</summary>
+<img src="/documentation/testing/validation-jslint-score.png">
+</details>
+Only one warning showed here for the for loop, which works as expected so this warning was disregarded.
+<details><summary>transitions.js JSLint results</summary>
+<img src="/documentation/testing/validation-jslint-transitions.png">
+</details>
+No warnings shown for transitions.js
 
 ## Accessibility
 The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/).
