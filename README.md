@@ -6,7 +6,7 @@
 
 *A game designed to test your memory. Can you correctly recall the order of a shuffled deck of cards?*
 
-This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. t provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
+This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. It provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
 
 ![A mock-up image of the website](/documentation/site-mock-up.png)
 
@@ -142,7 +142,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
     - External links open in a new browser tab
     - The design and functionality on the site works regardless of screen size
     - Contact information is readily available
-    - An obvious sign that I have accidentally accessed a page that does not exist
+    - An obvious sign that the user has accessed a page that does not exist
     - Accessibility
 
 #### Viability and Feasibility
@@ -322,11 +322,11 @@ Cabin is a modern looking sans serif typeface with wide language support. It is 
 
 **[Arimo](https://fonts.google.com/specimen/Arimo?query=arimo)**<br>
 ![Arimo](/documentation/font_arimo.png)<br>
-Arimo is an innovative and refreshing sans serif typeface that improves on screen readability. As such, it is a good choice for blocks of text to decrease eye strain on the user. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Arimo These are all sans serif typefaces and act as sufficient backups.
+Arimo is an innovative and refreshing sans serif typeface that improves on screen readability. As such, it is a good choice for blocks of text to decrease eye strain on the user. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Arimo. These are all sans serif typefaces and act as sufficient backups.
 
 **[Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans?query=josefin+sans)**<br>
 ![Josefin Sans](/documentation/font_josefin_sans.png)<br>
-Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timelessness design of playing cards.The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Josefin Sans. These are all sans serif typefaces and act as sufficient backups.
+Josefin Sans is an elegant and geometric typeface with a vintage feeling that works well with the timeless design of playing cards. The simple look will grab the user's attention to the site title and headings and includes a fun tilt on the "e" character. When used, it has the back up fonts of Arial, Helvetica, and Sans Serif in the case that the browser does not support Josefin Sans. These are all sans serif typefaces and act as sufficient backups.
 
 #### Images
 The icons used in the game were from [Font Awesome](https://fontawesome.com/) or UTF-8 icons with the codes retrieved from [UTF-8 icons](https://www.utf8icons.com/). The images of the playing cards were taken from [Wikipedia](https://en.wikipedia.org/wiki/Standard_52-card_deck) and are not under any copywrite.
@@ -334,7 +334,7 @@ The icons used in the game were from [Font Awesome](https://fontawesome.com/) or
 ### Features
 
 #### The Game Area
-For an in depth description of the functionality of the game area, please see the [game.md](/GAME.md).
+For an in depth description of the functionality of the game area, please see the [GAME.md](/GAME.md) file.
 #### Browser tab:
 
 <details><summary>Browser Tab</summary>
@@ -396,7 +396,7 @@ For an in depth description of the functionality of the game area, please see th
 #### Sequence Select
 
 <details><summary>Sequence Select</summary>
-<img src="/documentation/features/sequence-select.png">
+<img src="/documentation/features/button-sequence-select.png">
 </details>
 
 - The sequence select area gives the user a space to select the number of cards to memorise.
