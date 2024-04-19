@@ -281,7 +281,7 @@ As can be seen the chosen colours provide adequate contrast in line with the acc
     - On hover, the black card colour scheme flips so that it is used instead for the card background
     - Similarly used for the background on the how-to-play modal
     - Site logo words in the header and footer
-    - Text in the game buttons
+    - Text in the game buttons and labels
     - Hover effect for guessing table rows
     - Text on the results and error modals
     - Text for the 404 error 
@@ -592,7 +592,7 @@ For an in depth description of the functionality of the game area, please see th
 10. [emailJS](https://www.emailjs.com/)
     * API used to send the contents of the contact me form to the developers email inbox
 11. [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
-    * Used for testing the webpage
+    * Used for testing the webpage during development and testing the performance using Lighthouse
 12. [W3C HTML Validation Service](https://validator.w3.org/)
     * Used to validate the HTML code
 13. [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
@@ -603,7 +603,7 @@ For an in depth description of the functionality of the game area, please see th
     * Used to validate the accessibility of the web page
 
 ## Testing
-For my testing, please see the separate [testing.md](/TESTING.md) file.
+For my testing, please see the separate [TESTING.md](/TESTING.md) file.
 
 ## Bugs
 **Bug 1:**
