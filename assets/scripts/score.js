@@ -1,4 +1,3 @@
-// Button event listeners
 // Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
@@ -61,4 +60,3 @@ $(".submit-guess").click(function() {
         }
     } 
 });
-
