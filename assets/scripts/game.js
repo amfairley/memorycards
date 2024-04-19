@@ -1,122 +1,124 @@
 /* jshint esversion: 8, jquery: true, scripturl: true */
 
-// GLOBAL VARIABLES (var is used for variables that need to be accesed by separate scripts)
+// GLOBAL VARIABLES
+// (var is used for variables that need to be accesed by separate scripts)
 const cards = [
-    'ac.png', 
-    '2c.png', 
-    '3c.png', 
-    '4c.png', 
-    '5c.png', 
-    '6c.png', 
-    '7c.png', 
-    '8c.png', 
-    '9c.png', 
-    '0c.png', 
-    'jc.png', 
-    'qc.png',
-    'kc.png',
-    'ad.png', 
-    '2d.png', 
-    '3d.png', 
-    '4d.png', 
-    '5d.png', 
-    '6d.png', 
-    '7d.png', 
-    '8d.png', 
-    '9d.png', 
-    '0d.png', 
-    'jd.png', 
-    'qd.png',
-    'kd.png',
-    'ah.png', 
-    '2h.png', 
-    '3h.png', 
-    '4h.png', 
-    '5h.png', 
-    '6h.png', 
-    '7h.png', 
-    '8h.png', 
-    '9h.png', 
-    '0h.png', 
-    'jh.png', 
-    'qh.png',
-    'kh.png',
-    'as.png', 
-    '2s.png', 
-    '3s.png', 
-    '4s.png', 
-    '5s.png', 
-    '6s.png', 
-    '7s.png', 
-    '8s.png', 
-    '9s.png', 
-    '0s.png', 
-    'js.png', 
-    'qs.png',
-    'ks.png'
+    "ac.png",
+    "2c.png",
+    "3c.png",
+    "4c.png",
+    "5c.png",
+    "6c.png",
+    "7c.png",
+    "8c.png",
+    "9c.png",
+    "0c.png",
+    "jc.png",
+    "qc.png",
+    "kc.png",
+    "ad.png",
+    "2d.png",
+    "3d.png",
+    "4d.png",
+    "5d.png",
+    "6d.png",
+    "7d.png",
+    "8d.png",
+    "9d.png",
+    "0d.png",
+    "jd.png",
+    "qd.png",
+    "kd.png",
+    "ah.png",
+    "2h.png",
+    "3h.png",
+    "4h.png",
+    "5h.png",
+    "6h.png",
+    "7h.png",
+    "8h.png",
+    "9h.png",
+    "0h.png",
+    "jh.png",
+    "qh.png",
+    "kh.png",
+    "as.png",
+    "2s.png",
+    "3s.png",
+    "4s.png",
+    "5s.png",
+    "6s.png",
+    "7s.png",
+    "8s.png",
+    "9s.png",
+    "0s.png",
+    "js.png",
+    "qs.png",
+    "ks.png"
 ];
 let cardsToPlay;
 var sequenceLength;
 let lengthCheck;
 var cardObject = {
-    'ac': "Ace of Clubs",
-    '2c': "Two of Clubs",
-    '3c': "Three of Clubs",
-    '4c': "Four of Clubs",
-    '5c': "Five of Clubs",
-    '6c': "Six of Clubs",
-    '7c': "Seven of Clubs",
-    '8c': "Eight of Clubs",
-    '9c': "Nine of Clubs",
-    '0c': "Ten of Clubs",
-    'jc': "Jack of Clubs",
-    'qc': "Queen of Clubs",
-    'kc': "King of Clubs",
-    'ad': "Ace of Diamonds",
-    '2d': "Two of Diamonds",
-    '3d': "Three of Diamonds",
-    '4d': "Four of Diamonds",
-    '5d': "Five of Diamonds",
-    '6d': "Six of Diamonds",
-    '7d': "Seven of Diamonds",
-    '8d': "Eight of Diamonds",
-    '9d': "Nine of Diamonds",
-    '0d': "Ten of Diamonds",
-    'jd': "Jack of Diamonds",
-    'qd': "Queen of Diamonds",
-    'kd': "King of Diamonds",
-    'ah': "Ace of Hearts",
-    '2h': "Two of Hearts",
-    '3h': "Three of Hearts",
-    '4h': "Four of Hearts",
-    '5h': "Five of Hearts",
-    '6h': "Six of Hearts",
-    '7h': "Seven of Hearts",
-    '8h': "Eight of Hearts",
-    '9h': "Nine of Hearts",
-    '0h': "Ten of Hearts",
-    'jh': "Jack of Hearts",
-    'qh': "Queen of Hearts",
-    'kh': "King of Hearts",
-    'as': "Ace of Spades",
-    '2s': "Two of Spades",
-    '3s': "Three of Spades",
-    '4s': "Four of Spades",
-    '5s': "Five of Spades",
-    '6s': "Six of Spades",
-    '7s': "Seven of Spades",
-    '8s': "Eight of Spades",
-    '9s': "Nine of Spades",
-    '0s': "Ten of Spades",
-    'js': "Jack of Spades",
-    'qs': "Queen of Spades",
-    'ks': "King of Spades"
+    "ac": "Ace of Clubs",
+    "2c": "Two of Clubs",
+    "3c": "Three of Clubs",
+    "4c": "Four of Clubs",
+    "5c": "Five of Clubs",
+    "6c": "Six of Clubs",
+    "7c": "Seven of Clubs",
+    "8c": "Eight of Clubs",
+    "9c": "Nine of Clubs",
+    "0c": "Ten of Clubs",
+    "jc": "Jack of Clubs",
+    "qc": "Queen of Clubs",
+    "kc": "King of Clubs",
+    "ad": "Ace of Diamonds",
+    "2d": "Two of Diamonds",
+    "3d": "Three of Diamonds",
+    "4d": "Four of Diamonds",
+    "5d": "Five of Diamonds",
+    "6d": "Six of Diamonds",
+    "7d": "Seven of Diamonds",
+    "8d": "Eight of Diamonds",
+    "9d": "Nine of Diamonds",
+    "0d": "Ten of Diamonds",
+    "jd": "Jack of Diamonds",
+    "qd": "Queen of Diamonds",
+    "kd": "King of Diamonds",
+    "ah": "Ace of Hearts",
+    "2h": "Two of Hearts",
+    "3h": "Three of Hearts",
+    "4h": "Four of Hearts",
+    "5h": "Five of Hearts",
+    "6h": "Six of Hearts",
+    "7h": "Seven of Hearts",
+    "8h": "Eight of Hearts",
+    "9h": "Nine of Hearts",
+    "0h": "Ten of Hearts",
+    "jh": "Jack of Hearts",
+    "qh": "Queen of Hearts",
+    "kh": "King of Hearts",
+    "as": "Ace of Spades",
+    "2s": "Two of Spades",
+    "3s": "Three of Spades",
+    "4s": "Four of Spades",
+    "5s": "Five of Spades",
+    "6s": "Six of Spades",
+    "7s": "Seven of Spades",
+    "8s": "Eight of Spades",
+    "9s": "Nine of Spades",
+    "0s": "Ten of Spades",
+    "js": "Jack of Spades",
+    "qs": "Queen of Spades",
+    "ks": "King of Spades"
 };
 
 // FUNCTIONS
-// This shuffling algorithm was made with help from stack overflow and Bro Code on YouTube, see README.md for links
+// This shuffling algorithm was made with help from stack overflow
+// and Bro Code on YouTube, see README.md for links
 /**
- * Fischer Yates Algorithm for shuffling 
+ * Fischer Yates Algorithm for shuffling
  */
 function shuffle(array) {
     // Loop through elements of array from end to beginning
@@ -134,15 +136,21 @@ function shuffle(array) {
 
 // Function to make divs to hold the card card images
 /**
- *  Cycles through n times, making divs housing the card images and appending them to the game area
-*/ 
+ *  Cycles through n times
+ *  makes divs housing the card images
+ * and appending them to the game area
+*/
 function makeDivs(n) {
     for (let i = 0; i < n; i++) {
         var newDiv = document.createElement("div");
         // Assign CSS class
         $(newDiv).addClass("col-6 col-sm-4 col-lg-2 card-div");
         // Add image to the div
-        $(newDiv).html("<img src='assets/images/cards/"+cardsToPlay[i]+"' class = 'card-image' alt='The card " + cardObject[cardsToPlay[i].slice(0,2)] +"'>");
+        $(newDiv).html(
+            "<img src='assets/images/cards/"+cardsToPlay[i]+
+            "' class = 'card-image' alt='The card " +
+            cardObject[cardsToPlay[i].slice(0,2)] +"'>"
+        );
         // Apend it
         $("#card-mat").append(newDiv);
     }
@@ -165,7 +173,7 @@ function tableBuild(n) {
         td2.classList.add("guess-column");
         // Create column 2 Select section 1
         let select1 = document.createElement("select");
-        select1.innerHTML = 
+        select1.innerHTML =
             "<option value= 'disabled'>Value</option>" +
             "<option value='a'>Ace</option>" +
             "<option value='2'>2</option>" +
@@ -218,7 +226,10 @@ function tableBuild(n) {
         document.getElementById("table-body").append(tr1);
     }
     // Update the page
-    let appendScript = "<script id='guessing-script' src='assets/scripts/score.js'></script>";
+    let appendScript = (
+        "<script id='guessing-script'"+
+        "src='assets/scripts/score.js'></script>"
+    );
     $("body").append(appendScript);
 }
 
@@ -226,7 +237,8 @@ function tableBuild(n) {
 
 // Button event listeners
 
-// Apply length button chooses how many cards to show, shuffles the cards, displays the play button
+// Apply length button chooses how many cards to show
+// shuffles the cards, displays the play button
 $("#play").click(function() {
     // Save the number as length
     // Math.floor is used in case the user enters a float value
@@ -250,7 +262,7 @@ $("#play").click(function() {
         makeDivs(sequenceLength);
         // Show the guess button
         $("#guess").removeClass("hidden");
-        // Hide spacers on small screen 
+        // Hide spacers on small screens
         $(".spacer").remove();
     } else {
         $("#sequence-error-modal").css("display", "block");
@@ -262,7 +274,7 @@ $("#play").click(function() {
 $("#guess").click(function() {
     // Hide the guess button
     $("#guess").addClass("hidden");
-    $('#table-container').addClass("table-container-style");
+    $("#table-container").addClass("table-container-style");
     // Show the guessing table
     $("#guessing-table").removeClass("hidden");
     tableBuild(sequenceLength);
@@ -275,7 +287,7 @@ $("#guess").click(function() {
 // Reset button
 $(".reset-game").click(function() {
     // Remove table container class for page styling
-    $('#table-container').removeClass("table-container-style");
+    $("#table-container").removeClass("table-container-style");
     // Reset the sequence length
     sequenceLength = undefined;
     // Show the length selector if hidden
@@ -284,7 +296,7 @@ $(".reset-game").click(function() {
         $("#quantity-label").removeClass("hidden");
     }
     // Reset the length select element
-    $("#quantity").prop('value', "");
+    $("#quantity").prop("value", "");
     // Hide the sequence length display
     $("#length-box").css("display", "none");
     // Show the play button if hidden
@@ -307,7 +319,7 @@ $(".reset-game").click(function() {
     $(".table-row").each(function(){
         $(this).remove();
     });
-    // Remove the JavaScript script link to the guessing functions 
+    // Remove the JavaScript script link to the guessing functions
     $("#guessing-script").each(function(){
         $(this).remove();
     });
