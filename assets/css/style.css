@@ -1,99 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Cabin:ital,wght@0,500;1,500&family=Josefin+Sans&display=swap');
 
-/*-----GLOBAL STYLING ----- */
+/*-------------------- GLOBAL STYLING --------------------*/
 /* Default anchor tags */
 a {
     color: inherit;
     text-decoration: inherit;
 }
-
 /* Hidden class*/
 .hidden {
     visibility: hidden;
     position: absolute;
 }
-
 /* Hide modal */
 .hide-modal {
     display: none;
 }
-
 /* Uppercase font */
 .upper-case {
     text-transform: uppercase;
 }
-
 /* Keep footer at the bottom of the page */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-
 /* Spacers for game area on small screens */
 .spacer {
     display: none;
 }
 
-
-/*------------NAVIGATION BAR-----------------*/
+/*-------------------- NAVIGATION BAR --------------------*/
 /* Whole header secion */
 #header-section {
     height: 120px;
     width: 100%;
     background-color: #F5F5F5;
 }
-
 /* Divs that hold the logo and navigation bar list */
 .header-item {
     display: inline-block;
     margin: auto;
 }
-
 /* Header logo div */
 #header-logo {
     color: black;
     width: 60%;
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
 }
-
 /* Header logo contents */
 #logo {
     margin: auto;
     padding-top: 37px;
     padding-left: 10px;
 }
-
 /* Logo font awesome */
 .brand-icon {
     color:#CF1020;
 }
-
 /* Logo link anchor */
 #logo-link {
     display: inline-block;
     height: 120px;
     width: 100%;
 }
-
 /* Navigation links div */
 #nav-links-div {
     width: 40%;
 }
-
 /* Navigation unordered list */
 #nav-list {
     justify-content: right;
     margin: 0;
 }
-
 /*Individual list items */
 .nav-list-item {
     width: 90px;
 }
-
-/* Navigation anchor */
-
+/* Navigation links */
 .nav-link-red,
 .nav-link-black {
     display: inline-block;
@@ -104,11 +88,9 @@ body {
     margin: auto;
     background-color: #F5F5F5;
 }
-
 .nav-link-red {
     color: #CF1020;
 }
-
 .nav-link-black {
     color: #333A3F;
 }
@@ -132,57 +114,34 @@ body {
     background-color: #333A3F;
     color: #F5F5F5;
 }
-
 /* Navigation font-awesome: top */
 .nav-icon-top {
     text-align: left;
     padding-left: 5px;
     margin: 0;
 }
-
 /* Navigation link name */
 .nav-item-name {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0;
-}
-
-#home-text {
-    padding-top: 15px;
-}
-
-#how-to-play-text,
-#contact-me-text {
     padding-top: 6px;
 }
-
 /* Navigation font-awesome: bottom */
 .nav-icon-bottom {
     text-align: right;
     align-self: flex-end;
     margin: 0;
     padding-right: 5px;
-}
-
-#nav-icon-bottom-home {
-    padding-top: 23px;
-}
-
-#nav-icon-bottom-how,
-#nav-icon-bottom-contact {
     padding-top: 9px;
 }
 
-
-/* --------------- MAIN SECTIONS ------------ */
+/*-------------------- MAIN SECTIONS --------------------*/
 main {
     flex: 1 0 auto;
     background-color: #F5F5F5;
-
 }
-
 /* Sequence length display box */
-
 #length-box {
     font-family: "Cabin", Arial, Helvetica, sans-serif;
     color: #CF1020;
@@ -210,8 +169,6 @@ main {
     padding-right: 5px;
     padding-top: 10px;
 }
-
-
 /* Buttons */
 #button-section {
     text-align: center;
@@ -242,6 +199,10 @@ main {
     background-color: #333A3F;
     opacity: 0.7;
 }
+#quantity-label {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
+    color:#333A3F;
+}
 #quantity {
     font-family: "Cabin", Arial, Helvetica, sans-serif;
     width: 150px;
@@ -260,7 +221,6 @@ main {
     border-radius: 10%;
     margin-top: 10px;
 }
-
 /* Guessing table styling */
 .table-container-style {
     margin: auto;
@@ -296,7 +256,7 @@ tbody>tr:hover {
     width: 10%;
 }
 
-/* --------------- MODALS ------------------- */
+/*-------------------- MODALS --------------------*/
 
 #modal-background {
     height: 100vh;
@@ -306,7 +266,6 @@ tbody>tr:hover {
     z-index: 1;
     display: none;
 }
-
 #sequence-error-modal,
 #guess-error-modal,
 #results-modal {
@@ -314,7 +273,6 @@ tbody>tr:hover {
 }
 /* Modal global styling */
 .game-modal {
-    /* Centred in the screen */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -340,7 +298,6 @@ tbody>tr:hover {
     color:#CF1020;
     padding-right: 15px;
 }
-
 /* Game modals */
 #modal-sequence-header,
 #modal-guess-header,
@@ -385,11 +342,10 @@ tbody>tr:hover {
 #modal-results-icon {
     padding-top: 55px;
 }
-
 /* Contact me modal */
 #contact-me-modal::-webkit-scrollbar {
     display: none;
-  }
+}
 #contact-me-modal {
     height: auto;
     max-height:95vh;
@@ -417,7 +373,6 @@ tbody>tr:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 /* How to play modal */
 #how-to-play-modal {
     color:#F5F5F5;
@@ -439,7 +394,6 @@ tbody>tr:hover {
     width: 80%;
     margin: auto;
 }
-
 /* 404 */
 #main-404 {
     text-align: center;
@@ -454,7 +408,6 @@ tbody>tr:hover {
     text-align: center;
     color: #333A3F;
 } 
-
 #top-404,
 #bottom-404 {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
@@ -486,7 +439,7 @@ tbody>tr:hover {
     padding-top: 40px;
 }
 
-/* --------------- FOOTER ------------------- */
+/*-------------------- FOOTER --------------------*/
 /* Complete footer */
 #footer {
     position:relative;
@@ -495,7 +448,6 @@ tbody>tr:hover {
     height: 90px;
     margin: 0;
 }
-
 /* Footer logo outer */
 #footer-logo {
     height: inherit;
@@ -503,13 +455,11 @@ tbody>tr:hover {
     display: inline-block;
     margin: 0;
 }
-
 /* Footer logo anchor tag */
 #logo-link-footer {
     width: 100%;
     height: 100%;
 }
-
 /* Footer logo text */
 #footer-logo-content {
     color: #333A3F;
@@ -520,12 +470,10 @@ tbody>tr:hover {
     text-align: center;
     height: 90px;
 }
-
 /* Footer logo font awesome icons */
 .footer-logo-icon {
     color:#CF1020;
 }
-
 /* Footer GitHub outer */
 #footer-github {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
@@ -535,7 +483,6 @@ tbody>tr:hover {
     text-align: right;
     margin: 0;
 }
-
 /* Footer GitHub anchor link */
 #github-link {
     height: 80px;
@@ -544,7 +491,6 @@ tbody>tr:hover {
     border-radius: 15%;
     margin-right: 10px;
 }
-
 /* Footer GitHub Content */
 #github-icon-top{
     text-align: right;
@@ -563,9 +509,7 @@ tbody>tr:hover {
     margin: 0;
 }
 
-
-
-/* --------- Phone Media Queries ------------------------ */
+/*-------------------- MEDIA QUERIES --------------------*/
 @media screen and (max-width: 767px) {
     /*Make total head space 160*/
     #header-section {
@@ -581,25 +525,21 @@ tbody>tr:hover {
     #logo {
         padding: 20px;
     }
-
     /* New navigation bar height and width*/
     #nav-links-div {
         height: 90px;
         width: 100%;
     }
-
     /* Navigation bar UL new height and centred */
     #nav-list {
         height: 90px;
         justify-content: center;
     }
-
     /* Gaps between navigation bar items */
     .nav-list-item {
         margin-right: 30px;
         font-size: 11pt;
     }
-
     /* Rotate the navigation bar cards */
     .nav-link-red,
     .nav-link-black {
@@ -643,13 +583,8 @@ tbody>tr:hover {
     .nav-icon-bottom {
         text-align: left;
         padding-left: 5px;
+        padding-top: 2px;
     }
-    #nav-icon-bottom-home,
-    #nav-icon-bottom-how,
-    #nav-icon-bottom-contact {
-        padding-top: 5px;
-    }
-
     /* Footer logo */
     #footer-logo-content {
         padding-left: 5px;
@@ -683,7 +618,6 @@ tbody>tr:hover {
     .spacer {
         display: block;
     }
-
     /* Footer logo smaller */
     #footer-logo-content {
         font-size: 12pt;
