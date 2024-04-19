@@ -1,14 +1,14 @@
 # Testing
 
-Manual testing (often called user testing) is where the site is manually tested by clicking buttons, filling out forms, and testing all the logic. Automatic testing involves using scripts and a testing framework such as Jest. Automated testing can be quick, thorough, and allow the developer to pick up errors early on but rely on the developer asking the right questions and do not test the user experience. For this project, I have concentrated on manual testing, as automated testing was not required and this left me with more time to concentrate on the game logic and user experience.
+Manual testing (often called user testing) is where the site is manually tested by clicking buttons, filling out forms, and testing all the logic. Automatic testing involves using scripts and a testing framework such as Jest. Automated testing can be quick, thorough, and allow the developer to pick up errors early on but relies on the developer asking the right questions and does not test for user experience. For this project, I have concentrated on manual testing, as automated testing was not required and this left me with more time to concentrate on the game logic and user experience.
 
 ## Table Of Contents
 1. [HTML Validation](#HTML-validation)
 2. [CSS Validation](#css-validation)
 3. [JavaScript Validation](#javascript-validation)
 4. [Accessibility](#accessibility)
-    -[Game page](#game-page)
-    -[404 page](#404-page)
+    - [Game page](#game-page)
+    - [404 page](#404-page)
 5. [Performance](#performance)
 6. [Performance tests of various devices](#performance-tests-of-various-devices)
 7. [Browser Compatibility](#browser-compatability)
@@ -43,7 +43,7 @@ CSS validation was completed using the [W3C Jigsaw CSS Validation Service](https
 
 ## Javascript Validation
 
-The JavaScript validation was done by copying the JavaScript code into [JSHint](https://jshint.com/). The scripts were combined into one file for validation, as the score.js script accesses variables defined within game.js so would cause an error otherwise. The only error highlighted was an undefined variable of emailjs in the emailjs.js script. This is acceptable, as this portion of code is taken directly from the emailjs documentation and the initialised at the bottom of the body element in the html pages.
+The JavaScript validation was done by copying the JavaScript code into [JSHint](https://jshint.com/). The scripts were combined into one file for validation, as the score.js script accesses variables defined within game.js so would cause an error otherwise. The only error highlighted was an undefined variable of emailjs in the emailjs.js script. This is acceptable, as this portion of code is taken directly from the emailjs documentation and is initialised at the bottom of the body element in the html pages.
 <details><summary>JavaScript Validation</summary>
 <img src="/documentation/testing/validation-js.png">
 </details>
@@ -52,11 +52,11 @@ Testing was also done by running each script file through the linter [JSLint](ht
 <details><summary>game.js JSLint results</summary>
 <img src="/documentation/testing/validation-jslint-game.png">
 </details>
-These showed warnings; 2 on the use of var instead of let (explained previously to allow script.js to access these vairables) and one with the for loop, which works as expected so this warning was disregarded.
+These showed warnings; 2 on the use of var instead of let (explained previously to allow script.js to access these vairables) and one with the for loop, which works as expected so this warning was disregarded.<br>
 <details><summary>score.js JSLint results</summary>
 <img src="/documentation/testing/validation-jslint-score.png">
 </details>
-Only one warning showed here for the for loop, which works as expected so this warning was disregarded.
+Only one warning showed here for the for loop, which works as expected so this warning was disregarded.<br>
 <details><summary>transitions.js JSLint results</summary>
 <img src="/documentation/testing/validation-jslint-transitions.png">
 </details>
