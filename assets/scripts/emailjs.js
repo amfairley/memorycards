@@ -14,4 +14,4 @@ window.onload = function() {
         // Alert notification
         alert("Thank you for your message!");
     });
-}
+};
