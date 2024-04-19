@@ -77,9 +77,9 @@ However this does not test the HTML elements added to the page using the JavaScr
 
 ### 404 Page
 9 alerts are shown for the 404 page. The reasons that these are deemed acceptable are:
-- **Error 1 and 2 Possible heading:** This is referring to the corner 404s in the display card and is being flagged by the size and weight of the font. These are not headings, so these alerts can be ignored.
-- **Error 3 and 4 Redundant link:** Similar to the game page, this is flagged because there are multiple links to the homepage on this page. This is by design. The 2 links of the site logo in the header and footer are intentional and the additional link in the 404 alert provides and quick and intuitive way for the user to get back to the game page.
-- **Errors 5-9 Justified Text:** This refers to the text in the how-to-play instructions and is not applicable for the same reasons as the game page.
+- **Alerts 1 and 2 Possible heading:** This is referring to the corner 404s in the display card and is being flagged by the size and weight of the font. These are not headings, so these alerts can be ignored.
+- **Alerts 3 and 4 Redundant link:** Similar to the game page, this is flagged because there are multiple links to the homepage on this page. This is by design. The 2 links of the site logo in the header and footer are intentional and the additional link in the 404 alert provides and quick and intuitive way for the user to get back to the game page.
+- **Alerts 5-9 Justified Text:** This refers to the text in the how-to-play instructions and is not applicable for the same reasons as the game page.
 
 <details><summary>Accessibility Results: 404</summary>
 <img src="/documentation/testing/wave-results-404.png">
