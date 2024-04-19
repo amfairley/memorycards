@@ -66,6 +66,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Results modal](#results-modal)
         - [Reset button](#reset-button)
         - [Website footer](#website-footer)
+    7. [Future Development](#future-development)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks](#frameworks)
@@ -132,7 +133,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 ### Strategy
 - **What value does the project provide?** This memory game website will provide a fun and enjoyable way for users to test and improve upon their memory.
 - **What are the business needs?** The business in this case would be the developer, who intends to produce a fun, responsive, and interactive website. Their needs would be an engaging game and a way for the user to contact and give feedback to the developer.
-- **Who is the target audience?** The target audience are those interested in memory games or brain training games.
+- **Who is the target audience?** The target audience are those interested in memory games or brain training games. This can range from casual players, those training for memory challenges, or for childhood development.
 - **What are the user requirements and expectations?**
     - A simple and intuitive navigation system
     - Responsiveness from button clicks and mouse hover
@@ -553,6 +554,12 @@ For an in depth description of the functionality of the game area, please see th
 </details>
 - User stories covered: 1, 7, 11.
 
+### Future Development 
+Some features were considered and not included due to either not being a part of the scope of this project or time constraints. As such, the following features will be added in future updates:
+- Using JavaScript obfuscators to hide the emailJS public key
+- Add functionality to the guess select elements where the user can submit their guesses with the enter key
+- Use a back-end database to store the contact form responses
+
 ## Technologies Used
 
 ### Languages
@@ -599,7 +606,9 @@ For an in depth description of the functionality of the game area, please see th
     * Used to validate the CSS code
 14. [JSHint](https://jshint.com/)
     * Used to validate JavaScript code
-15. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+15. [JSLint](https://www.jslint.com/)
+    * Linter used to validated JavaScript code
+16. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     * Used to validate the accessibility of the web page
 
 ## Testing
@@ -760,7 +769,7 @@ $(".submit-guess").click(function() {
 **Bug 5:**
 On smaller screen heights, the contact me modal contents became blurred like so: <br>
 ![blurred modal](/documentation/bug-5-issue.png) <br>
-The problem turned out to be the border radius of the modal, so I added a media query to remove the border radius at and below screen sizes when the blurring occured: <br>
+The problem turned out to be the border radius of the modal, so I added a media query to remove the border radius at and below screen sizes when the blurring occurred: <br>
 
 `@media screen and (max-height: 660px) {
     #contact-me-modal {
@@ -771,8 +780,11 @@ The problem turned out to be the border radius of the modal, so I added a media 
 This fixed the issue: <br>
 ![fixed modal](/documentation/bug-5-solution.png)<br>
 
+**Bug 6:**
+The sequence length label and button overlap on smaller screens, this is why a media query is set for the strange value of 464 pixels, because this is the screen size at which overlapping occurs. This media query fixes the overlap issue.
 
 ### Known Bugs
+There are no known current bugs on the website.
 
 ### Mistakes
 - Git commit #100 did not start with a keyword before the description. Care will be taken to prevent this occuring in future.
@@ -799,6 +811,15 @@ To deploy locally; you can clone this project by typing
 into the terminal of your IDE of choice.
 
 ### Addition of 404.html
+The 404 page was added in the following way:
+- Create a file named 404.html
+- Create the content and style as desired
+- Create a new file named 404.md
+- Put the following code into the 404.md:
+
+`---` <br>
+`permalink: /404.html` <br>
+`---`
 
 ## Credits
 
@@ -806,9 +827,16 @@ into the terminal of your IDE of choice.
 - The code-institute [template](https://github.com/Code-Institute-Org/ci-full-template) was used in order to have necessary tools preinstalled
 
 ### Media
+- The card images are from [Wikipedia](https://en.wikipedia.org/wiki/Standard_52-card_deck). They are the work of [Dmitry Formin](https://commons.wikimedia.org/wiki/User:Dmitry_Fomin) who has dedicated these images to the public domain under the copywrite code [CC0]( https://creativecommons.org/publicdomain/zero/1.0/).
 
 ### Code
 **Fischer Yates Shuffling Algorithm**
 This code was put together with help from [stack overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/43409054) and [Bro Code](https://www.youtube.com/watch?v=FGAUekwri1Q) on YouTube. 
 
+**EmailJS**
+Code lines 2-11 in [emailjs.js](/assets/scripts/emailjs.js) is taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body elements.
+
 ## Acknowledgements
+- My mentor [Julia Konovalova](https://github.com/IuliiaKonovalova) for their continued guidance and support with this project
+- [Code Institute](https://codeinstitute.net/global/) Slack community members for their support and help
+- My fellow [Code Institute](https://codeinstitute.net/global/) learning cohort for all of their advice and support
