@@ -619,10 +619,8 @@ For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
 **Bug 1:**
 When populating the guessing table, the JavaScript could not connect event listeners for the guess submission buttons. This turned out to be because the buttons were added to the DOM after the JavaScript file was loaded. To solve this, I added the following lines of code to the bottom of the tableBuild() function:
 
-`JS
-    let appendScript = "<script id='guessing-script' src='assets/scripts/script2.js'></script>"
-    $("body").append(appendScript);
-`
+`let appendScript = "<script id='guessing-script' src='assets/scripts/score.js'></script>"`<br>
+`$("body").append(appendScript);`<br>
 This allowed a second JavaScript file to be appended to the html body, where the game scoring section is stored. As this is loaded after the table, it is able to connect event listeners to the buttons in the table.
 
 **Bug 2:**
