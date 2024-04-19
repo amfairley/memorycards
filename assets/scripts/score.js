@@ -2,8 +2,11 @@
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
     let siblings = $(this).siblings();
-    // Check for valid input 
-    if ((siblings[0].value === 'disabled') || (siblings[1].value === 'disabled')) {
+    // Check for valid input
+    if (
+        (siblings[0].value === "disabled") ||
+        (siblings[1].value === "disabled")
+    ) {
         $("#guess-error-modal").css("display", "block");
         $("#modal-background").css("display", "block");
     } else {
@@ -58,5 +61,5 @@ $(".submit-guess").click(function() {
         } else {
             $("#modal-results-header").html("Try again...");
         }
-    } 
+    }
 });
