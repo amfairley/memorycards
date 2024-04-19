@@ -22,7 +22,7 @@
 ## Game logic
 
 ### Possible errors
-These are some possible errors to keep in mind during development
+These are some possible errors to keep in mind during development:
 - If an unavailable value is selected e.g. none, negative, greater than 52 or a decimal
 - Each play through concatenating arrays and adding to the previous playthrough
 
@@ -31,10 +31,10 @@ These are some possible errors to keep in mind during development
 - **shuffle(array):** The shuffle function takes an array as a parameter and shuffles the indexes of the elements in the array. It is used in this game to shuffle a deck of cards.
 - **makeDivs(n):** The makeDivs function takes an integer parameter and uses it to produce a grid of that many playing cards in the game area. It loops through a range of i from 0 up to 1 less than n. On each iteration it: 
     - Creates a div
-    - Assigns it classes for css styling and later manipulation and an alt attribute for accessibility
-    - Sets the div innerHTML to be an img element with the source being the i<sup>th</sup> card in the current cardsToPlay array
+    - Assigns it classes for css styling and later manipulation
+    - Sets the div innerHTML to be an img element with the source being the i<sup>th</sup> card in the current cardsToPlay array with an alt attribute for accessibility
     - Appends the div it to the game area
-- **tableBuild(n):** The tableBuild() takes an integer parameter and uses it to create that many rows to populate the guessing table. After the loop, it appends a script element to the body, linking the score JavaScript file. During the loop, it iterates through a range of i from 0 up to 1 less than n. On each iteration it:
+- **tableBuild(n):** The tableBuild() function takes an integer parameter and uses it to create that many rows to populate the guessing table. After the loop, it appends a script element to the body, linking the score JavaScript file. During the loop, it iterates through a range of i from 0 up to 1 less than n. On each iteration it:
     - Creates a table row and adds a class to it
     - Creates the first table data cell element, adds a class, and sets its inner HTML to equal the current iteration (i+1)
     - Creates the second table data cell element and adds a class to it
@@ -80,7 +80,7 @@ These are some possible errors to keep in mind during development
     - Disable that rows two select options and submit button to prevent additional guesses
     - Add a class of submitted to the submit button
     - Calculate the game score by counting the amount of Y results, dividing it by the total results, multiplying it by 100, and using Math.floor() to round it down to an integer
-    - Check if the game is over by seeing if the length of the array containing elements with the submitted class is equal to the sequenceLength and display the score if they are
+    - Check if the game is over by seeing if the length of the array containing elements with the submitted class is equal to the sequenceLength and display the results modal if they are
 - **reset click**: The reset button will reset the game area. It will :
     - Remove the table container styling
     - Set the sequenceLength back to undefined
@@ -98,7 +98,7 @@ These are some possible errors to keep in mind during development
 
 ## Finalised JavaScript Files
 The custom JavaScript for this project is split across 4 script files; [game.js](/assets/scripts/game.js), [score.js](/assets/scripts/score.js), [transitions.js](/assets/scripts/transitions.js) and [emailjs.js](/assets/scripts/emailjs.js).
-- **game.js**: Defines the variables for the deck of cards, some global variables, and the cardObject. var is used to define the cardObject and sequenceLength because, despite being not as safe as let, these two need to be accessed by other script files. This risk was deemed acceptible for this small project as no malicious behaviour is expected. Functions for shuffling the deck of cards, building the card area, and building the guessing table are also defined here. The functionality of the play now, guess, and reset buttons are defined here.
+- **game.js**: Defines the variables for the deck of cards, some global variables, and the cardObject. Var is used to define the cardObject and sequenceLength because, despite being not as secure as let, these two need to be accessed by other script files. This risk was deemed acceptible for this small project as no malicious behaviour is expected. Functions for shuffling the deck of cards, building the card area, and building the guessing table are also defined here. The functionality of the play now, guess, and reset buttons are defined here.
 - **score.js**: The submit guess function is defined here. It is in a separate script file as a fix to **bug 1**.
 - **transitions.js**: This houses the JavaScript for styling on the page; hover effects for the navigation icons, opening the navigation icon modals, and the closing functionality for all modals.
 - **emailjs.js:**: Houses the JavaScript for the functioning of the emailJS API along with custom code to alert the user to a successful submission and reset the form contents.
