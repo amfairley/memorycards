@@ -42,6 +42,10 @@ CSS validation was completed using the [W3C Jigsaw CSS Validation Service](https
 </details>
 
 ## Javascript Validation
+The JavaScript validation was done by copying the JavaScript code into [JSHint](https://jshint.com/). The scripts were combined into one file for validation, as the score.js script accesses variables defined within game.js so would cause an error otherwise. The only error highlighted was an undefined variable of emailjs in the emailjs.js script. This is acceptable, as this portion of code is taken directly from the emailjs documentation and the initialised at the bottom of the body element in the html pages.
+<details><summary>JavaScript Validation</summary>
+<img src="/documentation/testing/validation-js.png">
+</details>
 
 ## Accessibility
 The accessibility testing was performed using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/).
@@ -51,6 +55,7 @@ However this does not test the HTML elements added to the page using the JavaScr
 6 alerts are shown for the game page. The reasons that these are deemed acceptable are:
 - **Alert 1 Redundant Link:** This occurs because the site logo in the header and the site logo in the footer both link back to the game page. It is my determination that this is not redundant and is part of the functionality of the site, therefore this alert may be ignored.
 - **Alerts 2-6 Justified Text:** These errors appeared because the how-to-play instructions are set to text-align: justify. This is acceptable in this instance because the text appears in no more than 4 lines so does not cause the same accessibility issues as large blocks of justified text (varying word/letter spacing and 'rivers of white' in the text).
+
 <details><summary>Accessibility Results: Homepage</summary>
 <img src="/documentation/testing/wave-results-homepage.png">
 </details>
