@@ -1,4 +1,5 @@
-// The bulk of this code is taken from the emailjs documentation. A link is provided in the README.
+// The bulk of this code is taken from the emailjs documentation
+//A link is provided in the README
 window.onload = function() {
     document.getElementById('contact-me-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -9,8 +10,8 @@ window.onload = function() {
             }, (error) => {
                 console.log('FAILED...', error);
             });
-        // Reset the form 
-        document.getElementById('contact-me-form').reset();
+        // Reset the form
+        document.getElementById("contact-me-form").reset();
         // Alert notification
         alert("Thank you for your message!");
     });
