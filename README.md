@@ -823,7 +823,7 @@ The 404 page was added in the following way:
 ## Credits
 
 ### Documentation
-- The code-institute [template](https://github.com/Code-Institute-Org/ci-full-template) was used in order to have necessary tools preinstalled
+- The code-institute [template](https://github.com/Code-Institute-Org/ci-full-template) was used in order to have necessary tools preinstalled.
 
 ### Media
 - The card images are from [Wikipedia](https://en.wikipedia.org/wiki/Standard_52-card_deck). They are the work of [Dmitry Formin](https://commons.wikimedia.org/wiki/User:Dmitry_Fomin) who has dedicated these images to the public domain under the copywrite code [CC0]( https://creativecommons.org/publicdomain/zero/1.0/).
@@ -833,7 +833,7 @@ The 404 page was added in the following way:
 This code was put together with help from [stack overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/43409054) and [Bro Code](https://www.youtube.com/watch?v=FGAUekwri1Q) on YouTube. 
 
 **EmailJS**
-Code lines 2-11 in [emailjs.js](/assets/scripts/emailjs.js) is taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body elements.
+Code lines 2-11 in [emailjs.js](/assets/scripts/emailjs.js) is taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body element.
 
 ## Acknowledgements
 - My mentor [Julia Konovalova](https://github.com/IuliiaKonovalova) for their continued guidance and support with this project
