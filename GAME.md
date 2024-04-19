@@ -1,5 +1,14 @@
 # Memory Cards Game Logic
 
+## Table of Contents
+1. [Required Components](#required-components)
+2. [Game Logic](#game-logic)
+    - [Possible Errors](#possible-errors)
+    - [JavaScript Functionality](#javascript-functionality)
+        - [Functions](#functions)
+        - [Event Listeners](#event-listeners)
+3. [Finalised JavaScript Files](#finalised-javascript-files)
+
 ## Required components
 **Game area**: The game requires a game area to take place in <br>
 **A button to start the game**: A play now button is required so that the user may start the game when they decide <br>
@@ -12,7 +21,8 @@
 
 ## Game logic
 
-### Possible errors to keep in mind
+### Possible errors
+These are some possible errors to keep in mind during development
 - If an unavailable value is selected e.g. none, negative, greater than 52 or a decimal
 - Each play through concatenating arrays and adding to the previous playthrough
 
@@ -86,10 +96,9 @@
     - Reset any removed spacers for styling purposes
     - It should be noted that this reset button does not unshuffle the cards, but as the cards are shuffled each time the play button is pressed, this does not affect gameplay 
 
-### Styling
-
-## JavaScript files breakdown 
-The JavaScript for this project is split across 4 script files; [game.js](/assets/scripts/game.js), [score.js](/assets/scripts/score.js), [transitions.js](/assets/scripts/transitions.js) and [emailjs.js](/assets/scripts/emailjs.js).
+## Finalised JavaScript Files
+The custom JavaScript for this project is split across 4 script files; [game.js](/assets/scripts/game.js), [score.js](/assets/scripts/score.js), [transitions.js](/assets/scripts/transitions.js) and [emailjs.js](/assets/scripts/emailjs.js).
 - **game.js**: Defines the variables for the deck of cards, some global variables, and the cardObject. var is used to define the cardObject and sequenceLength because, despite being not as safe as let, these two need to be accessed by other script files. This risk was deemed acceptible for this small project as no malicious behaviour is expected. Functions for shuffling the deck of cards, building the card area, and building the guessing table are also defined here. The functionality of the play now, guess, and reset buttons are defined here.
 - **score.js**: The submit guess function is defined here. It is in a separate script file as a fix to **bug 1**.
 - **transitions.js**: This houses the JavaScript for styling on the page; hover effects for the navigation icons, opening the navigation icon modals, and the closing functionality for all modals.
+- **emailjs.js:**: Houses the JavaScript for the functioning of the emailJS API along with custom code to alert the user to a successful submission and reset the form contents.
