@@ -29,16 +29,16 @@ Manual testing (often called user testing) is where the site is manually tested 
 HTML validation was completed using the [W3C HTML validation service](https://validator.w3.org/) for the homepage and 404 page.
 Each page passed with no errors or warnings to show. Screenshots of the results are shown below:
 <details><summary>Homepage</summary>
-<img src="/documentation/testing/html-validation-homepage.png">
+<img src="/documentation/testing/validation-html-homepage.png">
 </details>
 <details><summary>404</summary>
-<img src="/documentation/testing/html-validation-404.png">
+<img src="/documentation/testing/validation-html-404.png">
 </details>
 
 ## CSS Validation
-CSS validation was completed using the [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). The results can be seen [here]() or as a screenshot below.
+CSS validation was completed using the [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). The results can be seen [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famfairley.github.io%2Fmemorycards%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) or as a screenshot below. The 435 warnings that are flagged come from using the webkit rule to hide the scroll bar in the contact me modal as it is a vendor extended pseudo element and the other 434 from Bootstrap.
 <details><summary>CSS Validation</summary>
-<img src="">
+<img src="/documentation/testing/validation-css.png">
 </details>
 
 ## Javascript Validation
