@@ -459,7 +459,7 @@ For an in depth description of the functionality of the game area, please see th
 <img src="/documentation/features/card-display-desktop.png">
 </details>
 
-- The shuffled cards are displayed in the game area, neatly separated with gaps in between for a more pleasing appearance.
+- The shuffled cards are displayed in the game area, neatly separated with gaps inbetween for a more pleasing appearance.
 - They are bordered with a thick rounded border to highlight them against the background.
 - If there are too many cards to show on the page, content hinting is utilised to indicate to the user that they need to scroll down to see the rest of the cards.
 - Bootstrap 5 classes are used to change the number of cards in each row depending on the screen size, with 6 per row for large screens, 3 per row for medium screens and 2 per row for smaller screens, achieving good user experience across all device sizes.
@@ -473,6 +473,7 @@ For an in depth description of the functionality of the game area, please see th
 
 - The guess button advances the game from the memorisation stage to the guessing stage by:
     - Hiding the guess button so it cannot be clicked twice.
+    - Removing the cards from the game area.
     - Populating and showing the guessing table for the user to enter their guesses.
 - The guess button changes colour scheme with a slight transitional period when hovered to indicate functionality to the user in a pleasing way.
 - User stories covered: N/A.
@@ -582,14 +583,14 @@ Some features were considered and not included due to either not being a part of
     * This is my IDE of choice for writing my HTML, CSS, and JavaScript code for this project
 2. [Git](https://git-scm.com/)
 	* Used for version control
-3. [Github](https://github.com/)
+3. [GitHub](https://github.com/)
 	* Used to store the code
 4. [Balsamiq Wireframes](https://balsamiq.com/)
     * Used to create wireframes for the project
 5. [Multi Mock-up](https://techsini.com/multi-mockup/index.php)
     * Used to create mock-up images of the site for README.md
 6. [Google Fonts](https://fonts.google.com/)
-    * Used to supply fonts for the website
+    * Used to supply typefaces for the website
 7. [Font Awesome](https://fontawesome.com/)
     * Used throughout for decorative icons
 8. [UTF-8 characters](https://www.utf8icons.com/)
@@ -612,13 +613,13 @@ Some features were considered and not included due to either not being a part of
     * Used to validate the accessibility of the web page
 
 ## Testing
-For my testing, please see the separate [TESTING.md](/TESTING.md) file.
+For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
 
 ## Bugs
 **Bug 1:**
 When populating the guessing table, the JavaScript could not connect event listeners for the guess submission buttons. This turned out to be because the buttons were added to the DOM after the JavaScript file was loaded. To solve this, I added the following lines of code to the bottom of the tableBuild() function:
 
-` JS
+`JS
     let appendScript = "<script id='guessing-script' src='assets/scripts/script2.js'></script>"
     $("body").append(appendScript);
 `
