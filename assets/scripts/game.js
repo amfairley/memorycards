@@ -241,6 +241,7 @@ $("#play").click(function() {
         $(this).addClass("hidden");
         // Hide the choosing length select
         $("#quantity").addClass("hidden");
+        $("#quantity-label").addClass("hidden");
         // shuffle the cards
         shuffle(cards);
         // Selects a portion of the shuffled cards to play
@@ -280,6 +281,7 @@ $(".reset-game").click(function() {
     // Show the length selector if hidden
     if ($("#quantity").hasClass("hidden")) {
         $("#quantity").removeClass("hidden");
+        $("#quantity-label").removeClass("hidden");
     }
     // Reset the length select element
     $("#quantity").prop('value', "");
@@ -293,16 +295,16 @@ $(".reset-game").click(function() {
     if (!($("#guess").hasClass("hidden"))) {
         $("#guess").addClass("hidden");
     }
+    // Remove any cards on screen
+    $(".card-div").each(function(){
+        $(this).remove();
+    });
     // Hide the guessing table if not hidden
     if (!($("#guessing-table").hasClass("hidden"))) {
         $("#guessing-table").addClass("hidden");
     }
     // Remove any rows added to the table if there are any
     $(".table-row").each(function(){
-        $(this).remove();
-    });
-    // Remove any cards on screen
-    $(".card-div").each(function(){
         $(this).remove();
     });
     // Remove the JavaScript script link to the guessing functions 
