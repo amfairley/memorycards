@@ -48,7 +48,7 @@
                 <ul class = "row g-0 list-inline upper-case" id="nav-list">
                     <!-- Navbar list items -->
                     <li class = "nav-list-item">
-                        <div aria-label ="Go to the how to play page" class="nav-link-black" id="how-to-play-modal-link">
+                        <div class="nav-link-black" id="how-to-play-modal-link">
                             <p class="nav-icon-top"><i class="fa-regular fa-circle-question"></i></p>
                             <p class="nav-item-name" id="how-to-play-text">
                                 How to play
@@ -57,7 +57,7 @@
                         </div>
                     </li>
                     <li class = "nav-list-item">
-                        <div aria-label ="Open the contact me modal" class="nav-link-red" id="contact-modal-link">
+                        <div class="nav-link-red" id="contact-modal-link">
                             <p class = "nav-icon-top"><i class="fa-regular fa-address-book"></i></p>
                             <p class="nav-item-name" id="contact-me-text">
                                 Contact me
@@ -73,7 +73,7 @@
     <!-- Contact me modal -->
     <aside class="game-modal" id="contact-me-modal">
         <div class="modal-container">
-            <h2 id="modal-contact-header">&#9824 &#9830 &#9827 &#9829 <br>Contact me!</h2>
+            <h2 id="modal-contact-header">&#9824; &#9830; &#9827; &#9829; <br>Contact me!</h2>
             <div id="modal-contact-text">
                 <p id="contact-text">Contact me for more information, collaboration opportunites or to give feedback.</p>
             </div>
@@ -100,14 +100,15 @@
             <h2 id="modal-how-to-play-header">How to play</h2>
             <p id="how-to-intro">The goal is to memorise the order of shuffled playing cards. Can you memorise the whole deck?</p>
             <div id="modal-how-to-play-text">
-                <p>&#9824 Choose between 1 and 52 cards to memorise and enter this value into the box.</p>
-                <p>&#9830 Click play now to lock in your choice and display the cards</p>
-                <p>&#9827 When you have memorised the cards, click on guess to hide the cards</p>   
-                <p>&#9829 Test your memory by filling out the order of the cards in the table. Submit your answers to see if you are right!</p>
+                <p>&#9824; Choose between 1 and 52 cards to memorise and enter this value into the box.</p>
+                <p>&#9830; Click play now to lock in your choice and display the cards</p>
+                <p>&#9827; When you have memorised the cards, click on guess to hide the cards</p>   
+                <p>&#9829; Test your memory by filling out the order of the cards in the table. Submit your answers to see if you are right!</p>
             </div>
             <button class="game-button" id="modal-how-to-play-button">Close</button>
         </div>
     </aside>
+    <!-- 404 Error -->
     <main id="main-404">
         <div id="display-404">
             <p id="top-404">404</p>
@@ -117,7 +118,6 @@
             <p id="bottom-404">404</p>
         </div> 
     </main>
-
     <!-- Footer -->
     <footer id="footer" class="container-fluid row g-0">
         <!-- Site Logo -->
@@ -145,9 +145,9 @@
     </script>
 
     <!-- emailjs SDK link-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- initialise emailjs-->
-    <script type="text/javascript">
+    <script>
         (function() {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
