@@ -4,7 +4,7 @@
 Patch 1.01 was implemented after initial feedback on the web page from a group of friends, family, course colleagues and project assessor.
 
 ### Feedback
-- The modal background does not extend past the bottom of the screen when scrolling. This is logged as [Bug 7](#bug-7) and fixed.
+- The modal background does not extend past the bottom of the screen when scrolling. This is logged as [Bug 7](#bug-7) and has been fixed.
 - The 404 return button is easily missed.
 - The guessing table page can be "too busy".
 - More guidance on how to play would be appreciated.
@@ -20,6 +20,7 @@ Patch 1.01 was implemented after initial feedback on the web page from a group o
 ### Gameplay Updates
 
 ### Display Updates
+- The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). 
 
 ### JavaScript Updates
 - All JavaScript code is wrapped in an event listener to ensure that the document has fully loaded prior to the JavaScript being accessed following best practices and making the code more robust by preventing potential errors arising from unavailable DOM elements.
