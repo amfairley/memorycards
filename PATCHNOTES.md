@@ -21,6 +21,7 @@ Patch 1.01 was implemented after initial feedback on the web page from a group o
 
 ### Display Updates
 - The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). 
+- The how to play and contact me modals both have a visible scroll bar when smaller. This was acheived using media queries to add the slide bar when the screen height became less than the modal heights. The curved border of the how to play modal is removed at smaller screen heights due to a repetition of [Bug 5](/README.md#bugs).
 
 ### JavaScript Updates
 - All JavaScript code is wrapped in an event listener to ensure that the document has fully loaded prior to the JavaScript being accessed following best practices and making the code more robust by preventing potential errors arising from unavailable DOM elements.
