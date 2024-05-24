@@ -14,6 +14,7 @@ Patch 1.01 was implemented after initial feedback on the web page from a group o
 - A button to see the cards again once on the guessing stage would be nice.
 - Set difficulties with set number of cards and checking chances would make it more streamlined.
 - More security needs to be implemented to reduce spam and ensure the safety of user data.
+- Despite quick load times and high performance; the image format for the playing cards are not optimised. These were optimised to the .webp format and described further in these patch notes.
 
 
 ### Gameplay Updates
@@ -54,3 +55,6 @@ When the user scrolls with the modal open, the modal background only covers the 
 <details><summary>Bug 7 Fix</summary>
 <img src="/documentation/bug-7-fix.png">
 </details>
+
+### Image Optimisation
+[Cloud Convert](https://cloudconvert.com/) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb. 
