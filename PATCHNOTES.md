@@ -4,7 +4,7 @@
 Patch 1.01 was implemented after initial feedback on the web page from a group of friends, family, course colleagues and project assessor.
 
 ### Feedback
-- The modal background does not extend past the bottom of the screen when scrolling. This is logged as Bug 7 and fixed.
+- The modal background does not extend past the bottom of the screen when scrolling. This is logged as [Bug 7](#bug-7) and fixed.
 - The 404 return button is easily missed.
 - The guessing table page can be "too busy".
 - More guidance on how to play would be appreciated.
@@ -47,3 +47,10 @@ $("body").on('click', '.submit-guess', submitGuess);
 ```
 
 #### Bug 7
+When the user scrolls with the modal open, the modal background only covers the initial viewport, not the entire page. This was checked and confirmed by populating the card area with enough cards to extend the page height until it required a scroll bar, then opening a modal (how-to-play or contact-me) and scrolling. This was fixed by changing the css style of the modal background; updating the position to fixed rather than absolute.
+<details><summary>Bug 7 Issue</summary>
+<img src="/documentation/bug-7-issue.png">
+</details>
+<details><summary>Bug 7 Fix</summary>
+<img src="/documentation/bug-7-fix.png">
+</details>
