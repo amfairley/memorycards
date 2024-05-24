@@ -428,9 +428,28 @@ tbody>tr:hover {
 #link-404 {
     font-family: "Arimo", Arial, Helvetica, sans-serif;
     font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
-#link-404:hover {
-    color:#CF1020;
+#link-404-container {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 20%;
+    border-radius: 7%;
+    border: solid 2px #333A3F;
+}
+#link-404-container:hover {
+    color:#F5F5F5;
+    background-color: #333A3F;
 }
 #bottom-404 {
     color:#333A3F;
