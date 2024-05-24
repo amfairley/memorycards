@@ -308,11 +308,8 @@ $(document).ready(function() {
             $("#modal-results-header").html("Try again...");
         }
     }
-    
-
-
     // ---------- BUTTON EVENT LISTENERS ----------
-    // Accessibility feature to allow sequence length to be submitted with "enter"
+    // Accessibility feature to submit length with "enter"
     $("#quantity").on("keydown", function(event) {
         if (event.key === "Enter") {
             console.log("Enter pressed");
@@ -461,8 +458,6 @@ $(document).ready(function() {
             result(finalScore);
         }
     }
-
-
     // Adding the event listener function to the submit guess buttons
-    $("body").on('click', '.submit-guess', submitGuess);
+    $("body").on("click", ".submit-guess", submitGuess);
 });
