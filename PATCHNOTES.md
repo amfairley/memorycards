@@ -30,8 +30,20 @@ Patch 1.01 was implemented after initial feedback on the web page from a group o
 - An event listener for the quantity sequence length input has been added to allow the value to be submitted with the enter button as well as the play now button in a bid to ensure the accessibility of the game to all audiences.
 
 ### Display updates
-
+- 
 
 ### Bug fixes
 
 #### Bug 1
+The work around to Bug 1 ([click here to see](/README.md#bugs)) proved clunky and did not meet the highest standards as it introduced vulnerabilities in the code in the form of defining variables on a global scale to allow them to be accessed by multiple script files. This was patched out and the functionality of the second JavaScript file, score.js, was combined into the game.js file. This was achieved in 3 steps:
+1. The event listener for the submit buttons was defined in the body of the game.js file as the function `submitGuess`.
+2. This function was added to the submit buttons in the `tableColumn2` function before appending them to the table cell using 
+```javascript
+$(".submit-guess").click(submitGuess);
+```
+3. A single event listener was added to the body so that when the buttons were pressed, identified by their class, the `submitGuess` function is called.
+```javascript
+$("body").on('click', '.submit-guess', submitGuess);
+```
+
+#### Bug 7
