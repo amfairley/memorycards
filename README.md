@@ -597,19 +597,21 @@ Some features were considered and not included due to either not being a part of
     * Used for the playing card suit UTF-8 html codes
 9. [Favicon](https://favicon.io/)
 	* Used to supply the image for the browser tab
-10. [emailJS](https://www.emailjs.com/)
+10. [Cloud Convert](https://cloudconvert.com/)
+    * Used for image optimisation to convert from .png to .webp format
+11. [emailJS](https://www.emailjs.com/)
     * API used to send the contents of the contact me form to the developers email inbox
-11. [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+12. [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
     * Used for testing the webpage during development and testing the performance using Lighthouse
-12. [W3C HTML Validation Service](https://validator.w3.org/)
+13. [W3C HTML Validation Service](https://validator.w3.org/)
     * Used to validate the HTML code
-13. [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+14. [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
     * Used to validate the CSS code
-14. [JSHint](https://jshint.com/)
+15. [JSHint](https://jshint.com/)
     * Used to validate JavaScript code
-15. [JSLint](https://www.jslint.com/)
+16. [JSLint](https://www.jslint.com/)
     * Linter used to validated JavaScript code
-16. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+17. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     * Used to validate the accessibility of the web page
 
 ## Testing
