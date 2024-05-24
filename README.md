@@ -66,6 +66,7 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
         - [Results modal](#results-modal)
         - [Reset button](#reset-button)
         - [Website footer](#website-footer)
+        - [404 Page Message](#404-page-message)
     7. [Future Development](#future-development)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -555,10 +556,25 @@ For an in depth description of the functionality of the game area, please see th
 </details>
 - User stories covered: 1, 7, 11.
 
+#### 404 Page Message
+<details><summary>404 message</summary>
+<img src="/documentation/features/message-404.png">
+</details>
+<details><summary>404 message hover</summary>
+<img src="/documentation/features/message-404-hover.png">
+</details>
+
+- The 404 page displays a message informing the user that they have made a wrong turn and directs them back to the homepage.
+- The message is styled as a playing card in keeping with the site design and the value is displayed as 404 as a clear indicator to the user.
+- An anchor tag was used to link back to the home page rather than an automatic redirection after a set time for accessibility reasons; some users would read the message quickly and get impatient with an automatic redirection and other users may not finish reading the message before being redirected automatically, so an anchor tag was used to suit all users.
+- The anchor tag message is located within its own rectangular div, highlighting it as clickable and displays a similar hover animation as other clickable items.
+- User stories covered: 2
+
 ### Future Development 
 Some features were considered and not included due to either not being a part of the scope of this project or time constraints. As such, the following features will be added in future updates:
 - Using JavaScript obfuscators to hide the emailJS public key
 - Add functionality to the guess select elements where the user can submit their guesses with the enter key
+    - Added in [Patch 1.01](/PATCHNOTES.md#patch-101)
 - Use a back-end database to store the contact form responses
 
 ## Technologies Used
