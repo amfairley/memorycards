@@ -79,7 +79,8 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 7. [Deployment](#deployment)
     1. [Deployment to GitHub pages](#deployment-to-github-pages)
     2. [Deploying Locally](#deploying-locally)
-    3. [Addition of 404.html](#addition-of-404html)
+    3. [Forking The Repository](#forking-the-repository)
+    4. [Addition of 404.html](#addition-of-404html)
 8. [Credits](#credits)
     1. [Documentation](#documentation)
     2. [Media](#media)
@@ -813,22 +814,47 @@ There are no known current bugs on the website.
 
 ### Deployment to GitHub pages
 
-This site was deployed using GitHub pages following these steps:
-- Once in the [GitHub repository](https://github.com/amfairley/memorycards), go to the Settings tab
-- Under the **Code and automation** section on the left hand side; select **Pages**
-- Ensure your build and deployment source is **Deploy from a branch**
-- In the **Branch** section, click on the dropdown menu currently set to none and select the main branch
-- Click save
+This site was deployed using GitHub pages. Please follow these steps, with examples of my repository, to deploy your own repository to GitHub pages once you are logged in:
+- Once in the [GitHub repository](https://github.com/amfairley/memorycards), go to the Settings tab which can be found at the top of the page. 
+<details><summary>Setting tab location image</summary>
+<img src="/documentation/deployment/deployment-settings-tab.png">
+</details>
 
-You can fork the repository by going the [GitHub repository](https://github.com/amfairley/memorycards) and selecting **Fork** in the top right corner.
+- On the left hand side of the page there will be a series of sections; under the second heading named **Code and automation**; select the bottom option; **Pages**.
+<details><summary>Pages tab location image</summary>
+<img src="/documentation/deployment/deployment-pages-tab.png">
+</details>
+
+- Ensure your build and deployment source is **Deploy from a branch** which can be selected from a drop down menu under the **Build and Deployment** heading.
+<details><summary>Deploy from branch location image</summary>
+<img src="/documentation/deployment/deployment-deploy-from-branch.png">
+</details>
+
+- In the **Branch** section, click on the dropdown menu currently set to none and select the main branch, ensure that the folder is root, and click save.
+<details><summary>Main branch location image</summary>
+<img src="/documentation/deployment/deployment-main-branch.png">
+</details>
+
+- The page will refresh and the link to the deployed website will appear at the top of the page.
+<details><summary>Deployed website link</summary>
+<img src="/documentation/deployment/deployment-link.png">
+</details>
+
+### Forking The Repository
+This repository can be forked, allowing you to create a separate codebase to make local changes without impacting the original repository. <br>
+You can fork the repository if you have a [GitHub](https://github.com/) account by going the [GitHub repository](https://github.com/amfairley/memorycards) and selecting **Fork** in the top right corner and click **+ Create a new fork**. This will take you to a new page where you can assign yourself as an owner, add a description, and fork the main page.
+<details><summary>Fork location image</summary>
+<img src="/documentation/deployment/deployment-fork.png">
+</details>
 
 ### Deploying Locally
 
-To deploy locally; you can clone this project by typing 
-<br>
-`git clone https://github.com/amfairley/memorycards.git`
-<br>
-into the terminal of your IDE of choice.
+To deploy locally; you can clone this repository. To do so, access the [GitHub Repository](https://github.com/amfairley/memorycards) and click on the bright green "<> Code" button located below the Pin/Watch/Fork/Star toolbar and above the repository file list. From here, select your required option; either cloning it from the web URL using HTTPS, using a password protected SSH key using SSH, or working in the offial GitHub CLI with GitHub CLI. Then use the IDE of your choice, (mine is [Visual Studio Code](https://code.visualstudio.com/)) to clone it. <br>
+For example, in Studio Visual Code you will need to use the git clone command as such:
+```
+git clone https://github.com/amfairley/memorycards.git
+```
+There is also the option in the same green "<> Code" button to download all files as a ZIP folder or open the repository with GitHub Desktop.
 
 ### Addition of 404.html
 The 404 page was added in the following way:
