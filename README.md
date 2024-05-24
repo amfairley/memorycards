@@ -12,6 +12,9 @@ This memory card game is a fun, enjoyable way to put your memory to the test. Yo
 
 [Click here to access the site](https://amfairley.github.io/memorycards/)
 
+## Version 1.01 is now live!
+We are very excited to announce version 1.01 is now live, incorporating all feedback. Thank you to those that have responded and we wish you fun and memorable times! Please find all updates and changes logged in the [Patch Notes](/PATCHNOTES.md).
+
 ---
 
 ## Table Of Contents
