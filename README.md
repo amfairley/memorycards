@@ -636,9 +636,10 @@ For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
 ## Bugs
 **Bug 1:**
 When populating the guessing table, the JavaScript could not connect event listeners for the guess submission buttons. This turned out to be because the buttons were added to the DOM after the JavaScript file was loaded. To solve this, I added the following lines of code to the bottom of the tableBuild() function:
-
-`let appendScript = "<script id='guessing-script' src='assets/scripts/score.js'></script>"`<br>
-`$("body").append(appendScript);`<br>
+```javascript
+let appendScript = "<script id='guessing-script' src='assets/scripts/score.js'></script>"
+$("body").append(appendScript);
+```
 This allowed a second JavaScript file to be appended to the html body, where the game scoring section is stored. As this is loaded after the table, it is able to connect event listeners to the buttons in the table.
 
 **Bug 2:**
@@ -650,7 +651,7 @@ When entering an invalid number into the sequence length selector, it will assig
 **Bug 4:**
 When submitting guess, if no value or suit is submitted, it will accept the submitted answer as being "disableddisabled". This is bad user experience, as it prevents the user from enetering an actual guess and disables the button. This was solved by wrapping most of the code in an if/else statement to set an alert if either of the submitted values are "disabled" and to continue the code if the entries are valid. <br>
 Before: <br>
-```
+```javascript
 // Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
@@ -715,7 +716,7 @@ $(".submit-guess").click(function() {
 ```
 
 After:
-```
+```javascript
 // Submit guess button
 $(".submit-guess").click(function() {
     // Takes the sibling elements that are select elements in an array
@@ -788,11 +789,13 @@ On smaller screen heights, the contact me modal contents became blurred like so:
 ![blurred modal](/documentation/bug-5-issue.png) <br>
 The problem turned out to be the border radius of the modal, so I added a media query to remove the border radius at and below screen sizes when the blurring occurred: <br>
 
-`@media screen and (max-height: 660px) {
+```css
+@media screen and (max-height: 660px) {
     #contact-me-modal {
         border-radius: 0;
     }
-}`
+}
+```
 
 This fixed the issue: <br>
 ![fixed modal](/documentation/bug-5-solution.png)<br>
@@ -834,9 +837,11 @@ The 404 page was added in the following way:
 - Create a new file named 404.md
 - Put the following code into the 404.md:
 
-`---` <br>
-`permalink: /404.html` <br>
-`---`
+```
+---
+permalink: /404.html
+---
+```
 
 ## Credits
 
