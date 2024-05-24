@@ -343,13 +343,11 @@ tbody>tr:hover {
     padding-top: 55px;
 }
 /* Contact me modal */
-#contact-me-modal::-webkit-scrollbar {
-    display: none;
-}
 #contact-me-modal {
     height: auto;
     max-height:95vh;
     overflow: scroll;
+    overflow-x: hidden;
     background-color: #CF1020;
     display: none;
 }
@@ -377,8 +375,12 @@ tbody>tr:hover {
 #how-to-play-modal {
     color:#F5F5F5;
     background-color: #333A3F;
+    border-radius: 0;
     border-color: #F5F5F5;
     height: 560px;
+    max-height:95vh;
+    overflow: scroll;
+    overflow-x: hidden;
     display: none;
 }
 #modal-how-to-play-header {
@@ -652,5 +654,18 @@ tbody>tr:hover {
     #github-link {
         margin: auto;
         width: 100%;
+    }
+}
+@media screen and (min-height: 639px) {
+    #contact-me-modal::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (min-height: 560px) {
+    #how-to-play-modal::-webkit-scrollbar {
+        display: none;
+    }
+    #how-to-play-modal {
+        border-radius: 8%;
     }
 }
