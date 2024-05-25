@@ -10,7 +10,7 @@ Patch 1.01 was implemented after initial feedback on the web page from a group o
 - More guidance on how to play would be appreciated.
 - A visible slide bar on the how-to-play and contact-me modals is required. These were added.
 - The deployment information in the README.md file could be more descriptive. This section has been expanded to include more details and helpful screenshots, along with further options for local deployment. Find the updated section in the README file [here](/README.md#deployment).
-- The target audience and purpose of the site could be better described in the README.md file.
+- The target audience and purpose of the site could be better described in the README.md file. This was addressed by updating the target audience to include those interest, or participating, in the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) and the idea of Speed Cards is explained in the README file.
 - A button to see the cards again once on the guessing stage would be nice.
 - Set difficulties with set number of cards and checking chances would make it more streamlined.
 - More security needs to be implemented to reduce spam and ensure the safety of user data.

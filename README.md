@@ -6,7 +6,8 @@
 
 *A game designed to test your memory. Can you correctly recall the order of a shuffled deck of cards?*
 
-This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. It provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. 
+This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. It provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. <br>
+The game concept is inspired by the Speed Cards discipline of the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) in which the competitors are challenged, against the clock, to remember the order of a shuffled deck of cards and to correctly repeat that order. The key target audience are those interested in trying to memorise a deck of cards themselves, but don't worry, you can start with as little as one card and work your way up to a Memory Champion! The site is also of use to those currently competing who have an urge to practice whilst on the go or when they do not have access to a physical deck of cards.
 
 ![A mock-up image of the website](/documentation/site-mock-up.png)
 
@@ -138,7 +139,7 @@ We are very excited to announce version 1.01 is now live, incorporating all feed
 ### Strategy
 - **What value does the project provide?** This memory game website will provide a fun and enjoyable way for users to test and improve upon their memory.
 - **What are the business needs?** The business in this case would be the developer, who intends to produce a fun, responsive, and interactive website. Their needs would be an engaging game and a way for the user to contact and give feedback to the developer.
-- **Who is the target audience?** The target audience are those interested in memory games or brain training games. This can range from casual players, those training for memory challenges, or for childhood development.
+- **Who is the target audience?** The target audience are those interested in memory games or brain training games. This can range from casual players, those training for memory challenges such as the [World Memory Championships](https://www.worldmemorychampionships.com/sport/), or for childhood development. 
 - **What are the user requirements and expectations?**
     - A simple and intuitive navigation system
     - Responsiveness from button clicks and mouse hover
