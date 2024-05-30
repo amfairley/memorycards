@@ -3,24 +3,60 @@
 ## Patch 1.01
 Patch 1.01 was implemented after initial feedback on the web page from a group of friends, family, course colleagues and project assessor.
 
-### Feedback
-- The modal background does not extend past the bottom of the screen when scrolling. This is logged as [Bug 7](#bug-7) and has been fixed.
-- The 404 return link is easily missed. This was rectified by making it look more like a button.
-- The guessing table page can be "too busy".
-- More guidance on how to play would be appreciated.
-- A visible slide bar on the how-to-play and contact-me modals is required. These were added.
-- The deployment information in the README.md file could be more descriptive. This section has been expanded to include more details and helpful screenshots, along with further options for local deployment. Find the updated section in the README file [here](/README.md#deployment).
-- The target audience and purpose of the site could be better described in the README.md file. This was addressed by updating the target audience to include those interest, or participating, in the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) and the idea of Speed Cards is explained in the README file.
-- A button to see the cards again once on the guessing stage would be nice.
-- Set difficulties with set number of cards and checking chances would make it more streamlined.
-- More security needs to be implemented to reduce spam and ensure the safety of user data.
-- Despite quick load times and high performance; the image format for the playing cards are not optimised. These were optimised to the .webp format and described further in these patch notes.
+### User Feedback:
+The project was shown to friends, family, and course colleagues for user feedback that will be addressed and used to improve this webpage.
+1. The modal background does not extend past the bottom of the screen when scrolling. This is logged as [Bug 7](#bug-7) and has been fixed.
+2. The 404 return link is easily missed. This was rectified by making it look more like a button.
+3. The target audience and purpose of the site could be better described in the README.md file. This was addressed by updating the target audience to include those interest, or participating, in the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) and the idea of Speed Cards is explained in the README file.
+4. On larger screens the card area and table area are too spread out horizontally
+5. More security needs to be implemented to reduce spam and ensure the safety of user data.
+6. A button to see the cards again once on the guessing stage would be nice.
+7. Set difficulties with set number of cards and checking chances would make it more streamlined.
 
+
+
+### Assessor Feedback
+In order to address feedback from the project assessor, each item is logged here for reference when fixes and updates are documented later in this file.
+1. The guessing table requires clear visual clues.
+2. The guessing table requires clear instructions for how to list the cards in order.
+3. Informative messages are required to feedback to the user whether their guess was correct or incorrect.
+4. Ensure all interactive elements are properly labelled for screen readers.
+5. Ensure that the interface is navigable using keyboard controls as well as mouse input.
+6. Add a slider bar to the playing instructions.
+7. Is the layout clear and structured?
+8. Are the graphics legibile and visually appealing?
+9. Is the text legible and visually appealing?
+10. Address issue of redirecting users who land on non-existent pages.
+11. Insert screenshots of finished project that align to relevant user stories.
+12. Have you thoroughly tested all aspects of your web app?
+13. Have you tested edge cases and potential user interactions?
+14. Are there any scenarios or functionalities that have not been adequately tested?
+15. Have you conducted regression testing to ensure that  new updates or changes to your web app do not inadvertently break existing  features or functionalities?
+16. Have you assessed the performance of your webapp on different screen sizes?
+17. Have you assessed the performance of your webapp on different devices?
+18. Have you assessed the performance of your webapp on different network speeds?
+19. Have you used actual users to gather feedback on intuitiveness and ease?
+20. Have you verified that your web app is accessible to users with disabilities by testing with screen readers, keyboard navigation, and other assistive technologies?
+21. Does your web app adhere to accessibility  standards and guidelines?
+22. Have you performed security testing to identify and address any potential vulnerabilities or weaknesses in your web app? Is sensitive user data handled securely, and are appropriate measures in place to protect against common security threats?
+23. Implement continuous Inteegration/Continuous development.
+24. Optimize the load times using code minification and image optimisation.
+25. Design the website with scalability in mind, allowing it to handle increasing numbers of users and data without sacrificing performance.
+26. Implement monitoring and analytics tools to track the performance, usage, and errors of the webpage in real time.
+27. Incorporate mechanisms for gathering user feedback and engagement.
+28. Consider providing a step-by-step guide considering the user's perspective for deployment.
+29. Ensure that the deployment guide covers setting up any necessary accounts or platforms for deployment.
+30. Ensure that the deployment guide covers cloning the repository or downloading the application file.
+31. Ensure that the deployment guide covers installing any required dependencies or packages.
+32. Ensure that the deployment guide covers configuring environment variables or settings, if applicable.
+33. Ensure that the deployment guide covers uploading files to the hosting platform and configuring settings.
+34. Ensure that the deployment guide covers verifying the deployment and testing the application's functionality.
+35. Ensure that the deployment guide covers providing guidance on how to access and use the deployed application.
 
 ### Gameplay Updates
 
 ### Display Updates
-- The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). 
+- The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). This address User Feedback 2.
 - The how to play and contact me modals both have a visible scroll bar when smaller. This was acheived using media queries to add the slide bar when the screen height became less than the modal heights. The curved border of the how to play modal is removed at smaller screen heights due to a repetition of [Bug 5](/README.md#bugs).
 
 ### JavaScript Updates
