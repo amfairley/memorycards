@@ -48,7 +48,7 @@
                 <ul class = "row g-0 list-inline upper-case" id="nav-list">
                     <!-- Navbar list items -->
                     <li class = "nav-list-item">
-                        <div class="nav-link-black" id="how-to-play-modal-link">
+                        <div class="nav-link-black" id="how-to-play-modal-link" role="button" aria-label="Open how to play modal">
                             <p class="nav-icon-top"><i class="fa-regular fa-circle-question"></i></p>
                             <p class="nav-item-name">
                                 How to play
@@ -57,7 +57,7 @@
                         </div>
                     </li>
                     <li class = "nav-list-item">
-                        <div class="nav-link-red" id="contact-modal-link">
+                        <div class="nav-link-red" id="contact-modal-link" role="button" aria-label="Open contact me modal">
                             <p class = "nav-icon-top"><i class="fa-regular fa-address-book"></i></p>
                             <p class="nav-item-name">
                                 Contact me
@@ -167,7 +167,7 @@
                 <br>
                 <input type="number" id="quantity" name="sequence-select" min="1" max="52" placeholder="Pick up to 52 cards">
                 <br class="spacer">
-                <button id="play" class="game-button">Play now</button>
+                <button id="play" class="game-button" aria-label="Submit sequence length and start the game">Play now</button>
                 <button id="guess" class="game-button hidden">Guess</button>
             </div>
             <div id="table-container" class="hidden">
