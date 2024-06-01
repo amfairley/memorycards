@@ -73,8 +73,11 @@ In order to address feedback from the project assessor, each item is logged here
     * The how to play modal has had a scroll bar fitted and the height of the modal has been set to auto and a maximum of 95vh.The curved border of the how to play modal is removed due to a repetition of [Bug 5](/README.md#bugs). 
     * The instructions have also been updated to specify buttons by name, recommend a memorisation technique, recommend that new players start with fewer cards, and keeping the tone motivational and uplifting.
     * ![How to play updated](/documentation/features/how-to-play-updated.png)
+- Contact me modal : **Assessor Feedback Addressed: 6**
+    * The scroll bar on the contact me modal has been made to be visible when the modal is larger than the screen size.
+    * 
 - The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). This address User Feedback 2.
-- The how to play and contact me modals both have a visible scroll bar when smaller. This was acheived using media queries to add the slide bar when the screen height became less than the modal heights. 
+
 
 ### JavaScript Updates
 - All JavaScript code is wrapped in an event listener to ensure that the document has fully loaded prior to the JavaScript being accessed following best practices and making the code more robust by preventing potential errors arising from unavailable DOM elements.
@@ -83,8 +86,12 @@ In order to address feedback from the project assessor, each item is logged here
 - The `tableBuild` function has been revolutionised for clearer legibility and improved versatility and modification. This was done by splitting the function into separate functions that deal with only one or two tasks. These functions are then called within the tableBuild function. The functions are: `tableRow`, `tableColumn1`, `tableColumn2`, `tableColumn3`, `tableSelect1`, `tableSelect2`, and `tableSubmit`. The `tableBuild` function is now defined with integer and array parameters as opposed to previously just an integer.
 - The submit guess button click event was refactored and sections were defined as separate functions to streamline this rather messy chunk of code. The conditional to check whether the answer is correct is refactored as the `checkAnswer` function and the conditional to check the final score and give a corresponding message is refactored into the `result` function. This event listener has also been moved into the game.js file from the score.js file when [Bug 1](#bug-1) was fixed.
 - The reset button event listener had the check for the link to the score.js file removed, as this file is no longer needed as per the fix to [Bug 1](#bug-1).
-- An event listener for the quantity sequence length input has been added to allow the value to be submitted with the enter button as well as the play now button in a bid to ensure the accessibility of the game to all audiences.
+- An event listener for the quantity sequence length input has been added to allow the value to be submitted with the enter button as well as the play now button in a bid to ensure the accessibility of the game to all audiences. This addressed **Assessor Feedback 5**.
 - To address **Assessor Feedback 1,2,3** the `tableBuild` function no longer creates a fourth column, so the `tableColumn4` function was deleted. The correct answers are now stored in the global variable `results` which is used to calculate the final score in the `submitGuess` function and is reset in the reset button event listener.
+
+### Patch 1.01 Testing
+#### Manual testing
+
 
 ### Patch 1.01 Validation
 #### Accessibility
@@ -113,6 +120,7 @@ For this, I went through all the game elements, found those which were not label
 | Submit guess button | N | These have had aria labels added to them |
 | Footer logo link | Y | Aria Labelled |
 | GitHub link | Y | Aria Labelled |
+For added security, I played through the game and opened/closed the modals using only the keyboard and only the mouse finding no issues, addressing **Assessor Feedback: 5**. Despite this, functionality to submit the sequence length with the enter key was added. Feedback from a partially sighted user was positive and they identified no issues with their screenreader or being able to play the game.
 
 
 ### Bug fixes
