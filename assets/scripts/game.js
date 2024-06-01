@@ -113,6 +113,7 @@ $(document).ready(function() {
     let cardsToPlay;
     let sequenceLength;
     let lengthCheck;
+    var results = [];
 
     // ---------- FUNCTIONS ----------
     // This shuffling algorithm was made with help from stack overflow
@@ -201,14 +202,6 @@ $(document).ready(function() {
         return column3;
     }
     /**
-     * Creates the fourth column data for the guessing table
-     */
-    function tableColumn4() {
-        let column4 = document.createElement("td");
-        column4.classList.add("result", "correct-column");
-        return column4;
-    }
-    /**
      * Creates card value select drop down menu
      */
     function tableSelect1() {
@@ -270,13 +263,10 @@ $(document).ready(function() {
             let td3 = tableColumn3();
             let currentCard = array[i].slice(0,2);
             td3.innerHTML = cardObject[currentCard];
-            // Correct column 4: Result
-            let td4 = tableColumn4();
             // Append all columns to table row
             tr1.append(td1);
             tr1.append(td2);
             tr1.append(td3);
-            tr1.append(td4);
             // Append table row to table
             document.getElementById("table-body").append(tr1);
         }
@@ -366,6 +356,8 @@ $(document).ready(function() {
 
     // Reset button
     $(".reset-game").click(function() {
+        // Reset the results
+        results = [];
         // Remove table container class for page styling
         $("#table-container").removeClass("table-container-style");
         // Reset the sequence length
@@ -427,17 +419,17 @@ $(document).ready(function() {
             let pSiblings = $(this).parent().siblings();
             // Show the answer column
             pSiblings[1].classList.remove("hidden");
+            // Compare answers
             let correctAnswer = pSiblings[1].innerHTML;
-            let results = pSiblings[2];
+            let outcome = checkAnswer(submittedAnswer, correctAnswer);
             // Compare the two values
-            $(results).html(checkAnswer(submittedAnswer, correctAnswer));
+            results.push(outcome);
             // Disable the select and submit fields
             $(this).prop("disabled", true);
             $(siblings[0]).prop("disabled", true);
             $(siblings[1]).prop("disabled", true);
-            console.log($(results).innerHTML)
             // Change submit field value to correct or incorrect
-            if ($(results).text() === "Y"){
+            if (outcome === "Y"){
                 $(this).addClass("correct-transition submit-guess-pressed");
                 $(this).removeClass("submit-guess")
                 void $(this)[0].offsetWidth;
@@ -453,13 +445,11 @@ $(document).ready(function() {
             // Add a class to the submit button to track submissions
             $(this).addClass("submitted");
             // Check score
-            // Array of the result cell
-            let resultsArray = $(".result");
             // Score counter starts at 0
             let counter = 0;
             // If an answer is correct, add 1 to counter
             for (let i = 0; i < sequenceLength; i++) {
-                if (resultsArray[i].textContent==="Y") {
+                if (results[i]==="Y") {
                     counter++;
                 }
             }
