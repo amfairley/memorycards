@@ -189,7 +189,6 @@ main {
         color 0.5s,
         background-color 0.7s;
 }
-.submit-guess-pressed {}
 .game-button:hover {
     color: #F5F5F5;
     background-color: #CF1020;
@@ -262,7 +261,7 @@ tbody>tr:hover {
     background-color: #F5F5F5;
 }
 .correct {
-    background-color: green;
+    background-color: #008000;
     color: #F5F5F5;
     font-family: cabin;
 }
