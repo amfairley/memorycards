@@ -243,6 +243,7 @@ $(document).ready(function() {
             "<option value='s'>&#9824</option>";
         return select2;
     }
+
     /**
      * Creates the guessing table submit button
      */
@@ -252,6 +253,7 @@ $(document).ready(function() {
         submitButton.innerHTML = "Submit";
         return submitButton;
     }
+    
     /**
      * Builds a the guessing table with n rows
      */
@@ -354,7 +356,7 @@ $(document).ready(function() {
         $("#guess").addClass("hidden");
         $("#table-container").addClass("table-container-style");
         // Show the guessing table
-        $("#guessing-table").removeClass("hidden");
+        $("#table-container").removeClass("hidden");
         tableBuild(sequenceLength, cardsToPlay);
         // Remove the card images from the screen
         $(".card-image").remove();
@@ -390,8 +392,8 @@ $(document).ready(function() {
             $(this).remove();
         });
         // Hide the guessing table if not hidden
-        if (!($("#guessing-table").hasClass("hidden"))) {
-            $("#guessing-table").addClass("hidden");
+        if (!($("#table-container").hasClass("hidden"))) {
+            $("#table-container").addClass("hidden");
         }
         // Remove any rows added to the table if there are any
         $(".table-row").each(function(){
