@@ -255,9 +255,6 @@ tbody>tr:hover {
 .answer-column{
     width: 25%;
 }
-.correct-column{
-    width: 10%;
-}
 /* Guessing table transitions */
 .correct-transition,
 .incorrect-transition {
