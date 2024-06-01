@@ -69,8 +69,12 @@ In order to address feedback from the project assessor, each item is logged here
     * ![Submit button hover](/documentation/features/submit-button-hover.png)
     * The results table column is removed, as its functionality is now defunct with the update to the Submit button.
     * ![New table columns](/documentation/features/table-layout-update.png)
+- How to play modal: **Assessor Feedback Addressed: 6**, **User Feedback Addressed: 3**
+    * The how to play modal has had a scroll bar fitted and the height of the modal has been set to auto and a maximum of 95vh.The curved border of the how to play modal is removed due to a repetition of [Bug 5](/README.md#bugs). 
+    * The instructions have also been updated to specify buttons by name, recommend a memorisation technique, recommend that new players start with fewer cards, and keeping the tone motivational and uplifting.
+    * ![How to play updated](/documentation/features/how-to-play-updated.png)
 - The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). This address User Feedback 2.
-- The how to play and contact me modals both have a visible scroll bar when smaller. This was acheived using media queries to add the slide bar when the screen height became less than the modal heights. The curved border of the how to play modal is removed at smaller screen heights due to a repetition of [Bug 5](/README.md#bugs).
+- The how to play and contact me modals both have a visible scroll bar when smaller. This was acheived using media queries to add the slide bar when the screen height became less than the modal heights. 
 
 ### JavaScript Updates
 - All JavaScript code is wrapped in an event listener to ensure that the document has fully loaded prior to the JavaScript being accessed following best practices and making the code more robust by preventing potential errors arising from unavailable DOM elements.
