@@ -67,6 +67,8 @@ In order to address feedback from the project assessor, each item is logged here
     * Since the button turns to red when the guess in incorrect, the red hover styling was removed from these buttons and instead have the off-black background with off-white text that turns to an off-white background with off-black text when hovered. The hover effect is removed once it is coloured green/red depending on the answer provided. This does make the button background match the row background when the row is hovered but the button bordering and text colour prevent it from getting lost.
     * ![Submit button row hover](/documentation/features/submit-button-row-hover.png)
     * ![Submit button hover](/documentation/features/submit-button-hover.png)
+    * The results table column is removed, as its functionality is now defunct with the update to the Submit button.
+    * ![New table columns](/documentation/features/table-layout-update.png)
 - The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). This address User Feedback 2.
 - The how to play and contact me modals both have a visible scroll bar when smaller. This was acheived using media queries to add the slide bar when the screen height became less than the modal heights. The curved border of the how to play modal is removed at smaller screen heights due to a repetition of [Bug 5](/README.md#bugs).
 
@@ -74,10 +76,11 @@ In order to address feedback from the project assessor, each item is logged here
 - All JavaScript code is wrapped in an event listener to ensure that the document has fully loaded prior to the JavaScript being accessed following best practices and making the code more robust by preventing potential errors arising from unavailable DOM elements.
 - The deck of cards `cardObject` is defined using `const` rather than `var` and the variable `sequenceLength` is defined using `let` instead of `var`. This is better practice and reduces vulnerabilities in the code, as the variables will not be able to be accessed by other JavaScript files. This is now possible due to the advances regarding [Bug 1](#bug-1).
 - The `makeDivs` function is now defined with integer and array parameters and returns a div array when called.
-- The `tableBuild` function has been revolutionised for clearer legibility and improved versatility and modification. This was done by splitting the function into separate functions that deal with only one or two tasks. These functions are then called within the tableBuild function. The functions are: `tableRow`, `tableColumn1`, `tableColumn2`, `tableColumn3`, `tableColumn4`, `tableSelect1`, `tableSelect2`, and `tableSubmit`. The `tableBuild` function is now defined with integer and array parameters as opposed to previously just an integer.
+- The `tableBuild` function has been revolutionised for clearer legibility and improved versatility and modification. This was done by splitting the function into separate functions that deal with only one or two tasks. These functions are then called within the tableBuild function. The functions are: `tableRow`, `tableColumn1`, `tableColumn2`, `tableColumn3`, `tableSelect1`, `tableSelect2`, and `tableSubmit`. The `tableBuild` function is now defined with integer and array parameters as opposed to previously just an integer.
 - The submit guess button click event was refactored and sections were defined as separate functions to streamline this rather messy chunk of code. The conditional to check whether the answer is correct is refactored as the `checkAnswer` function and the conditional to check the final score and give a corresponding message is refactored into the `result` function. This event listener has also been moved into the game.js file from the score.js file when [Bug 1](#bug-1) was fixed.
 - The reset button event listener had the check for the link to the score.js file removed, as this file is no longer needed as per the fix to [Bug 1](#bug-1).
 - An event listener for the quantity sequence length input has been added to allow the value to be submitted with the enter button as well as the play now button in a bid to ensure the accessibility of the game to all audiences.
+- To address **Assessor Feedback 1,2,3** the `tableBuild` function no longer creates a fourth column, so the `tableColumn4` function was deleted. The correct answers are now stored in the global variable `results` which is used to calculate the final score in the `submitGuess` function and is reset in the reset button event listener.
 
 ### Patch 1.01 Validation
 #### Accessibility
@@ -102,6 +105,7 @@ $("body").on('click', '.submit-guess', submitGuess);
 ```
 
 #### Bug 7
+This bug fix addresses **User feedback 1**.
 When the user scrolls with the modal open, the modal background only covers the initial viewport, not the entire page. This was checked and confirmed by populating the card area with enough cards to extend the page height until it required a scroll bar, then opening a modal (how-to-play or contact-me) and scrolling. This was fixed by changing the css style of the modal background; updating the position to fixed rather than absolute.
 <details><summary>Bug 7 Issue</summary>
 <img src="/documentation/bug-7-issue.png">
