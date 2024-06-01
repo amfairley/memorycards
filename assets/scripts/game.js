@@ -435,6 +435,21 @@ $(document).ready(function() {
             $(this).prop("disabled", true);
             $(siblings[0]).prop("disabled", true);
             $(siblings[1]).prop("disabled", true);
+            console.log($(results).innerHTML)
+            // Change submit field value to correct or incorrect
+            if ($(results).text() === "Y"){
+                $(this).addClass("correct-transition submit-guess-pressed");
+                $(this).removeClass("submit-guess")
+                void $(this)[0].offsetWidth;
+                $(this).text("Correct");
+                $(this).addClass("correct");
+            } else {
+                $(this).addClass("incorrect-transition submit-guess-pressed")
+                $(this).removeClass("submit-guess")
+                void $(this)[0].offsetWidth;
+                $(this).text("Incorrect");
+                $(this).addClass("incorrect");
+            }
             // Add a class to the submit button to track submissions
             $(this).addClass("submitted");
             // Check score
