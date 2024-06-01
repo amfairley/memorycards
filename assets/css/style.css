@@ -392,7 +392,7 @@ tbody>tr:hover {
     background-color: #333A3F;
     border-radius: 0;
     border-color: #F5F5F5;
-    height: 560px;
+    height: auto;
     max-height:95vh;
     overflow: scroll;
     overflow-x: hidden;
@@ -410,6 +410,9 @@ tbody>tr:hover {
     text-align: justify;
     width: 80%;
     margin: auto;
+}
+#modal-how-to-play-button {
+    margin-bottom: 10px;
 }
 /* 404 */
 #main-404 {
@@ -674,13 +677,5 @@ tbody>tr:hover {
 @media screen and (min-height: 639px) {
     #contact-me-modal::-webkit-scrollbar {
         display: none;
-    }
-}
-@media screen and (min-height: 560px) {
-    #how-to-play-modal::-webkit-scrollbar {
-        display: none;
-    }
-    #how-to-play-modal {
-        border-radius: 8%;
     }
 }
