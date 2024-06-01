@@ -227,6 +227,10 @@ main {
     max-width: 95%;
     padding-top: 30px;
 }
+#table-title {
+    font-family: "Arimo", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 #guessing-table {
     width: 100%;
     text-align: center;
