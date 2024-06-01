@@ -206,6 +206,7 @@ $(document).ready(function() {
      */
     function tableSelect1() {
         let select1 = document.createElement("select");
+        select1.setAttribute('aria-label', 'Select the card value');
         select1.innerHTML =
             "<option value= 'disabled'>Value</option>" +
             "<option value='a'>Ace</option>" +
@@ -228,6 +229,7 @@ $(document).ready(function() {
      */
     function tableSelect2() {
         let select2 = document.createElement("select");
+        select2.setAttribute('aria-label', 'Select the card suit');
         select2.innerHTML =
             "<option value='disabled'>Suit</option>" +
             "<option value='c'>&#9827</option>" +
@@ -243,6 +245,7 @@ $(document).ready(function() {
     function tableSubmit() {
         let submitButton = document.createElement("button");
         submitButton.classList.add("submit-guess");
+        submitButton.setAttribute('aria-label', 'Submit this guess');
         submitButton.innerHTML = "Submit";
         return submitButton;
     }
