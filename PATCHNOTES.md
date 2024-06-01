@@ -93,6 +93,26 @@ Green (#008000) is used to highlight correct guesses. This colour is an industry
 <details><summary>Correct answer contrast</summary>
 <img src="/documentation/features/submit-button-correct-contrast.png">
 </details>
+<br>
+
+**Ensuring all interactive elements are properly labelled for screen readers. This addresses Assessor Feedback 4.**
+For this, I went through all the game elements, found those which were not labelled for full accessibility and updated them. Doing this allowed me to ensure my completeness in meeting the guidance for accessibility.
+| Game Element | Labelled? | Notes |
+|---|---|---|
+| Game logo link | Y | Aria Labelled |
+| How to play modal | N | Role added as button and aria labelled for opening the how to play modal |
+| How to play modal close button | N | Buttons do not require aria labelling if their purpose and text is clear, like this |
+| Contact me modal |  N | Role added as button and aria labelled for opening the contact me modal |
+| Contact me modal form elements | Y | The entry elements in the form are labelled, rendering aria-labels unnecessary as the labels are descriptive enough and none of the form elements are icons |
+| Reset Game button | N | Buttons do not require aria labelling if their purpose and text is clear, like this |
+| Sequence length selection | Y | The sequence length selection has a label associated with it |
+| Play now button | N | Aria label added to inform the user to click this to submit their selected sequence length |
+| Guess button | N | Aria label added to inform the user that this button hides the cards and advances to the guessing stage |
+| Card images | Y | All have an alt attribute associated to them |
+| Card select boxes | N | These have had aria labels added to them |
+| Submit guess button | N | These have had aria labels added to them |
+| Footer logo link | Y | Aria Labelled |
+| GitHub link | Y | Aria Labelled |
 
 
 ### Bug fixes
