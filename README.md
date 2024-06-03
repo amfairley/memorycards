@@ -634,6 +634,8 @@ Some features were considered and not included due to either not being a part of
     * Linter used to validated JavaScript code
 17. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     * Used to validate the accessibility of the web page
+20. [Google Analytics](https://marketingplatform.google.com/about/analytics/)
+    * Used for real time analytics of the webite
 
 ## Testing
 For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
