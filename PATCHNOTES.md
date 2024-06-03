@@ -10,11 +10,11 @@ The project was shown to friends, family, and course colleagues for user feedbac
 1. The modal background does not extend past the bottom of the screen when scrolling. This is logged as [Bug 7](#bug-7) and has been fixed.
 2. The 404 return link is easily missed. This was rectified by making it look more like a button.
 3. The target audience and purpose of the site could be better described in the README.md file. This was addressed by updating the target audience to include those interest, or participating, in the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) and the idea of Speed Cards is explained in the README file.
-4. On larger screens the card area and table area are too spread out horizontally
+4. On larger screens the card area and table area are too spread out horizontally.
 5. More security needs to be implemented to reduce spam and ensure the safety of user data.
 
 ### Assessor Feedback
-In order to address feedback from the project assessor, each item is logged here for reference when fixes and updates are documented later in this file.
+In order to address feedback from the project assessor, each item is logged here for reference and fixes and updates are documented later in this file.
 1. The guessing table requires clear visual clues.
 2. The guessing table requires clear instructions for how to list the cards in order.
 3. Informative messages are required to feedback to the user whether their guess was correct or incorrect.
@@ -22,7 +22,7 @@ In order to address feedback from the project assessor, each item is logged here
 5. Ensure that the interface is navigable using keyboard controls as well as mouse input.
 6. Add a slider bar to the playing instructions.
 7. Is the layout clear and structured?
-8. Are the graphics legibile and visually appealing?
+8. Are the graphics legible and visually appealing?
 9. Is the text legible and visually appealing?
 10. Address issue of redirecting users who land on non-existent pages.
 11. Insert screenshots of finished project that align to relevant user stories.
@@ -37,7 +37,7 @@ In order to address feedback from the project assessor, each item is logged here
 20. Have you verified that your web app is accessible to users with disabilities by testing with screen readers, keyboard navigation, and other assistive technologies?
 21. Does your web app adhere to accessibility standards and guidelines?
 22. Have you performed security testing to identify and address any potential vulnerabilities or weaknesses in your web app? Is sensitive user data handled securely, and are appropriate measures in place to protect against common security threats?
-23. Implement continuous Intergration/Continuous development.
+23. Implement continuous Integration/Continuous development.
 24. Optimize the load times using code minification and image optimisation.
 25. Design the website with scalability in mind, allowing it to handle increasing numbers of users and data without sacrificing performance.
 26. Implement monitoring and analytics tools to track the performance, usage, and errors of the webpage in real time.
@@ -53,18 +53,18 @@ In order to address feedback from the project assessor, each item is logged here
 
 ### Gameplay Updates
 - Contact Me Form: **Assessor Feedback Addressed: 27**
-    * The contact me form is specifically described to gather feedback from users, fulfulling this criteria. The functionality, usage, and requirements are extensively covered in the README.md and TESTING.md files and user response has been that the contact me form works well with no issues and I can confirm that responses via the contact me form have been received via email.
+    * The contact me form is specifically described to gather feedback from users, fulfilling this criteria. The functionality, usage, and requirements are extensively covered in the README.md and TESTING.md files and the user response has been that the contact me form works well with no issues and I can confirm that responses via the contact me form have been received via email.
 
 ### Display Updates
 - Total layout: **Assessor Feedback Addressed: 7, 8, 9**
     * The version 1 [WAVE accessibility results](/TESTING.md#accessibility) showed no issues with the font size for legibility, with all font colours showing a high contrast against their backgrounds. No font size smaller than 16px was used, in line with the [Bureau of Internet Accessibility](https://www.boia.org/) guidelines. Additionally, all user feedback showed no issue with reading any of the text.
     * The layout of the webpage is described in the [Skeleton](/README.md#skeleton) and [Surface](/README.md#surface) sections of the README file and is clear and structured in keeping with common webpage structural conventions to allow quick and intuitive user engagement.
-    * The graphics are all legibile with no pixilation, checked through manual testing and user feedback to the site.
+    * The graphics are all legible with no pixilation, checked through manual testing and user feedback to the site.
 - Card Game Area: **Assessor Feedback Addressed: 7, User Feedback Addressed: 4**
-    * For better compatability with larger screens, a maximum width of the game area of 1100px has been introduced to keep the cards from being spread out too much horizontally. This allows for a better user experience on wider displays and generally looks better.
+    * For better compatibility with larger screens, a maximum width of the game area of 1100px has been introduced to keep the cards from being spread out too much horizontally. This allows for a better user experience on wider displays and generally looks better.
     * ![Card game max width](/documentation/features/card-display-max-width.png)
 - Guessing table: **Assessor Feedback Addressed: 1, 2, 3, User Feedback Addressed: 4**
-    * A title has been added to the guessing table area to inform the users that they must now enter their guesses into the table. This was achieved by adding a H2 element to the table-container div, then moving the hidden class and hide/show table functionality from the table itself to the table-container div, allowing the title to appear and disappear with the table. The H2 title was given the font-family as the text in the game to keep the styling consistent and is centred above the table.
+    * A title has been added to the guessing table area to inform the users that they must now enter their guesses into the table. This was achieved by adding a H2 element to the table-container div, then moving the hidden class and hide/show table functionality from the table itself to the table-container div, allowing the title to appear and disappear with the table. The H2 title was given the same font-family as the text in the game to keep the styling consistent and is centred above the table.
     * ![Guessing table title](/documentation/features/guessing-table-title.png)
     * The submit guess buttons now change their text to "Correct" or "Incorrect" depending on the guess. This was achieved through the use of an if statement in the `submitGuess` click event.
     * The "Correct" and "Incorrect" buttons are coloured green and red respectively using CSS transitions and applying the styles in the above mentioned `submitGuess` click event.
@@ -103,7 +103,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Target audience: **User feedback addressed: 3**
     * The target audience is identified as those competing in memory championships
 - Screenshots of features: **Assessor Feedback Addressed: 11**
-    * Screenshots of each feature are provided in the [Features](/README.md#features) of the README.md file where they are clearly linked to each user story. The decision was taken to not duplicate these screenshots in the TESTING.md file when the user stories are testing as it was deemed they would detract from the information and make the page messy and harder to read.
+    * Screenshots of each feature are provided in the [Features](/README.md#features) of the README.md file where they are clearly linked to each user story. The decision was taken to not duplicate these screenshots in the TESTING.md file when the user stories are tested as it was deemed they would detract from the information and make the page messy and harder to read.
 - Deployment information: **Assessor Feedback Addressed: 29, 30, 31, 32, 33, 34, 35**
     * Ensure that the deployment guide covers setting up any necessary accounts or platforms for deployment: Specified a GitHub account is required.
     * Ensure that the deployment guide covers cloning the repository or downloading the application file: Added a screenshot, code excerpt and recommendation for IDE.
@@ -118,7 +118,7 @@ In order to address feedback from the project assessor, each item is logged here
 ### Development Updates
 - Continuous Integration/Continuous Development: **Assessor Feedback Addressed: 23**
     * The use of continuous development and continuous integration software was beyond the remit for this project, however aspects of it have been included in the development process where possible.
-    * Git has been used for the version control for the webpage. Though not strictly continuous integration, version control and continuous integration are synergystic and have a large cross over in their aims and implementation and manage the changes of the code over time. The repository was not shared with any other developers for this single developer project, so a shared repository and necessary continuous integeration practices such as automated builds or automated testing were not required. That being said, the spirit and philosophy of continuous integration and continuous development can be seen in my approach to testing and implementing new features, described below in the [Patch 1.01 Testing](#patch-101-testing) section.
+    * Git has been used for the version control for the webpage. Though not strictly continuous integration, version control and continuous integration are synergistic and have a large cross over in their aims and implementation and manage the changes of the code over time. The repository was not shared with any other developers for this single developer project, so a shared repository and necessary continuous integration practices such as automated builds or automated testing were not required. That being said, the spirit and philosophy of continuous integration and continuous development can be seen in my approach to testing and implementing new features, described below in the [Patch 1.01 Testing](#patch-101-testing) section.
     * Additionally, GitHub projects was used for project management for this patch update and can be found [here](https://github.com/users/amfairley/projects/2/views/1). This allowed for feedback to be tracked as individual issues ensuring that all user and assessor feedback was addressed and implemented, where necessary, into the project. On top of this, the [MoSCoW method](https://www.marketing-logic.com/salesforce/the-moscow-method/) was used when assigning the issues in order to prioritise tasks based on their importance.
 - Scalability: **Assessor Feedback Addressed: 25**
     * Scalability for a static front end website with some JavaScript functionality consisting of a single webpage has not been a high priority due to its high performance. However, many aspects of scalability have been included during the development process.
@@ -130,7 +130,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Monitoring and Analytics: **Assessor Feedback Addressed: 26**
     * The performance has been tested using Chrome Dev Tool's Lighthouse, which can be found in the [Testing file](/TESTING.md#performance) and below in testing for this patch.
     * Real time analytics of the back end will be in a future patch once a back end is added.
-    * Despite being beyond the remit of this project, [Google Analytics](https://marketingplatform.google.com/about/analytics/) has been used to provide analytics about how users use my webpage. This includes how many page views, how many users scroll to the bottom of the page, indicating that content hinting is working, and how many users use the contact me form. The data received from this will be used to infrom the future updates to the webpage. This required the following code to be added to the index.html and 404.html pages immediately after the head element as directed:
+    * Despite being beyond the remit of this project, [Google Analytics](https://marketingplatform.google.com/about/analytics/) has been used to provide analytics about how users use my webpage. This includes how many page views, how many users scroll to the bottom of the page, indicating that content hinting is working, and how many users use the contact me form. The data received from this will be used to infrom the future updates to the webpage. This required the following code to be added to the index.html and 404.html pages at the bottom of the head element as directed:
 ```HTML
 <!-- Google tag (gtag.js) For Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXSS0CS8J9"></script>
@@ -145,7 +145,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Security: **Assessor Feedback Addressed: 22, User Feedback Addressed: 5**
     * Despite being beyond the remit of this project, substantial effort has been given to making the website as secure as possible.
     * The developer has been trained to spot spam and not to click potential phishing links when reading through the responses from the contact me form.
-    * [obfuscator.io](obfuscator.io) was used to hide the public key for emailjs on the html pages for extra security so that this key cannot be used for malicious behaviour.
+    * [obfuscator.io](obfuscator.io) was used to hide the public key for emailjs on the html pages for extra security so that this key cannot be used for malicious behaviour. <br>
 **Before**:
 ``` JavaScript
 (function() {
@@ -167,7 +167,7 @@ Addressing **Assessor Feedback: 12, 13, 14, 15**:
 - All aspects of the site have been sufficiently tested and have now gone through user testing since version 1.00 was released. Feedback has been incorporated into this patch and total retesting of the site has been completed with the outcomes documented in this section.
 - Edge cases were considered and tested when writing the JavaScript code for this webpage. Although no automatic testing was incorporated; a test driven approach was taken nonetheless. This is evidenced in the limitation and sanitisation of the sequence length input by the user and the requirements for submitting both guesses in the guessing table and user feedback in the contact me form.
 - There are no scenarios or functionalities that have not been adequately tested. Given a longer time frame for the project, automatic testing of the JavaScript code using Jest would have been implemented, however it was not a requirement for this project and the manual testing has been extensive with the benefits and outcomes described in the [TESTING.md](/TESTING.md) file.
-- Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing. As it is a single webpage with minimal activity and styling, the risk of regression is low, but the aforementioned steps that I have taken have made this risk negligable.
+- Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirety of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing. As it is a single webpage with minimal activity and styling, the risk of regression is low, but the aforementioned steps that I have taken have made this risk negligible.
 
 #### User testing
 Addressing **Assessor Feedback 19, 20**. The project was shown to a total of 10 friends, family, and course colleagues for user feedback including a friend who is partially sighted who gave invaluable feedback on the accessibility of the site. This also allowed multiple browsers and devices to be tested. Criticisms and pain points are numbered above in [User Feedback](#user-feedback) with positives and feedback data outlined here.
@@ -222,7 +222,7 @@ With the CSS there were no errors and no warnings associated with my written cod
 With the accessibility validation, the extra bullet points in the how-to-play modal resulted in more justified content alerts, but still no errors. The JavaScript was passed through JSHint again with no errors.
 
 #### Accessibility
-Accessibility was tested in the [TESTING.md](/TESTING.md#accessibility) file to meet the [W3C Web Accessibility Initiative](https://www.w3.org/WAI/WCAG22/quickref/) addressing **Assessor Feedback 21**. On top of this, further efforts have been made on existing and new additions to the webpage as outlined below.
+Accessibility was tested in the [TESTING.md](/TESTING.md#accessibility) file to meet the [W3C Web Accessibility Initiative](https://www.w3.org/WAI/WCAG22/quickref/) addressing **Assessor Feedback 21**. On top of this, further efforts have been made on existing and new additions to the webpage as outlined below.<br>
 **New colour used for "Correct" guesses**
 Green (#008000) is used to highlight correct guesses. This colour is an industry standard for showing that something is correct and when paired with the off-white font colour, gives a great contrast of 4.71 for those with colour blindness.
 <details><summary>Correct answer contrast</summary>
@@ -248,12 +248,13 @@ For this, I went through all the game elements, found those which were not label
 | Submit guess button | N | These have had aria labels added to them |
 | Footer logo link | Y | Aria Labelled |
 | GitHub link | Y | Aria Labelled |
+<br>
 For added security, I played through the game and opened/closed the modals using only the keyboard and only the mouse finding no issues, addressing **Assessor Feedback: 5, 20**. Despite this, functionality to submit the sequence length with the enter key was added. Feedback from a partially sighted user was positive and they identified no issues with their screenreader or being able to play the game.
 
 #### Performance
 The performance of the site was good as seen [here](/TESTING.md#performance) but efforts have been taken to improve this.
-- Image Optimisation: **Addressess Assessor Feedback: 24**
-    * [Cloud Convert](https://cloudconvert.com/) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb.
+- Image Optimisation: **Addresses Assessor Feedback: 24**
+    * [Cloud Convert](https://cloudconvert.com/png-to-webp) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb.
 - Code minification: **Addresses Assessor Feedback: 24**
     * The JavaScript was updated as shown [here](#javascript-updates). This resulted in more concisely written, secure code spread over fewer files improving the performance of the site. As this project is submitted for grading, full code minification was not undertaken as to provide clear and easy to read code to the assessor. However, going forward, should the performance suffer, code minification can be revisited. It makes the code look like this: ![Minified Code](/documentation/code-minification.png)
 - The performance was initially tested the same was as in [TESTING.md](/TESTING.md) ensuring scores of 100 in Accessibility, Best Practices, and SEO were maintained. To address **Assessor Feedback 18** network throttling was introduced and the pages were run simulating "Fast 3G" and "Slow 3G", the two preset speeds for Google Chrome Dev Tools lighthouse. From the results below, it is clear that the performance of this website is very high.
