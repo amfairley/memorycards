@@ -124,6 +124,37 @@ Addressing **Assessor Feedback: 12, 13, 14, 15**:
 - There are no scenarios or functionalities that have not been adequately tested. Given a longer time frame for the project, automatic testing of the JavaScript code using Jest would have been implemented, however it was not a requirement for this project and the manual testing has been extensive with the benefits and outcomes described in the [TESTING.md](/TESTING.md) file.
 - Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing. As it is a single webpage with minimal activity and styling, the risk of regression is low, but the aforementioned steps that I have taken have made this risk negligable.
 
+#### User tesing
+Addressing **Assessor Feedback 19**. The project was shown to a total of 10 friends, family, and course colleagues for user feedback including a friend who is partially sighted who gave invaluable feedback on the accessibility of the site. This also allowed multiple browsers and devices to be tested. Criticisms and pain points are numbered above in [User Feedback](#user-feedback) with positives and feedback data outlined here.
+<br>
+
+**Browsers Used:**
+
+| | Chrome | Firefox | Opera | Safari | Edge | Brave |
+|---|---|---|---|---|---|---|
+| Browser Usage | 4 | 1 | 1 | 3 | 0 | 1 |
+
+There was no negative feedback that was browser specific. Although no users tested Edge, that is a browser that I have access to and had already conducted browser compatability testing with.
+<br>
+
+**Devices Used:**
+| | Desktop | Tablet | iPhone | Android Phone |
+| --- | --- | --- | --- | --- |
+| Device usage | 1 | 2 | 6 | 1 |
+
+There was no negative feedback that was device specific, which was great news as this covered many options of screen sizes. I had previously tested some of the devices using Chrome Dev Tools, however it was good to see that this was a suitable substitute to testing the devices themselves.
+<br>
+
+**Positive Feedback**
+- The instructions were clear and intuitive to find
+- The contact me form is well considered, preventing the user from putting in incorrect values or leaving fields blank
+- The 404 page works well
+- Allowing the user to select the number of cards lets them progress at their own rate and doesn't "dumb down" the gameplay
+- There is no fuss, you can start the game straight away
+- The error modals for choosing number of cards or submitting an invalid guess were useful and stopped the users breaking the game/having to restart
+- Having different results messages for different scores is a nice touch
+- Works with the [Jaws screenreader](https://www.freedomscientific.com/products/software/jaws/) with no complaints.
+
 #### Validation
 
 
