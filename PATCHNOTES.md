@@ -214,9 +214,6 @@ The HTML, CSS, JavaScript, and Accessibility were validated in the same way as i
 With the CSS there were no errors and no warnings associated with my written code.<br>
 With the accessibility validation, the extra bullet points in the how-to-play modal resulted in more justified content alerts, but still no errors. The JavaScript was passed through JSHint again with no errors.
 
-
-
-
 #### Accessibility
 Accessibility was tested in the [TESTING.md](/TESTING.md#accessibility) file to meet the [W3C Web Accessibility Initiative](https://www.w3.org/WAI/WCAG22/quickref/) addressing **Assessor Feedback 21**. On top of this, further efforts have been made on existing and new additions to the webpage as outlined below.
 **New colour used for "Correct" guesses**
@@ -272,10 +269,19 @@ The performance of the site was good as seen [here](/TESTING.md#performance) but
 <img src="/documentation/testing/lighthouse-performance-404-update-slow-3g.png">
 </details>
 
-
-
 #### Manual testing
-And JS
+All of the manual and JavaScript manual testing from the [TESTING.md](/TESTING.md) file was rerun and all tests passed. Added tests are outlined below:
+
+| Feature | Action | Expected result | Passed | Comments |
+|-----|-----|-----|-----|-----|
+| Length selector | Select a valid number and press enter | Game progresses | Y | As expected |
+| Submit button | Get an answer correct | Button turns green and says "Correct" | Y | As expected |
+| Submit button | Get an answer incorrect | Button turns red and says "Incorrect" | Y | As expected |
+| Submit button | Hover after submitting an answer | Nothing | Y | As expected |
+| 404 link | Click it | Redirected to home page | Y | As expected |
+| How to play modal | Open it | Slider bar is visible and works | Y | As expected |
+| Contact me modal | Open and resize | Slider bar appears when modal size is less than text size and works | Y | As expected |
+
 
 
 ### Bug fixes
