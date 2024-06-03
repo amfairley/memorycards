@@ -634,8 +634,10 @@ Some features were considered and not included due to either not being a part of
     * Linter used to validated JavaScript code
 17. [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     * Used to validate the accessibility of the web page
-20. [Google Analytics](https://marketingplatform.google.com/about/analytics/)
+18. [Google Analytics](https://marketingplatform.google.com/about/analytics/)
     * Used for real time analytics of the webite
+19. [Obfuscator.io](https://www.obfuscator.io/)
+    * Used for obfuscating the emailjs public key
 
 ## Testing
 For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
@@ -888,7 +890,11 @@ permalink: /404.html
 This code was put together with help from [stack overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/43409054) and [Bro Code](https://www.youtube.com/watch?v=FGAUekwri1Q) on YouTube. 
 
 **EmailJS**
-Code lines 2-11 in [emailjs.js](/assets/scripts/emailjs.js) is taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body element.
+Code lines in [emailjs.js](/assets/scripts/emailjs.js) are taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body element. These sections in the html files have been obfuscated using [obfuscator.io](https://www.obfuscator.io/) for security reasons.
+
+**Google Analytics**
+The google analytics script is added below the head element on each html page, taken from the google analytics tagging instructions.
+
 
 ## Acknowledgements
 - My mentor [Julia Konovalova](https://github.com/IuliiaKonovalova) for their continued guidance and support with this project
