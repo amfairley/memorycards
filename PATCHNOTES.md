@@ -170,7 +170,7 @@ Green (#008000) is used to highlight correct guesses. This colour is an industry
 </details>
 <br>
 
-**Ensuring all interactive elements are properly labelled for screen readers. This addresses Assessor Feedback 4.**
+**Ensuring all interactive elements are properly labelled for screen readers. This addresses Assessor Feedback 4, 20.**
 For this, I went through all the game elements, found those which were not labelled for full accessibility and updated them. Doing this allowed me to ensure my completeness in meeting the guidance for accessibility.
 | Game Element | Labelled? | Notes |
 |---|---|---|
@@ -191,6 +191,12 @@ For this, I went through all the game elements, found those which were not label
 For added security, I played through the game and opened/closed the modals using only the keyboard and only the mouse finding no issues, addressing **Assessor Feedback: 5, 20**. Despite this, functionality to submit the sequence length with the enter key was added. Feedback from a partially sighted user was positive and they identified no issues with their screenreader or being able to play the game.
 
 #### Performance
+The performance of the site was good as seen [here](/TESTING.md#performance) but efforts have been taken to improve this.
+- Image Optimisation: **Addressess Assessor Feedback: 24**
+    * [Cloud Convert](https://cloudconvert.com/) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb.
+- Code minification: **Addresses Assessor Feedback: 24**
+    * The JavaScript was updated as shown [here](#javascript-updates). This resulted in more concisely written, secure code spread over fewer files improving the performance of the site.
+
 Plus different devices, browser
 
 
@@ -223,6 +229,3 @@ When the user scrolls with the modal open, the modal background only covers the 
 
 #### Bug 8
 When clicking links from within a .md file that direct to specific parts of another .md file, the page is redirected to the top of that .md file instead of the section linked, however the correct link is present in the URL and so simply refreshing the opened page will take the user to the section originally linked to.
-
-### Image Optimisation
-[Cloud Convert](https://cloudconvert.com/) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb. 
