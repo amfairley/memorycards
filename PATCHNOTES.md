@@ -194,7 +194,25 @@ There was no negative feedback that was device specific, which was great news as
 - Works with the [Jaws screenreader](https://www.freedomscientific.com/products/software/jaws/) with no complaints.
 
 #### Validation
+The HTML, CSS, JavaScript, and Accessibility were validated in the same way as in [TESTING.md](/TESTING.md) to ensure that any additions did not impact the quality of the website.
+<details><summary>HMTL validation results - index.html</summary>
+<img src="/documentation/testing/validation-html-homepage-patch101.png">
+</details>
+<details><summary>HMTL validation results - 404.html</summary>
+<img src="/documentation/testing/validation-html-404-patch101.png">
+</details>
+<details><summary>CSS validation results</summary>
+<img src="/documentation/testing/validation-css-patch101.png">
+</details>
+<details><summary>Accessibility validation results - index.html</summary>
+<img src="/documentation/testing/wave-results-homepage-patch101.png">
+</details>
+<details><summary>Accessibility validation results - 404.html</summary>
+<img src="/documentation/testing/wave-results-404-patch101.png">
+</details>
 
+With the CSS there were no errors and no warnings associated with my written code.<br>
+With the accessibility validation, the extra bullet points in the how-to-play modal resulted in more justified content alerts, but still no errors. The JavaScript was passed through JSHint again with no errors.
 
 
 
