@@ -113,7 +113,13 @@ In order to address feedback from the project assessor, each item is logged here
     * The use of continuous development and continuous integration software was beyond the remit for this project, however aspects of it have been included in the development process where possible.
     * Git has been used for the version control for the webpage. Though not strictly continuous integration, version control and continuous integration are synergystic and have a large cross over in their aims and implementation and manage the changes of the code over time. The repository was not shared with any other developers for this single developer project, so a shared repository and necessary continuous integeration practices such as automated builds or automated testing were not required. That being said, the spirit and philosophy of continuous integration and continuous development can be seen in my approach to testing and implementing new features, described below in the [Patch 1.01 Testing](#patch-101-testing) section.
     * Additionally, GitHub projects was used for project management for this patch update and can be found [here](https://github.com/users/amfairley/projects/2/views/1). This allowed for feedback to be tracked as individual issues ensuring that all user and assessor feedback was addressed and implemented, where necessary, into the project. On top of this, the [MoSCoW method](https://www.marketing-logic.com/salesforce/the-moscow-method/) was used when assigning the issues in order to prioritise tasks based on their importance.
-
+- Scalability: **Assessor Feedback Addressed: 25**
+    * Scalability for a static front end website with some JavaScript functionality consisting of a single webpage has not been a high priority due to its high performance. However, many aspects of scalability have been included during the development process.
+    * The assets are saved on GitHub and are accessible by GitHub pages when the site was deployed. This mimics the benefits of a Content Delivery Network (CDN).
+    * Code minification and image optimisation are used to optimise the performance.
+    * The JavaScript is written to optimise efficiency and reduce DOM manipulations. An example of this is having the game area and guessing table headers hidden and then showing them, rather than creating them through JavaScript.
+    * The website is responsive and works well on all tested devices and screen sizes.
+    * Future updates would include real time monitoring and analytics to ensure good user experience when a back end is added to allow users to create profiles and track their scores.
 
 
 ### Patch 1.01 Testing
