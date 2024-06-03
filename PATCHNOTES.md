@@ -57,6 +57,7 @@ In order to address feedback from the project assessor, each item is logged here
 
 ### Gameplay Updates
 
+
 ### Display Updates
 - Total layout: **Assessor Feedback Addressed: 7, 8, 9**
     * The version 1 [WAVE accessibility results](/TESTING.md#accessibility) showed no issues with the font size for legibility, with all font colours showing a high contrast against their backgrounds. No font size smaller than 16px was used, in line with the [Bureau of Internet Accessibility](https://www.boia.org/) guidelines. Additionally, all user feedback showed no issue with reading any of the text.
@@ -100,6 +101,10 @@ In order to address feedback from the project assessor, each item is logged here
 - The reset button event listener had the check for the link to the score.js file removed, as this file is no longer needed as per the fix to [Bug 1](#bug-1).
 - An event listener for the quantity sequence length input has been added to allow the value to be submitted with the enter button as well as the play now button in a bid to ensure the accessibility of the game to all audiences. This addressed **Assessor Feedback 5**.
 - To address **Assessor Feedback 1,2,3** the `tableBuild` function no longer creates a fourth column, so the `tableColumn4` function was deleted. The correct answers are now stored in the global variable `results` which is used to calculate the final score in the `submitGuess` function and is reset in the reset button event listener.
+
+### Documentation Updates
+- Screenshots of features: **Assessor Feedback Addressed: 11**
+    * Screenshots of each feature are provided in the [Features](/README.md#features) of the README.md file where they are clearly linked to each user story. The decision was taken to not duplicate these screenshots in the TESTING.md file when the user stories are testing as it was deemed they would detract from the information and make the page messy and harder to read.
 
 ### Patch 1.01 Testing
 #### Manual testing
