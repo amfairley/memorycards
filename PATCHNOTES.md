@@ -39,9 +39,9 @@ In order to address feedback from the project assessor, each item is logged here
 18. Have you assessed the performance of your webapp on different network speeds?
 19. Have you used actual users to gather feedback on intuitiveness and ease?
 20. Have you verified that your web app is accessible to users with disabilities by testing with screen readers, keyboard navigation, and other assistive technologies?
-21. Does your web app adhere to accessibility  standards and guidelines?
+21. Does your web app adhere to accessibility standards and guidelines?
 22. Have you performed security testing to identify and address any potential vulnerabilities or weaknesses in your web app? Is sensitive user data handled securely, and are appropriate measures in place to protect against common security threats?
-23. Implement continuous Inteegration/Continuous development.
+23. Implement continuous Intergration/Continuous development.
 24. Optimize the load times using code minification and image optimisation.
 25. Design the website with scalability in mind, allowing it to handle increasing numbers of users and data without sacrificing performance.
 26. Implement monitoring and analytics tools to track the performance, usage, and errors of the webpage in real time.
@@ -106,17 +106,28 @@ In order to address feedback from the project assessor, each item is logged here
 - Screenshots of features: **Assessor Feedback Addressed: 11**
     * Screenshots of each feature are provided in the [Features](/README.md#features) of the README.md file where they are clearly linked to each user story. The decision was taken to not duplicate these screenshots in the TESTING.md file when the user stories are testing as it was deemed they would detract from the information and make the page messy and harder to read.
 
+### Development Updates
+- Continuous Integration/Continuous Development: **Assessor Feedback Addressed: 23**
+    * The use of continuous development and continuous integration software was beyond the remit for this project, however aspects of it have been included in the development process where possible.
+    * Git has been used for the version control for the webpage. Though not strictly continuous integration, version control and continuous integration are synergystic and have a large cross over in their aims and implementation and manage the changes of the code over time. The repository was not shared with any other developers for this single developer project, so a shared repository and necessary continuous integeration practices such as automated builds or automated testing were not required. That being said, the spirit and philosophy of continuous integration and continuous development can be seen in my approach to testing and implementing new features, described below in the [Patch 1.01 Testing](#patch-101-testing) section.
+    * Additionally, GitHub projects was used for project management for this patch update and can be found [here](https://github.com/users/amfairley/projects/2/views/1). This allowed for feedback to be tracked as individual issues ensuring that all user and assessor feedback was addressed and implemented, where necessary, into the project.
+
+
+
 ### Patch 1.01 Testing
 
 Addressing **Assessor Feedback: 12, 13, 14, 15**:
 - All aspects of the site have been sufficiently tested and have now gone through user testing since version 1.00 was released. Feedback has been incorporated into this patch and total retesting of the site has been completed with the outcomes documented in this section.
 - Edge cases were considered and tested when writing the JavaScript code for this webpage. Although no automatic testing was incorporated; a test driven approach was taken nonetheless. This is evidenced in the limitation and sanitisation of the sequence length input by the user and the requirements for submitting both guesses in the guessing table and user feedback in the contact me form.
 - There are no scenarios or functionalities that have not been adequately tested. Given a longer time frame for the project, automatic testing of the JavaScript code using Jest would have been implemented, however it was not a requirement for this project and the manual testing has been extensive with the benefits and outcomes described in the [TESTING.md](/TESTING.md) file.
-- Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing.
-#### Manual testing
+- Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing. As it is a single webpage with minimal activity and styling, the risk of regression is low, but the aforementioned steps that I have taken have made this risk negligable.
+
+#### Validation
 
 
-### Patch 1.01 Validation
+
+
+
 #### Accessibility
 **New colour used for "Correct" guesses**
 Green (#008000) is used to highlight correct guesses. This colour is an industry standard for showing that something is correct and when paired with the off-white font colour, gives a great contrast of 4.71 for those with colour blindness.
@@ -144,6 +155,13 @@ For this, I went through all the game elements, found those which were not label
 | Footer logo link | Y | Aria Labelled |
 | GitHub link | Y | Aria Labelled |
 For added security, I played through the game and opened/closed the modals using only the keyboard and only the mouse finding no issues, addressing **Assessor Feedback: 5**. Despite this, functionality to submit the sequence length with the enter key was added. Feedback from a partially sighted user was positive and they identified no issues with their screenreader or being able to play the game.
+
+#### Performance
+Plus different devices, browser
+
+
+#### Manual testing
+And JS
 
 
 ### Bug fixes
