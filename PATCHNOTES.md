@@ -33,7 +33,7 @@ In order to address feedback from the project assessor, each item is logged here
 12. Have you thoroughly tested all aspects of your web app?
 13. Have you tested edge cases and potential user interactions?
 14. Are there any scenarios or functionalities that have not been adequately tested?
-15. Have you conducted regression testing to ensure that  new updates or changes to your web app do not inadvertently break existing  features or functionalities?
+15. Have you conducted regression testing to ensure that new updates or changes to your web app do not inadvertently break existing  features or functionalities?
 16. Have you assessed the performance of your webapp on different screen sizes?
 17. Have you assessed the performance of your webapp on different devices?
 18. Have you assessed the performance of your webapp on different network speeds?
@@ -75,7 +75,7 @@ In order to address feedback from the project assessor, each item is logged here
     * ![How to play updated](/documentation/features/how-to-play-updated.png)
 - Contact me modal : **Assessor Feedback Addressed: 6**
     * The scroll bar on the contact me modal has been made to be visible when the modal is larger than the screen size.
-    * 
+    * ![Contact me updates](/documentation/features/contact-me-slider.png)
 - The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). This address User Feedback 2.
 
 
