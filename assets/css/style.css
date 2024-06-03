@@ -470,8 +470,8 @@ tbody>tr:hover {
     margin: auto;
     width: 95%;
     height: 20%;
-    border-radius: 7%;
     border: solid 2px #333A3F;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #link-404-container:hover {
     color:#F5F5F5;
