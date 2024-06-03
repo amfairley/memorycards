@@ -113,7 +113,7 @@ $(document).ready(function() {
     let cardsToPlay;
     let sequenceLength;
     let lengthCheck;
-    var results = [];
+    let results = [];
 
     // ---------- FUNCTIONS ----------
     // This shuffling algorithm was made with help from stack overflow
@@ -444,13 +444,13 @@ $(document).ready(function() {
             // Change submit field value to correct or incorrect
             if (outcome === "Y"){
                 $(this).addClass("correct-transition submit-guess-pressed");
-                $(this).removeClass("submit-guess")
+                $(this).removeClass("submit-guess");
                 void $(this)[0].offsetWidth;
                 $(this).text("Correct");
                 $(this).addClass("correct");
             } else {
-                $(this).addClass("incorrect-transition submit-guess-pressed")
-                $(this).removeClass("submit-guess")
+                $(this).addClass("incorrect-transition submit-guess-pressed");
+                $(this).removeClass("submit-guess");
                 void $(this)[0].offsetWidth;
                 $(this).text("Incorrect");
                 $(this).addClass("incorrect");
@@ -478,7 +478,7 @@ $(document).ready(function() {
             result(finalScore);
         }
     }
-    
+
     // Adding the event listener function to the submit guess buttons
     $("body").on("click", ".submit-guess", submitGuess);
 });
