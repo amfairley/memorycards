@@ -208,6 +208,10 @@ main {
     margin-bottom: 10px;
 }
 /* Card images */
+#game-area {
+    max-width: 1100px;
+    margin: auto;
+}
 .card-div {
     display: inline-block;
     text-align: center;
@@ -232,6 +236,8 @@ main {
 #guessing-table {
     width: 100%;
     text-align: center;
+    max-width: 800px;
+    margin: auto;
 }
 thead {
     color: #F5F5F5;
@@ -246,13 +252,13 @@ tbody>tr:hover {
     width: 10%;
 }
 .guess-column{
-    width: 55%;
+    width: 70%;
 }
 .guess-column > select {
     text-align: center;
 }
 .answer-column{
-    width: 25%;
+    width: 20%;
 }
 /* Guessing table transitions */
 .correct-transition,
