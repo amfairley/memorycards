@@ -125,7 +125,7 @@ Addressing **Assessor Feedback: 12, 13, 14, 15**:
 - Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing. As it is a single webpage with minimal activity and styling, the risk of regression is low, but the aforementioned steps that I have taken have made this risk negligable.
 
 #### User tesing
-Addressing **Assessor Feedback 19**. The project was shown to a total of 10 friends, family, and course colleagues for user feedback including a friend who is partially sighted who gave invaluable feedback on the accessibility of the site. This also allowed multiple browsers and devices to be tested. Criticisms and pain points are numbered above in [User Feedback](#user-feedback) with positives and feedback data outlined here.
+Addressing **Assessor Feedback 19, 20**. The project was shown to a total of 10 friends, family, and course colleagues for user feedback including a friend who is partially sighted who gave invaluable feedback on the accessibility of the site. This also allowed multiple browsers and devices to be tested. Criticisms and pain points are numbered above in [User Feedback](#user-feedback) with positives and feedback data outlined here.
 <br>
 
 **Browsers Used:**
@@ -162,6 +162,7 @@ There was no negative feedback that was device specific, which was great news as
 
 
 #### Accessibility
+Accessibility was tested in the [TESTING.md](/TESTING.md#accessibility) file to meet the [W3C Web Accessibility Initiative](https://www.w3.org/WAI/WCAG22/quickref/) addressing **Assessor Feedback 21**. On top of this, further efforts have been made on existing and new additions to the webpage as outlined below.
 **New colour used for "Correct" guesses**
 Green (#008000) is used to highlight correct guesses. This colour is an industry standard for showing that something is correct and when paired with the off-white font colour, gives a great contrast of 4.71 for those with colour blindness.
 <details><summary>Correct answer contrast</summary>
@@ -187,7 +188,7 @@ For this, I went through all the game elements, found those which were not label
 | Submit guess button | N | These have had aria labels added to them |
 | Footer logo link | Y | Aria Labelled |
 | GitHub link | Y | Aria Labelled |
-For added security, I played through the game and opened/closed the modals using only the keyboard and only the mouse finding no issues, addressing **Assessor Feedback: 5**. Despite this, functionality to submit the sequence length with the enter key was added. Feedback from a partially sighted user was positive and they identified no issues with their screenreader or being able to play the game.
+For added security, I played through the game and opened/closed the modals using only the keyboard and only the mouse finding no issues, addressing **Assessor Feedback: 5, 20**. Despite this, functionality to submit the sequence length with the enter key was added. Feedback from a partially sighted user was positive and they identified no issues with their screenreader or being able to play the game.
 
 #### Performance
 Plus different devices, browser
