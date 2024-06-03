@@ -180,7 +180,7 @@ There was no negative feedback that was browser specific. Although no users test
 | --- | --- | --- | --- | --- |
 | Device usage | 1 | 2 | 6 | 1 |
 
-There was no negative feedback that was device specific, which was great news as this covered many options of screen sizes. I had previously tested some of the devices using Chrome Dev Tools, however it was good to see that this was a suitable substitute to testing the devices themselves.
+There was no negative feedback that was device specific, which was great news as this covered many options of screen sizes. I had previously tested some of the devices using Chrome Dev Tools, however it was good to see that this was a suitable substitute to testing the devices themselves. This also addresses **Assessor Feedback: 16, 17**.
 <br>
 
 **Positive Feedback**
@@ -234,6 +234,25 @@ The performance of the site was good as seen [here](/TESTING.md#performance) but
     * [Cloud Convert](https://cloudconvert.com/) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb.
 - Code minification: **Addresses Assessor Feedback: 24**
     * The JavaScript was updated as shown [here](#javascript-updates). This resulted in more concisely written, secure code spread over fewer files improving the performance of the site. As this project is submitted for grading, full code minification was not undertaken as to provide clear and easy to read code to the assessor. However, going forward, should the performance suffer, code minification can be revisited. It makes the code look like this: ![Minified Code](/documentation/code-minification.png)
+- The performance was initially tested the same was as in [TESTING.md](/TESTING.md) ensuring scores of 100 in Accessibility, Best Practices, and SEO were maintained. To address **Assessor Feedback 18** network throttling was introduced and the pages were run simulating "Fast 3G" and "Slow 3G", the two preset speeds for Google Chrome Dev Tools lighthouse. From the results below, it is clear that the performance of this website is very high.
+<details><summary>index.html normal speed</summary>
+<img src="/documentation/testing/lighthouse-performance-homepage-update-normal.png">
+</details>
+<details><summary>index.html fast 3G</summary>
+<img src="/documentation/testing/lighthouse-performance-homepage-update-fast-3g.png">
+</details>
+<details><summary>index.html slow 3G</summary>
+<img src="/documentation/testing/lighthouse-performance-homepage-update-slow-3g.png">
+</details>
+<details><summary>404.html normal speed</summary>
+<img src="/documentation/testing/lighthouse-performance-404-update-normal.png">
+</details>
+<details><summary>404.html fast 3G</summary>
+<img src="/documentation/testing/lighthouse-performance-404-update-fast-3g.png">
+</details>
+<details><summary>404.html slow 3G</summary>
+<img src="/documentation/testing/lighthouse-performance-404-update-slow-3g.png">
+</details>
 
 
 
