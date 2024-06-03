@@ -116,7 +116,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Scalability: **Assessor Feedback Addressed: 25**
     * Scalability for a static front end website with some JavaScript functionality consisting of a single webpage has not been a high priority due to its high performance. However, many aspects of scalability have been included during the development process.
     * The assets are saved on GitHub and are accessible by GitHub pages when the site was deployed. This mimics the benefits of a Content Delivery Network (CDN).
-    * Code minification and image optimisation are used to optimise the performance.
+    * Image optimisation is used to optimise the performance.
     * The JavaScript is written to optimise efficiency and reduce DOM manipulations. An example of this is having the game area and guessing table headers hidden and then showing them, rather than creating them through JavaScript.
     * The website is responsive and works well on all tested devices and screen sizes.
     * Future updates would include real time monitoring and analytics to ensure good user experience when a back end is added to allow users to create profiles and track their scores.
@@ -162,7 +162,7 @@ Addressing **Assessor Feedback: 12, 13, 14, 15**:
 - There are no scenarios or functionalities that have not been adequately tested. Given a longer time frame for the project, automatic testing of the JavaScript code using Jest would have been implemented, however it was not a requirement for this project and the manual testing has been extensive with the benefits and outcomes described in the [TESTING.md](/TESTING.md) file.
 - Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing. As it is a single webpage with minimal activity and styling, the risk of regression is low, but the aforementioned steps that I have taken have made this risk negligable.
 
-#### User tesing
+#### User testing
 Addressing **Assessor Feedback 19, 20**. The project was shown to a total of 10 friends, family, and course colleagues for user feedback including a friend who is partially sighted who gave invaluable feedback on the accessibility of the site. This also allowed multiple browsers and devices to be tested. Criticisms and pain points are numbered above in [User Feedback](#user-feedback) with positives and feedback data outlined here.
 <br>
 
@@ -233,9 +233,8 @@ The performance of the site was good as seen [here](/TESTING.md#performance) but
 - Image Optimisation: **Addressess Assessor Feedback: 24**
     * [Cloud Convert](https://cloudconvert.com/) was used to convert the card images from .png to .webp format for faster load times and optimised performance of the webpage. This reduced the combined size of the 52 images from 3.66mb to 1.09mb.
 - Code minification: **Addresses Assessor Feedback: 24**
-    * The JavaScript was updated as shown [here](#javascript-updates). This resulted in more concisely written, secure code spread over fewer files improving the performance of the site.
+    * The JavaScript was updated as shown [here](#javascript-updates). This resulted in more concisely written, secure code spread over fewer files improving the performance of the site. As this project is submitted for grading, full code minification was not undertaken as to provide clear and easy to read code to the assessor. However, going forward, should the performance suffer, code minification can be revisited. It makes the code look like this: ![Minified Code](/documentation/code-minification.png)
 
-Plus different devices, browser
 
 
 #### Manual testing
