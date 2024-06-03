@@ -618,7 +618,7 @@ Some features were considered and not included due to either not being a part of
     * Used for the playing card suit UTF-8 html codes
 9. [Favicon](https://favicon.io/)
 	* Used to supply the image for the browser tab
-10. [Cloud Convert](https://cloudconvert.com/)
+10. [Cloud Convert](https://cloudconvert.com/png-to-webp)
     * Used for image optimisation to convert from .png to .webp format
 11. [emailJS](https://www.emailjs.com/)
     * API used to send the contents of the contact me form to the developers email inbox
