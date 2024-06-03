@@ -107,6 +107,12 @@ In order to address feedback from the project assessor, each item is logged here
     * Screenshots of each feature are provided in the [Features](/README.md#features) of the README.md file where they are clearly linked to each user story. The decision was taken to not duplicate these screenshots in the TESTING.md file when the user stories are testing as it was deemed they would detract from the information and make the page messy and harder to read.
 
 ### Patch 1.01 Testing
+
+Addressing **Assessor Feedback: 12, 13, 14, 15**:
+- All aspects of the site have been sufficiently tested and have now gone through user testing since version 1.00 was released. Feedback has been incorporated into this patch and total retesting of the site has been completed with the outcomes documented in this section.
+- Edge cases were considered and tested when writing the JavaScript code for this webpage. Although no automatic testing was incorporated; a test driven approach was taken nonetheless. This is evidenced in the limitation and sanitisation of the sequence length input by the user and the requirements for submitting both guesses in the guessing table and user feedback in the contact me form.
+- There are no scenarios or functionalities that have not been adequately tested. Given a longer time frame for the project, automatic testing of the JavaScript code using Jest would have been implemented, however it was not a requirement for this project and the manual testing has been extensive with the benefits and outcomes described in the [TESTING.md](/TESTING.md) file.
+- Regression testing was incorporated from the start, though behind the scenes, as to not flood the testing file with unnecessary information. For each function, interactivity, and style introduced to the project, they were validated and manually tested to ensure that they worked as expected and did not impact the working of any others. Once the project was ready to deploy, these tests were completed again to ensure compliance and a good webpage that both works and is consistent. A similar philosophy has been used for the updates in each patch. The individual changes are validated and tested and once all changes have been made, the entirity of the tests in [TESTING.md](/TESTING.md) are rerun along with testing the updates to ensure that the updates do not break the game or webpage. Admittedly this is quite a clunky approach, however it works well for this single page webpage by a single developer and allows efficient testing and bug fixing.
 #### Manual testing
 
 
