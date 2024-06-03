@@ -172,6 +172,7 @@ $(document).ready(function() {
         tableRow.classList.add("table-row");
         return tableRow;
     }
+
     /**
      * Creates the first column data for the guessing table
      */
@@ -180,6 +181,7 @@ $(document).ready(function() {
         column1.classList.add("order-column");
         return column1;
     }
+
     /**
      * Creates the second column data for the guessing table
      */
@@ -193,6 +195,7 @@ $(document).ready(function() {
         column2.append(cardValueSelect, suitValueSelect, valueSubmit);
         return column2;
     }
+
     /**
      * Creates the third column data for the guessing table
      */
@@ -201,6 +204,7 @@ $(document).ready(function() {
         column3.classList.add("answer-column", "hidden");
         return column3;
     }
+
     /**
      * Creates card value select drop down menu
      */
@@ -224,6 +228,7 @@ $(document).ready(function() {
             "<option value='k'>King</option>";
         return select1;
     }
+
     /**
      * Creates the suit value drop down menu
      */
@@ -274,6 +279,7 @@ $(document).ready(function() {
             document.getElementById("table-body").append(tr1);
         }
     }
+
     /**
      * Checks whether two arguments are identical.
      * Used to check the user answer against the correct answer.
@@ -288,6 +294,7 @@ $(document).ready(function() {
         }
         return answerCheck;
     }
+
     /**
      * Gives the user an appropriate message
      * based on their final score.
@@ -303,6 +310,7 @@ $(document).ready(function() {
             $("#modal-results-header").html("Try again...");
         }
     }
+
     // ---------- BUTTON EVENT LISTENERS ----------
     // Accessibility feature to submit length with "enter"
     $("#quantity").on("keydown", function(event) {
@@ -311,6 +319,7 @@ $(document).ready(function() {
             document.getElementById("play").click();
         }
     });
+
     // Shuffles the cards, displays the play button
     $("#play").click(function() {
         // Save the number as length
@@ -402,6 +411,7 @@ $(document).ready(function() {
             $("#button-section").prepend(x);
         }
     });
+
     // Submit guess:
     function submitGuess(event){
         // Takes the sibling elements that are select elements in an array
@@ -468,6 +478,7 @@ $(document).ready(function() {
             result(finalScore);
         }
     }
+    
     // Adding the event listener function to the submit guess buttons
     $("body").on("click", ".submit-guess", submitGuess);
 });
