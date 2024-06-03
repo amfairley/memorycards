@@ -822,7 +822,7 @@ There are no known current bugs on the website.
 
 ### Deployment to GitHub pages
 
-This site was deployed using GitHub pages. Please follow these steps, with examples of my repository, to deploy your own repository to GitHub pages once you are logged in:
+This site was deployed using GitHub pages. To deploy your own site, you will need a GitHub account and your code in a respository of your own following this [handy guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories). Please follow these steps, with examples of my repository, to deploy your own repository to GitHub pages once you are logged in:
 - Once in the [GitHub repository](https://github.com/amfairley/memorycards), go to the Settings tab which can be found at the top of the page. 
 <details><summary>Setting tab location image</summary>
 <img src="/documentation/deployment/deployment-settings-tab.png">
@@ -848,21 +848,30 @@ This site was deployed using GitHub pages. Please follow these steps, with examp
 <img src="/documentation/deployment/deployment-link.png">
 </details>
 
+- Clicking or typing this link into your URL bar will take you to your deployed website. Congratulations! You can then manually test the functionality of your website following along with my [TESTING.md](/TESTING.md) procedure.
+
+- For any troubleshooting advice, the guys over at GitHub have provided handy documentation that can be found [here](https://docs.github.com/en/pages/quickstart)
+
 ### Forking The Repository
 This repository can be forked, allowing you to create a separate codebase to make local changes without impacting the original repository. <br>
 You can fork the repository if you have a [GitHub](https://github.com/) account by going the [GitHub repository](https://github.com/amfairley/memorycards) and selecting **Fork** in the top right corner and click **+ Create a new fork**. This will take you to a new page where you can assign yourself as an owner, add a description, and fork the main page.
 <details><summary>Fork location image</summary>
 <img src="/documentation/deployment/deployment-fork.png">
 </details>
+For any troubleshooting, see the GitHub documentation that can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 ### Deploying Locally
 
 To deploy locally; you can clone this repository. To do so, access the [GitHub Repository](https://github.com/amfairley/memorycards) and click on the bright green "<> Code" button located below the Pin/Watch/Fork/Star toolbar and above the repository file list. From here, select your required option; either cloning it from the web URL using HTTPS, using a password protected SSH key using SSH, or working in the offial GitHub CLI with GitHub CLI. Then use the IDE of your choice, (mine is [Visual Studio Code](https://code.visualstudio.com/)) to clone it. <br>
+<details><summary>How to clone image</summary>
+<img src="/documentation/deployment/deploying-locally.png">
+</details>
 For example, in Studio Visual Code you will need to use the git clone command as such:
 ```
 git clone https://github.com/amfairley/memorycards.git
 ```
 There is also the option in the same green "<> Code" button to download all files as a ZIP folder or open the repository with GitHub Desktop.
+For any troubleshooting, please see the GitHub documentation that can be found [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ### Addition of 404.html
 The 404 page was added in the following way:
@@ -893,7 +902,7 @@ This code was put together with help from [stack overflow](https://stackoverflow
 Code lines in [emailjs.js](/assets/scripts/emailjs.js) are taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body element. These sections in the html files have been obfuscated using [obfuscator.io](https://www.obfuscator.io/) for security reasons.
 
 **Google Analytics**
-The google analytics script is added below the head element on each html page, taken from the google analytics tagging instructions.
+The google analytics script is added at the bottom of the head element on each html page, taken from the google analytics tagging instructions.
 
 
 ## Acknowledgements

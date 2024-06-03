@@ -12,10 +12,6 @@ The project was shown to friends, family, and course colleagues for user feedbac
 3. The target audience and purpose of the site could be better described in the README.md file. This was addressed by updating the target audience to include those interest, or participating, in the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) and the idea of Speed Cards is explained in the README file.
 4. On larger screens the card area and table area are too spread out horizontally
 5. More security needs to be implemented to reduce spam and ensure the safety of user data.
-6. A button to see the cards again once on the guessing stage would be nice.
-7. Set difficulties with set number of cards and checking chances would make it more streamlined.
-
-
 
 ### Assessor Feedback
 In order to address feedback from the project assessor, each item is logged here for reference when fixes and updates are documented later in this file.
@@ -59,16 +55,15 @@ In order to address feedback from the project assessor, each item is logged here
 - Contact Me Form: **Assessor Feedback Addressed: 27**
     * The contact me form is specifically described to gather feedback from users, fulfulling this criteria. The functionality, usage, and requirements are extensively covered in the README.md and TESTING.md files and user response has been that the contact me form works well with no issues and I can confirm that responses via the contact me form have been received via email.
 
-
 ### Display Updates
 - Total layout: **Assessor Feedback Addressed: 7, 8, 9**
     * The version 1 [WAVE accessibility results](/TESTING.md#accessibility) showed no issues with the font size for legibility, with all font colours showing a high contrast against their backgrounds. No font size smaller than 16px was used, in line with the [Bureau of Internet Accessibility](https://www.boia.org/) guidelines. Additionally, all user feedback showed no issue with reading any of the text.
     * The layout of the webpage is described in the [Skeleton](/README.md#skeleton) and [Surface](/README.md#surface) sections of the README file and is clear and structured in keeping with common webpage structural conventions to allow quick and intuitive user engagement.
     * The graphics are all legibile with no pixilation, checked through manual testing and user feedback to the site.
-- Card Game Area: **Assessor Feedback Addressed: 7**
+- Card Game Area: **Assessor Feedback Addressed: 7, User Feedback Addressed: 4**
     * For better compatability with larger screens, a maximum width of the game area of 1100px has been introduced to keep the cards from being spread out too much horizontally. This allows for a better user experience on wider displays and generally looks better.
     * ![Card game max width](/documentation/features/card-display-max-width.png)
-- Guessing table: **Assessor Feedback Addressed: 1, 2, 3**
+- Guessing table: **Assessor Feedback Addressed: 1, 2, 3, User Feedback Addressed: 4**
     * A title has been added to the guessing table area to inform the users that they must now enter their guesses into the table. This was achieved by adding a H2 element to the table-container div, then moving the hidden class and hide/show table functionality from the table itself to the table-container div, allowing the title to appear and disappear with the table. The H2 title was given the font-family as the text in the game to keep the styling consistent and is centred above the table.
     * ![Guessing table title](/documentation/features/guessing-table-title.png)
     * The submit guess buttons now change their text to "Correct" or "Incorrect" depending on the guess. This was achieved through the use of an if statement in the `submitGuess` click event.
@@ -88,7 +83,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Contact me modal : **Assessor Feedback Addressed: 6**
     * The scroll bar on the contact me modal has been made to be visible when the modal is larger than the screen size.
     * ![Contact me updates](/documentation/features/contact-me-slider.png)
-- 404 page: **Assessor Feedback Addressed: 10**
+- 404 page: **Assessor Feedback Addressed: 10, User Feedback Addressed: 2**
     * The 404 page functionality has been manually checked and confirms the original success of the manual testing carried out. Additionally, user feedback indicates that the functionality also works.
     * The 404 link back to the homepage has been updated to look more like a button for a better user experience including a shadow around the border in case the original design was too subtle.
     * Link: ![Updated 404 link](/documentation/features/message-404.png) Hover: ![Updated 404 link hover](/documentation/features/message-404-hover.png)
@@ -105,8 +100,20 @@ In order to address feedback from the project assessor, each item is logged here
 - To address **Assessor Feedback 1,2,3** the `tableBuild` function no longer creates a fourth column, so the `tableColumn4` function was deleted. The correct answers are now stored in the global variable `results` which is used to calculate the final score in the `submitGuess` function and is reset in the reset button event listener.
 
 ### Documentation Updates
+- Target audience: **User feedback addressed: 3**
+    * The target audience is identified as those competing in memory championships
 - Screenshots of features: **Assessor Feedback Addressed: 11**
     * Screenshots of each feature are provided in the [Features](/README.md#features) of the README.md file where they are clearly linked to each user story. The decision was taken to not duplicate these screenshots in the TESTING.md file when the user stories are testing as it was deemed they would detract from the information and make the page messy and harder to read.
+- Deployment information: **Assessor Feedback Addressed: 29, 30, 31, 32, 33, 34, 35**
+    * Ensure that the deployment guide covers setting up any necessary accounts or platforms for deployment: Specified a GitHub account is required.
+    * Ensure that the deployment guide covers cloning the repository or downloading the application file: Added a screenshot, code excerpt and recommendation for IDE.
+    * Ensure that the deployment guide covers installing any required dependencies or packages: None required.
+    * Ensure that the deployment guide covers configuring environment variables or settings, if applicable: None required.
+    * Ensure that the deployment guide covers uploading files to the hosting platform and configuring settings: Added link for GitHub tutorial on setting up a repository.
+    * Ensure that the deployment guide covers verifying the deployment and testing the application's functionality: Add in a step to click or type in the link to go to the site and invite the user to follow along with my testing methodology with a link to my testing file.
+    * Ensure that the deployment guide covers providing guidance on how to access and use the deployed application: As above.
+    * Added in a link for troubleshooting for each section.
+- Tools used and acknowledgements updated.
 
 ### Development Updates
 - Continuous Integration/Continuous Development: **Assessor Feedback Addressed: 23**
@@ -135,7 +142,7 @@ In order to address feedback from the project assessor, each item is logged here
   gtag('config', 'G-PXSS0CS8J9');
 </script>
 ```
-- Security: **Assessor Feedback Addressed: 22**
+- Security: **Assessor Feedback Addressed: 22, User Feedback Addressed: 5**
     * Despite being beyond the remit of this project, substantial effort has been given to making the website as secure as possible.
     * The developer has been trained to spot spam and not to click potential phishing links when reading through the responses from the contact me form.
     * [obfuscator.io](obfuscator.io) was used to hide the public key for emailjs on the html pages for extra security so that this key cannot be used for malicious behaviour.
@@ -281,8 +288,6 @@ All of the manual and JavaScript manual testing from the [TESTING.md](/TESTING.m
 | 404 link | Click it | Redirected to home page | Y | As expected |
 | How to play modal | Open it | Slider bar is visible and works | Y | As expected |
 | Contact me modal | Open and resize | Slider bar appears when modal size is less than text size and works | Y | As expected |
-
-
 
 ### Bug fixes
 #### Bug 1
