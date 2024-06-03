@@ -132,9 +132,9 @@ Addressing **Assessor Feedback 19**. The project was shown to a total of 10 frie
 
 | | Chrome | Firefox | Opera | Safari | Edge | Brave |
 |---|---|---|---|---|---|---|
-| Browser Usage | 4 | 1 | 1 | 3 | 0 | 1 |
+| Browser Usage | 2 | 0 | 1 | 6 | 0 | 1 |
 
-There was no negative feedback that was browser specific. Although no users tested Edge, that is a browser that I have access to and had already conducted browser compatability testing with.
+There was no negative feedback that was browser specific. Although no users tested Edge or Firefox, those are browsers that I have access to and had already conducted browser compatability testing with.
 <br>
 
 **Devices Used:**
