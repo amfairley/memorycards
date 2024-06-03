@@ -76,7 +76,8 @@ In order to address feedback from the project assessor, each item is logged here
     * ![Submit button hover](/documentation/features/submit-button-hover.png)
     * The results table column is removed, as its functionality is now defunct with the update to the Submit button.
     * ![New table columns](/documentation/features/table-layout-update.png)
-    * The maximum 
+    * The maximum width of the guessing table has been added to be 800px so that the white space around the selections is minimised on larger screens leading to a better user experience.
+    * ![Guessing table max width](/documentation/features/guessing-table-max-width.png)
 - How to play modal: **Assessor Feedback Addressed: 6**, **User Feedback Addressed: 3**
     * The how to play modal has had a scroll bar fitted and the height of the modal has been set to auto and a maximum of 95vh.The curved border of the how to play modal is removed due to a repetition of [Bug 5](/README.md#bugs). 
     * The instructions have also been updated to specify buttons by name, recommend a memorisation technique, recommend that new players start with fewer cards, and keeping the tone motivational and uplifting.
