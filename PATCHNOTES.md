@@ -56,6 +56,8 @@ In order to address feedback from the project assessor, each item is logged here
 35. Ensure that the deployment guide covers providing guidance on how to access and use the deployed application.
 
 ### Gameplay Updates
+- Contact Me Form: **Assessor Feedback Addressed: 27**
+    * The contact me form is specifically described to gather feedback from users, fulfulling this criteria. The functionality, usage, and requirements are extensively covered in the README.md and TESTING.md files and user response has been that the contact me form works well with no issues and I can confirm that responses via the contact me form have been received via email.
 
 
 ### Display Updates
@@ -110,7 +112,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Continuous Integration/Continuous Development: **Assessor Feedback Addressed: 23**
     * The use of continuous development and continuous integration software was beyond the remit for this project, however aspects of it have been included in the development process where possible.
     * Git has been used for the version control for the webpage. Though not strictly continuous integration, version control and continuous integration are synergystic and have a large cross over in their aims and implementation and manage the changes of the code over time. The repository was not shared with any other developers for this single developer project, so a shared repository and necessary continuous integeration practices such as automated builds or automated testing were not required. That being said, the spirit and philosophy of continuous integration and continuous development can be seen in my approach to testing and implementing new features, described below in the [Patch 1.01 Testing](#patch-101-testing) section.
-    * Additionally, GitHub projects was used for project management for this patch update and can be found [here](https://github.com/users/amfairley/projects/2/views/1). This allowed for feedback to be tracked as individual issues ensuring that all user and assessor feedback was addressed and implemented, where necessary, into the project.
+    * Additionally, GitHub projects was used for project management for this patch update and can be found [here](https://github.com/users/amfairley/projects/2/views/1). This allowed for feedback to be tracked as individual issues ensuring that all user and assessor feedback was addressed and implemented, where necessary, into the project. On top of this, the [MoSCoW method](https://www.marketing-logic.com/salesforce/the-moscow-method/) was used when assigning the issues in order to prioritise tasks based on their importance.
 
 
 
