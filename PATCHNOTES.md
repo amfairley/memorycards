@@ -58,6 +58,13 @@ In order to address feedback from the project assessor, each item is logged here
 ### Gameplay Updates
 
 ### Display Updates
+- Total layout: **Assessor Feedback Addressed: 7, 8, 9**
+    * The version 1 [WAVE accessibility results](/TESTING.md#accessibility) showed no issues with the font size for legibility, with all font colours showing a high contrast against their backgrounds. No font size smaller than 16px was used, in line with the [Bureau of Internet Accessibility](https://www.boia.org/) guidelines. Additionally, all user feedback showed no issue with reading any of the text.
+    * The layout of the webpage is described in the [Skeleton](/README.md#skeleton) and [Surface](/README.md#surface) sections of the README file and is clear and structured in keeping with common webpage structural conventions to allow quick and intuitive user engagement.
+    * The graphics are all legibile with no pixilation, checked through manual testing and user feedback to the site.
+- Card Game Area: **Assessor Feedback Addressed: 7**
+    * For better compatability with larger screens, a maximum width of the game area of 1100px has been introduced to keep the cards from being spread out too much horizontally. This allows for a better user experience on wider displays and generally looks better.
+    * ![Card game max width](/documentation/features/card-display-max-width.png)
 - Guessing table: **Assessor Feedback Addressed: 1, 2, 3**
     * A title has been added to the guessing table area to inform the users that they must now enter their guesses into the table. This was achieved by adding a H2 element to the table-container div, then moving the hidden class and hide/show table functionality from the table itself to the table-container div, allowing the title to appear and disappear with the table. The H2 title was given the font-family as the text in the game to keep the styling consistent and is centred above the table.
     * ![Guessing table title](/documentation/features/guessing-table-title.png)
@@ -69,6 +76,7 @@ In order to address feedback from the project assessor, each item is logged here
     * ![Submit button hover](/documentation/features/submit-button-hover.png)
     * The results table column is removed, as its functionality is now defunct with the update to the Submit button.
     * ![New table columns](/documentation/features/table-layout-update.png)
+    * The maximum 
 - How to play modal: **Assessor Feedback Addressed: 6**, **User Feedback Addressed: 3**
     * The how to play modal has had a scroll bar fitted and the height of the modal has been set to auto and a maximum of 95vh.The curved border of the how to play modal is removed due to a repetition of [Bug 5](/README.md#bugs). 
     * The instructions have also been updated to specify buttons by name, recommend a memorisation technique, recommend that new players start with fewer cards, and keeping the tone motivational and uplifting.
