@@ -892,3 +892,4 @@ Code lines 2-11 in [emailjs.js](/assets/scripts/emailjs.js) is taken from the [e
 - My mentor [Julia Konovalova](https://github.com/IuliiaKonovalova) for their continued guidance and support with this project
 - [Code Institute](https://codeinstitute.net/global/) Slack community members for their support and help
 - My fellow [Code Institute](https://codeinstitute.net/global/) learning cohort for all of their advice and support
+- My friends, family, and colleagues who provided essential user tests to get the game to the state it is in today
