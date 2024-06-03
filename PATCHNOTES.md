@@ -122,6 +122,7 @@ In order to address feedback from the project assessor, each item is logged here
     * Future updates would include real time monitoring and analytics to ensure good user experience when a back end is added to allow users to create profiles and track their scores.
 - Monitoring and Analytics: **Assessor Feedback Addressed: 26**
     * The performance has been tested using Chrome Dev Tool's Lighthouse, which can be found in the [Testing file](/TESTING.md#performance) and below in testing for this patch.
+    * Real time analytics of the back end will be in a future patch once a back end is added.
     * Despite being beyond the remit of this project, [Google Analytics](https://marketingplatform.google.com/about/analytics/) has been used to provide analytics about how users use my webpage. This includes how many page views, how many users scroll to the bottom of the page, indicating that content hinting is working, and how many users use the contact me form. The data received from this will be used to infrom the future updates to the webpage. This required the following code to be added to the index.html and 404.html pages immediately after the head element as directed:
 ```HTML
 <!-- Google tag (gtag.js) For Analytics -->
@@ -134,7 +135,23 @@ In order to address feedback from the project assessor, each item is logged here
   gtag('config', 'G-PXSS0CS8J9');
 </script>
 ```
-
+- Security: **Assessor Feedback Addressed: 22**
+    * Despite being beyond the remit of this project, substantial effort has been given to making the website as secure as possible.
+    * The developer has been trained to spot spam and not to click potential phishing links when reading through the responses from the contact me form.
+    * [obfuscator.io](obfuscator.io) was used to hide the public key for emailjs on the html pages for extra security so that this key cannot be used for malicious behaviour.
+**Before**:
+``` JavaScript
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+        publicKey: "",
+    });
+})();
+```
+**After**:
+``` JavaScript
+(function(_0xf789cc,_0x25c114){var _0x7bce6d=_0x5215,_0x479cf6=_0xf789cc();while(!![]){try{var _0x1ace72=-parseInt(_0x7bce6d(0x101))/0x1*(parseInt(_0x7bce6d(0xfa))/0x2)+parseInt(_0x7bce6d(0x100))/0x3*(-parseInt(_0x7bce6d(0xf7))/0x4)+parseInt(_0x7bce6d(0xff))/0x5*(-parseInt(_0x7bce6d(0xfd))/0x6)+-parseInt(_0x7bce6d(0xf6))/0x7*(-parseInt(_0x7bce6d(0xfe))/0x8)+parseInt(_0x7bce6d(0xfc))/0x9+parseInt(_0x7bce6d(0xf9))/0xa+parseInt(_0x7bce6d(0xf8))/0xb*(parseInt(_0x7bce6d(0xfb))/0xc);if(_0x1ace72===_0x25c114)break;else _0x479cf6['push'](_0x479cf6['shift']());}catch(_0x2b5306){_0x479cf6['push'](_0x479cf6['shift']());}}}(_0x247f,0xc1df3),(function(){emailjs['init']({'publicKey':'5Il-1n7VCJG_mw70w'});}()));function _0x5215(_0x353a77,_0x4f3f1d){var _0x247f40=_0x247f();return _0x5215=function(_0x52157c,_0x1157e8){_0x52157c=_0x52157c-0xf6;var _0xb69795=_0x247f40[_0x52157c];return _0xb69795;},_0x5215(_0x353a77,_0x4f3f1d);}function _0x247f(){var _0x35bdbb=['8686370yZGlwi','314dvSCnL','21360348EYihkr','7658721vPbMUh','4182CYtsRP','8zXggRY','9695RHIoQz','3158247HZOQGP','5053jlfnEj','3444119MYoLqo','4qrNPHH','11hKiDHU'];_0x247f=function(){return _0x35bdbb;};return _0x247f();}
+```
 
 
 ### Patch 1.01 Testing
