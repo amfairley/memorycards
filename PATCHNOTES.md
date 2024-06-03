@@ -85,7 +85,10 @@ In order to address feedback from the project assessor, each item is logged here
 - Contact me modal : **Assessor Feedback Addressed: 6**
     * The scroll bar on the contact me modal has been made to be visible when the modal is larger than the screen size.
     * ![Contact me updates](/documentation/features/contact-me-slider.png)
-- The 404 link back to the homepage has been updated to look more like a button for a better user experience. The features section in the README.md file has been updated accordingly and can be found [here](/README.md#404-page-message). This address User Feedback 2.
+- 404 page: **Assessor Feedback Addressed: 10**
+    * The 404 page functionality has been manually checked and confirms the original success of the manual testing carried out. Additionally, user feedback indicates that the functionality also works.
+    * The 404 link back to the homepage has been updated to look more like a button for a better user experience including a shadow around the border in case the original design was too subtle.
+    * Link: ![Updated 404 link](/documentation/features/message-404.png) Hover: ![Updated 404 link hover](/documentation/features/message-404-hover.png)
 
 
 ### JavaScript Updates
