@@ -120,6 +120,21 @@ In order to address feedback from the project assessor, each item is logged here
     * The JavaScript is written to optimise efficiency and reduce DOM manipulations. An example of this is having the game area and guessing table headers hidden and then showing them, rather than creating them through JavaScript.
     * The website is responsive and works well on all tested devices and screen sizes.
     * Future updates would include real time monitoring and analytics to ensure good user experience when a back end is added to allow users to create profiles and track their scores.
+- Monitoring and Analytics: **Assessor Feedback Addressed: 26**
+    * The performance has been tested using Chrome Dev Tool's Lighthouse, which can be found in the [Testing file](/TESTING.md#performance) and below in testing for this patch.
+    * Despite being beyond the remit of this project, [Google Analytics](https://marketingplatform.google.com/about/analytics/) has been used to provide analytics about how users use my webpage. This includes how many page views, how many users scroll to the bottom of the page, indicating that content hinting is working, and how many users use the contact me form. The data received from this will be used to infrom the future updates to the webpage. This required the following code to be added to the index.html and 404.html pages immediately after the head element as directed:
+```HTML
+<!-- Google tag (gtag.js) For Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PXSS0CS8J9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PXSS0CS8J9');
+</script>
+```
+
 
 
 ### Patch 1.01 Testing
