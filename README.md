@@ -858,7 +858,8 @@ You can fork the repository if you have a [GitHub](https://github.com/) account 
 <details><summary>Fork location image</summary>
 <img src="/documentation/deployment/deployment-fork.png">
 </details>
-For any troubleshooting, see the GitHub documentation that can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+For any troubleshooting, see the GitHub documentation that can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
 
 ### Deploying Locally
 
@@ -866,10 +867,12 @@ To deploy locally; you can clone this repository. To do so, access the [GitHub R
 <details><summary>How to clone image</summary>
 <img src="/documentation/deployment/deploying-locally.png">
 </details>
-For example, in Studio Visual Code you will need to use the git clone command as such:
+For example, in Studio Visual Code you will need to use the git clone command as such:<br>
+
 ```
 git clone https://github.com/amfairley/memorycards.git
 ```
+
 There is also the option in the same green "<> Code" button to download all files as a ZIP folder or open the repository with GitHub Desktop.
 For any troubleshooting, please see the GitHub documentation that can be found [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
