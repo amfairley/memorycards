@@ -283,12 +283,17 @@ All of the manual and JavaScript manual testing from the [TESTING.md](/TESTING.m
 | Feature | Action | Expected result | Passed | Comments |
 |-----|-----|-----|-----|-----|
 | Length selector | Select a valid number and press enter | Game progresses | Y | As expected |
+| Card game area | Resize the screen | Width does not exceed 1100px and is centered | Y | As expected |
+| Guessing table area | Resize the screen | Width does not exceed 800px and is centered | Y | As expected |
 | Submit button | Get an answer correct | Button turns green and says "Correct" | Y | As expected |
 | Submit button | Get an answer incorrect | Button turns red and says "Incorrect" | Y | As expected |
 | Submit button | Hover after submitting an answer | Nothing | Y | As expected |
 | 404 link | Click it | Redirected to home page | Y | As expected |
 | How to play modal | Open it | Slider bar is visible and works | Y | As expected |
-| Contact me modal | Open and resize | Slider bar appears when modal size is less than text size and works | Y | As expected |
+| How to play modal | Open it on different screen sizes | Modal takes up 95vh with no overflow and slider functions | Y | As expected |
+| Contact me modal | Open it on different screen sizes | Slider bar appears when modal size is less than text size and works | Y | As expected |
+| Accessibility | Play game with only keyboard | No issues | Y | As expected |
+| Accessibility | Play game with only mouse | No issues | Y | As expected |
 
 ### Bug fixes
 #### Bug 1
