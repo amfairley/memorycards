@@ -822,7 +822,7 @@ There are no known current bugs on the website.
 
 ### Deployment to GitHub pages
 
-This site was deployed using GitHub pages. To deploy your own site, you will need a GitHub account and your code in a respository of your own following this [handy guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories). Please follow these steps, with examples of my repository, to deploy your own repository to GitHub pages once you are logged in:
+This site was deployed using GitHub pages. To deploy your own site, you will need a GitHub account of your own and to put your code into a respository following this [handy guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories). Please follow these steps, with examples of my repository, to deploy your own repository to GitHub pages once you are logged in:
 - Once in the [GitHub repository](https://github.com/amfairley/memorycards), go to the Settings tab which can be found at the top of the page. 
 <details><summary>Setting tab location image</summary>
 <img src="/documentation/deployment/deployment-settings-tab.png">
@@ -850,7 +850,7 @@ This site was deployed using GitHub pages. To deploy your own site, you will nee
 
 - Clicking or typing this link into your URL bar will take you to your deployed website. Congratulations! You can then manually test the functionality of your website following along with my [TESTING.md](/TESTING.md) procedure.
 
-- For any troubleshooting advice, the guys over at GitHub have provided handy documentation that can be found [here](https://docs.github.com/en/pages/quickstart)
+- For any troubleshooting advice, the guys over at GitHub have provided handy documentation that can be found [here](https://docs.github.com/en/pages/quickstart).
 
 ### Forking The Repository
 This repository can be forked, allowing you to create a separate codebase to make local changes without impacting the original repository. <br>
