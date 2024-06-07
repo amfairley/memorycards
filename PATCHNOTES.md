@@ -145,6 +145,7 @@ In order to address feedback from the project assessor, each item is logged here
 - Security: **Assessor Feedback Addressed: 22, User Feedback Addressed: 5**
     * Despite being beyond the remit of this project, substantial effort has been given to making the website as secure as possible.
     * The developer has been trained to spot spam and not to click potential phishing links when reading through the responses from the contact me form.
+    * Future updates will include a turnstile or captcha when submitting the form for proper data handling security.
     * [obfuscator.io](obfuscator.io) was used to hide the public key for emailjs on the html pages for extra security so that this key cannot be used for malicious behaviour. <br>
 **Before**:
 ``` JavaScript
@@ -278,7 +279,7 @@ The performance of the site was good as seen [here](/TESTING.md#performance) but
 </details>
 
 #### Manual testing
-All of the manual and JavaScript manual testing from the [TESTING.md](/TESTING.md) file was rerun and all tests passed. Added tests are outlined below:
+All of the manual and JavaScript manual testing from the [TESTING.md](/TESTING.md) file were re-run and all tests passed. Additional tests for updated features are outlined below:
 
 | Feature | Action | Expected result | Passed | Comments |
 |-----|-----|-----|-----|-----|
